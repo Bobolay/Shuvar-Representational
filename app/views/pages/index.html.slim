@@ -1,0 +1,335 @@
+.main-banner-container
+  ul.main-banner-slider
+    li.img-background style="background-image: url(#{asset_path('photo/homeslider-1.jpg')})"
+    li.img-background style="background-image: url(#{asset_path('photo/homeslider-2.jpg')})"
+    li.img-background style="background-image: url(#{asset_path('photo/homeslider-3.jpg')})"
+    li.img-background style="background-image: url(#{asset_path('photo/homeslider-4.jpg')})"
+  .slide-description-container.shadow
+    .arrow-left = inline_svg "icons/arrow-left.svg"
+    .arrow-right = inline_svg "icons/arrow-right.svg"
+    .description-text.visible
+      p.main-title
+        | про&nbsp;
+        span шувар
+      .horizontal-line-separator
+      p.regular.slider-count-symbols
+        | Перший в Україні і найбільший в Західному регіоні гуртовий ринок сільськогосподарської продукції.&nbsp;
+        span «Шувар» 
+        | забезпечує найкращі умови проведення товарообміну між професійними операторами агроринку та невеликими виробниками сільгосппродукції з одного боку, та оптовим покупцем і кінцевим споживачем продукції &mdash; з іншого.
+    .description-text  
+      p.main-title
+        | про&nbsp;
+        span нас
+      .horizontal-line-separator
+      p.regular.slider-count-symbols
+        | В цьому текстовому блоці для прикладу подано забагато тексту. Зверніть увагу на обмежену кількість символів, в іншому випадку стрічка буде обрізана, про що свідчать крапки вкінці!!! В цьому текстовому блоці для прикладу подано забагато тексту. Зверніть увагу на обмежену кількість символів, в іншому випадку стрічка буде обрізана, про що свідчать крапки вкінці!!!
+    .description-text
+      p.main-title
+        | про&nbsp;
+        span термінали
+      .horizontal-line-separator
+      p.regular.slider-count-symbols
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laudantium ipsa, eius tempora magni dolorem minima ab expedita deserunt omnis dolore possimus, veritatis nostrum nihil repellendus soluta labore culpa explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laudantium ipsa, eius tempora magni dolorem minima ab expedita deserunt omnis dolore possimus, veritatis nostrum nihil repellendus soluta labore culpa explicabo.
+    .description-text
+      p.main-title
+        | про&nbsp;
+        span щось інше
+      .horizontal-line-separator
+      p.regular.slider-count-symbols
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laudantium ipsa, eius tempora magni dolorem minima ab expedita deserunt omnis dolore possimus, veritatis nostrum nihil repellendus soluta labore culpa explicabo.
+    .line-container
+      .line.active-line-position
+
+.news-container.inner-indent
+  p.main-title
+    | наші&nbsp;
+    span новини
+  .row.columns-left.inner-indent
+    .columns.medium-6.large-3
+      a.new-block
+        .icon
+          = inline_svg "icons/business_black.svg"
+        .img-container style="background-image: url(#{asset_path('photo/sample-1.jpg')})"
+        p.georgia-italic.date 17 серпня 2016
+        p.new-title цьогорічний базилік. переваги та недоліки
+        p.smaller Після скасування державного регулювання цін соціально значущі продукти подорожчали менше, ніж очікували експерти
+        .line
+    .columns.medium-6.large-3
+      a.new-block
+        .icon
+          = inline_svg "icons/shopping_basket.svg"
+        .img-container style="background-image: url(#{asset_path('photo/sample-2.jpg')})"
+        p.georgia-italic.date 15 серпня 2016
+        p.new-title ріст жита цього літа порадує продавців
+        p.smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id necessitatibus ipsa molestiae ea voluptates, facilis excepturi, repudiandae iure numquam vel nobis? Odit, doloremque nulla minus amet rerum velit omnis atque.
+        .line
+    .columns.medium-6.large-3
+      a.new-block
+        .icon
+          = inline_svg "icons/soccer.svg"
+        .img-container style="background-image: url(#{asset_path('photo/sample-3.jpg')})"
+        p.georgia-italic.date 13 серпня 2016
+        p.new-title збільшення ціна на валовий продукт ринку
+        p.smaller В цьому полі 120 символів!!! В полі рівно 120 символів. В цьому полі рівно 120 символів. В цьому полі рівно 120 символів
+        .line
+    .columns.medium-6.large-3
+      a.new-block
+        .icon
+          = inline_svg "icons/shopping_basket.svg"
+        .img-container style="background-image: url(#{asset_path('photo/sample-2.jpg')})"
+        p.georgia-italic.date 15 серпня 2016
+        p.new-title ріст жита цього літа порадує продавців
+        p.smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id necessitatibus ipsa molestiae ea voluptates, facilis excepturi, repudiandae iure numquam vel nobis? Odit, doloremque nulla minus amet rerum velit omnis atque.
+        .line
+  a.georgia-italic Переглянути всі
+
+.analytics-container.inner-indent
+  p.main-title
+    | аналітичний&nbsp;
+    span центр
+  p.main-subtitle Короткий текст опис, який характеризує даний розділ
+  .row.inner-indent
+    .columns.medium-6.large-4
+      a.analytic-block
+        = inline_svg "icons/mechanic.svg"
+        p.title
+          | новини
+          = inline_svg "icons/ext-link.svg"
+        p.description Короткий текст опис на одне або два речення даної категорії або послуги.
+    .columns.medium-6.large-4
+      a.analytic-block
+        = inline_svg "icons/mechanic.svg"
+        p.title
+          | новини
+          = inline_svg "icons/ext-link.svg"
+        p.description Короткий текст опис на одне або два речення даної категорії або послуги.
+    .columns.medium-6.large-4
+      a.analytic-block
+        = inline_svg "icons/mechanic.svg"
+        p.title
+          | новини
+          = inline_svg "icons/ext-link.svg"
+        p.description Короткий текст опис на одне або два речення даної категорії або послуги.
+    .columns.medium-6.large-4
+      a.analytic-block
+        = inline_svg "icons/mechanic.svg"
+        p.title
+          | новини
+          = inline_svg "icons/ext-link.svg"
+        p.description Короткий текст опис на одне або два речення даної категорії або послуги.
+    .columns.medium-6.large-4
+      a.analytic-block
+        = inline_svg "icons/mechanic.svg"
+        p.title
+          | новини
+          = inline_svg "icons/ext-link.svg"
+        p.description Короткий текст опис на одне або два речення даної категорії або послуги.
+    .columns.medium-6.large-4
+      a.analytic-block
+        = inline_svg "icons/mechanic.svg"
+        p.title
+          | новини
+          = inline_svg "icons/ext-link.svg"
+        p.description Короткий текст опис на одне або два речення даної категорії або послуги.
+
+= render "advertisement"
+
+.person-type-container.inner-indent
+  .img-container style="background-image: url(#{asset_path('photo/person-type-banner.jpg')})"
+  .row
+    .columns.large-10.large-centered
+      .shadow
+        p.main-title
+          | хто&nbsp;
+          span ви
+        .row
+          .columns.small-6.medium-4.columns
+            a.person-type-block
+              = inline_svg "icons/sprout.svg"
+              p.title виробник
+              p.georgia-italic Я маю поле і виробляю продукти.
+          .columns.small-6.medium-4.columns
+            a.person-type-block
+              = inline_svg "icons/sprout.svg"
+              p.title виробник
+              p.georgia-italic Я маю поле і виробляю продукти.
+          .columns.small-6.medium-4.columns
+            a.person-type-block
+              = inline_svg "icons/sprout.svg"
+              p.title виробник
+              p.georgia-italic Я маю поле і виробляю продукти.
+          .columns.small-6.medium-4.columns
+            a.person-type-block
+              = inline_svg "icons/sprout.svg"
+              p.title виробник
+              p.georgia-italic Я маю поле і виробляю продукти.
+          .columns.small-6.medium-4.columns
+            a.person-type-block
+              = inline_svg "icons/sprout.svg"
+              p.title виробник
+              p.georgia-italic Я маю поле і виробляю продукти.
+          .columns.small-6.medium-4.columns
+            a.person-type-block
+              = inline_svg "icons/sprout.svg"
+              p.title виробник
+              p.georgia-italic Я маю поле і виробляю продукти.
+
+.product-categories-container.inner-indent
+  p.main-title
+    | товарні&nbsp;
+    span групи
+  p.main-subtitle Короткий текст опис, який характеризує даний розділ
+  .row.blocks
+    .columns.medium-6.large-4
+      a.product-category-block
+        .img-container
+          .img-background style="background-image: url(#{asset_path('photo/product-category.png')})"
+        .line
+        p.title овочі та фрукти
+        p.georgia-italic Короткий текст опис
+    .columns.medium-6.large-4
+      a.product-category-block
+        .img-container
+          .img-background style="background-image: url(#{asset_path('photo/product-category.png')})"
+        .line
+        p.title овочі та фрукти
+        p.georgia-italic Короткий текст опис
+    .columns.medium-6.large-4
+      a.product-category-block
+        .img-container
+          .img-background style="background-image: url(#{asset_path('photo/product-category.png')})"
+        .line
+        p.title овочі та фрукти
+        p.georgia-italic Короткий текст опис
+    .columns.medium-6.large-4
+      a.product-category-block
+        .img-container
+          .img-background style="background-image: url(#{asset_path('photo/product-category.png')})"
+        .line
+        p.title овочі та фрукти
+        p.georgia-italic Короткий текст опис
+    .columns.medium-6.large-4
+      a.product-category-block
+        .img-container
+          .img-background style="background-image: url(#{asset_path('photo/product-category.png')})"
+        .line
+        p.title овочі та фрукти
+        p.georgia-italic Короткий текст опис
+    .columns.medium-6.large-4
+      a.product-category-block
+        .img-container
+          .img-background style="background-image: url(#{asset_path('photo/product-category.png')})"
+        .line
+        p.title овочі та фрукти
+        p.georgia-italic Короткий текст опис
+
+.projects-container.inner-indent
+  p.main-title
+    | проекти на&nbsp;
+    span шуварі
+  p.main-subtitle Короткий текст опис, який характеризує даний розділ
+  .row
+    .columns
+      .slider-container
+        .arrow-left = inline_svg "icons/arrow-left.svg"
+        .arrow-right = inline_svg "icons/arrow-right.svg"
+        .projects-slider-container
+          ul.projects-slider
+            li.img-background style="background-image: url(#{asset_path('photo/sample-1.jpg')})"
+            li.img-background style="background-image: url(#{asset_path('photo/sample-2.jpg')})"
+            li.img-background style="background-image: url(#{asset_path('photo/sample-3.jpg')})"
+            li.img-background style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
+            li.img-background style="background-image: url(#{asset_path('photo/sample-5.jpg')})"
+            li.img-background style="background-image: url(#{asset_path('photo/sample-6.jpg')})"
+          .project-info
+            .description-text.visible
+              p.main-title галичагропарк
+              p.smaller Проект IFC &#171;Розвиток фінансування аграрного сектору в Європі та Центральній Азії&#187; нещодавно презентував результати дослідження ринку агрострахування в Україні 2016-му році.
+              a.georgia-italic Детальніше
+            .description-text
+              p.main-title експорт
+              p.smaller Проект IFC &#171;Розвиток фінансування аграрного сектору в Європі та Центральній Азії&#187; нещодавно презентував результати дослідження ринку агрострахування в Україні 2016-му році.
+              a.georgia-italic Детальніше
+            .description-text
+              p.main-title софія торг
+              p.smaller Проект IFC &#171;Розвиток фінансування аграрного сектору в Європі та Центральній Азії&#187; нещодавно презентував результати дослідження ринку агрострахування в Україні 2016-му році.
+              a.georgia-italic Детальніше
+            .description-text
+              p.main-title проект дідо
+              p.smaller Проект IFC &#171;Розвиток фінансування аграрного сектору в Європі та Центральній Азії&#187; нещодавно презентував результати дослідження ринку агрострахування в Україні 2016-му році.
+              a.georgia-italic Детальніше
+            .description-text
+              p.main-title інтернет магазин
+              p.smaller Проект IFC &#171;Розвиток фінансування аграрного сектору в Європі та Центральній Азії&#187; нещодавно презентував результати дослідження ринку агрострахування в Україні 2016-му році.
+              a.georgia-italic Детальніше
+            .description-text
+              p.main-title дистанційні продажі
+              p.smaller Проект IFC &#171;Розвиток фінансування аграрного сектору в Європі та Центральній Азії&#187; нещодавно презентував результати дослідження ринку агрострахування в Україні 2016-му році.
+              a.georgia-italic Детальніше
+            .line
+      #bx-pager-projects
+        a.pager data-slide-index=0 галичагропарк
+        a.pager data-slide-index=1 експорт
+        a.pager data-slide-index=2 софія торг
+        a.pager data-slide-index=3 дідо
+        a.pager data-slide-index=4 інтернет магазин
+        a.pager data-slide-index=5 дистанційні продажі
+  a.georgia-italic Переглянути всі
+
+.events-container.inner-indent
+  p.main-title
+    | проекти на&nbsp;
+    span шуварі
+
+  .row.blocks-container
+    .columns.medium-6.large-4
+      a.event-block.clearfix
+        .floated.date
+          p.date-number 27
+          p.date-month жовтня
+          p.date-year 2016
+        .floated.description
+          p.larger Найбільший український виробник цукру планує розширити молочний бізнес
+    .columns.medium-6.large-4
+      a.event-block.clearfix
+        .floated.date
+          p.date-number 12
+          p.date-month вересня
+          p.date-year 2016
+        .floated.description
+          p.larger Погляд експерта на сезон росту картоплі
+    .columns.medium-6.large-4
+      a.event-block.clearfix
+        .floated.date
+          p.date-number 33
+          p.date-month серпня
+          p.date-year 2016
+        .floated.description
+          p.larger Німці розвивають на Житомирщині органічне сільське господарство
+    .columns.medium-6.large-4
+      a.event-block.clearfix
+        .floated.date
+          p.date-number 15
+          p.date-month червня
+          p.date-year 2016
+        .floated.description
+          p.larger Мінагропрод і корейська Posco Daewoo мають намір оновлення парку сільгосптехніки
+    .columns.medium-6.large-4
+      a.event-block.clearfix
+        .floated.date
+          p.date-number 08
+          p.date-month червня
+          p.date-year 2016
+        .floated.description
+          p.larger Йдемо на рекорд: Український аграрний експорт перевищив 9 мільярдів доларів
+    .columns.medium-6.large-4
+      a.event-block.clearfix
+        .floated.date
+          p.date-number 24
+          p.date-month березня
+          p.date-year 2016
+        .floated.description
+          p.larger Погляд експерта на сезон росту картоплі
+
+  a.georgia-italic Переглянути всі
+  

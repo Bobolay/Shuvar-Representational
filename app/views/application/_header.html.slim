@@ -1,0 +1,87 @@
+.top-nav-container
+  
+  .left-container
+
+    .inline-block.logo-container
+      = inline_svg "icons/logo.svg"
+
+    .inline-block.languages
+      p.smaller.active укр
+      p.smaller eng
+
+  .right-container
+    
+    a.top-nav-link
+      = inline_svg "icons/clock.svg"
+      span
+        | Графік
+        br
+        | роботи
+    a.top-nav-link
+      = inline_svg "icons/price-monitor.svg"
+      span
+        | Ціни на
+        br
+        | продукцію
+    a.top-nav-link
+      = inline_svg "icons/local_shipping.svg"
+      span
+        | Тарифи
+        br
+        | на заїзд
+    a.top-nav-link
+      = inline_svg "icons/network-cam.svg"
+      span
+        | Веб
+        br
+        | камери
+
+    .vertical-line-separator
+
+    .social-container
+      a.social-link = inline_svg "icons/social-facebook.svg"
+      a.social-link = inline_svg "icons/social-facebook.svg"
+
+    .vertical-line-separator
+
+    .contacts
+      a.contact-info href="tel:+380322953636"
+        | +38 
+        span
+          | (032) 
+        | 295-36-36
+      a.contact-info href="tel:+380965321078"
+        | +38 
+        span
+          | (096) 
+        | 532-10-78
+
+    .vertical-line-separator
+
+    a.top-nav-contact-button
+      = inline_svg "icons/phone.svg"
+
+    a.login-logout-container-mobile
+      = inline_svg "icons/lock.svg"
+
+    a.login-logout-container-desktop
+      = inline_svg "icons/lock.svg"
+      span вхід
+
+.main-nav-container
+  .menu-button
+    .menu-button-lines
+  a.main-nav-link.home.desktop = inline_svg "icons/home.svg"
+  a.main-nav-link.desktop новини
+  a.main-nav-link.desktop про нас
+  a.main-nav-link.desktop послуги
+  a.main-nav-link.desktop план схема
+  a.main-nav-link.desktop проекти
+  a.main-nav-link.desktop контакти
+  a.main-nav-link = inline_svg "icons/shuvar-info-logo.svg"
+  .input-field.search
+    = inline_svg "icons/search.svg"
+    input placeholder="Пошук"
+
+  .mobile-menu
+    

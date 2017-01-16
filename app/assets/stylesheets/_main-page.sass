@@ -1,0 +1,249 @@
+.advertisement
+  .edvertisement-subtitle
+    margin-top: 10px
+    float: right
+    font-size: 12px
+    font-style: italic
+    p
+      color: $grey600
+      display: inline-block
+    a
+      color: $green
+      text-decoration: underline
+      display: inline-block
+
+.person-type-container
+  position: relative
+  margin-bottom: 120px
+  .img-container
+    position: absolute
+    height: 100%
+  .shadow
+    position: relative
+    top: 150px
+    background: white
+    padding: 20px 20px 50px
+  .main-title
+    margin-bottom: 50px
+  .person-type-block
+    text-align: center
+    border: 1px solid transparent
+    padding: 20px
+    svg
+      fill: $green
+      width: 40px
+      height: 40px
+    .title
+      @extend .large
+      +medium
+      color: $navy
+      text-transform: uppercase
+      margin: 10px 0
+      +transition(0.15s)
+    .georgia-italic
+      @media #{$small-only}
+        display: none
+    &:hover
+      border: 1px solid $blueGrey100
+      .title
+        color: $green
+
+.product-categories-container
+  .blocks
+    padding: 50px 0 0
+  .product-category-block
+    position: relative
+    height: 380px
+    margin-bottom: 20px
+    text-align: center
+    width: 90%
+    margin: 0 auto
+    .img-container
+      position: relative
+      height: 250px
+      margin-bottom: 30px
+      overflow: hidden
+    .img-background
+      +transition(0.2s)
+    .line
+      position: absolute
+      top: 210px
+      left: 50%
+      width: 1px
+      height: 60px
+      background: $blueGrey300
+    .title
+      font-size: 1.375em
+      color: $blueGrey700
+      text-transform: uppercase
+      +bold
+      +transition(0.2s)
+    &:hover
+      .img-background
+        +scale(1.1)
+      .title
+        color: $green
+
+
+.projects-container
+
+  .slider-container
+    position: relative
+    margin: 50px auto 0
+    .arrow-left, .arrow-right
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      border: 1px solid $blueGrey400
+      position: absolute
+      top: 50%
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      +translate(0,-50%)
+      cursor: pointer
+      +transition(0.15s)
+      svg
+        fill: $blueGrey400
+        margin: auto
+      &:hover
+        border: 1px solid $green
+        svg
+          fill: $green
+    .arrow-left
+      left: 0
+    .arrow-right
+      right: 0
+    .projects-slider-container
+      position: relative
+      width: 85%
+      height: 500px
+      margin: 0 auto
+      @media #{$small-only}
+        height: 400px
+      @media #{$xxlarge-up}
+        height: 500px
+        width: 90%
+    .projects-slider
+      width: 100%
+      height: 100%
+    .project-info
+      position: absolute
+      z-index: 1
+      background: rgba($green, 0.95)
+      width: 700px
+      max-width: 100%
+      height: 50%
+      left: 50%
+      +translate(-50%,0)
+      bottom: 0
+      padding: 20px
+      text-align: center
+      .description-text
+        position: absolute
+        left: 50%
+        +translate(-50%,0)
+        opacity: 0
+        &.visible
+          +transition(0.75s)
+          opacity: 1
+      .main-title
+        color: white
+        span
+          color: white
+      .smaller
+        color: white
+        width: 500px
+        max-width: 90%
+        margin: 10px auto
+      .georgia-italic
+        color: white
+      .line
+        position: absolute
+        left: 50%
+        bottom: -20px
+        width: 1px
+        height: 50px
+        background: $blueGrey600
+      @media #{$xlarge-up}
+        padding: 30px
+        .smaller
+          margin: 20px auto
+
+  #bx-pager-projects
+    margin: 30px auto
+    text-align: center
+    .pager
+      display: inline-block
+      font-size: 0.875em
+      text-transform: uppercase
+      +bold
+      color: $blueGrey400
+      padding: 0 10px
+      &.active
+        color: $green
+
+  a.georgia-italic
+    text-align: center
+    color: $blueGrey800
+    &:hover
+      color: $green
+
+.events-container
+  position: relative
+  background: $blueGrey50
+  .blocks-container
+    padding: 30px 0
+    @media #{$xxlarge-up}
+      padding: 50px 0
+  .event-block
+    position: relative
+    height: 120px
+    @media #{$large-up}
+      height: 150px
+    .date
+      width: 94px
+      height: 94px
+      text-align: center
+      border: 1px solid $blueGrey100
+      padding: 10px
+      +transition(0.2s)
+      .date-number
+        font-size: 2em
+        color: $green
+        +bold
+        line-height: 1.25
+        +transition(0.2s)
+      .date-month, .date-year
+        font-style: italic
+        color: $blueGrey600
+        font-size: 0.75em
+        line-height: 1.25
+        +transition(0.2s)
+    .description
+      padding-left: 15px
+      width: calc(100% - 100px)
+      @media #{$xxlarge-up}
+        padding-top: 15px
+      .larger
+        +medium
+        color: $blueGrey700
+        line-height: 1.25
+        +transition(0.2s)
+  .event-block
+    &:hover
+      .date
+        background: $green
+        .date-number, .date-month, .date-year
+          color: white
+      .description
+        .larger
+          color: $green
+
+  a.georgia-italic
+    text-align: center
+    color: $blueGrey800
+    &:hover
+      color: $green

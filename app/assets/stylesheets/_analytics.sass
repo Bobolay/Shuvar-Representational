@@ -1,0 +1,49 @@
+.analytics-container
+
+  .analytic-block
+    background: $grey50
+    border: 1px solid $blueGrey100
+    height: 220px
+    text-align: center
+    padding-top: 30px
+    margin-bottom: 30px
+    +transition(0.15s)
+    svg
+      position: relative
+      width: 40px
+      height: 40px
+      fill: $green
+      vertical-align: super
+      left: 3px
+      top: -4px
+    .title
+      position: relative
+      @extend .large
+      +medium
+      color: $navy
+      text-transform: uppercase
+      margin: 10px 0
+      +transition(0.15s)
+      svg
+        width: 10px
+        height: 10px
+        fill: $blueGrey600
+        +transition(0.15s)
+    .description
+      @extend .smaller
+      color: $blueGrey600
+      width: 400px
+      max-width: 90%
+      margin: 0 auto
+      +transition(0.15s)
+      line-height: 1.25
+    &:hover
+      background: $green
+      svg
+        fill: white
+      .title
+        color: white
+        svg
+          fill: white
+      .description
+        color: white

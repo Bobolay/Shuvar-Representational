@@ -1,0 +1,230 @@
+.top-nav-container
+  position: relative
+  background: $blueGrey50
+  padding: 10px 20px
+  @media #{$large-up}
+    padding: 20px 30px
+  & > .left-container, .right-container
+    vertical-align: middle
+    display: inline-block
+  .left-container
+    width: 200px
+  .right-container
+    width: calc(100% - 210px)
+    text-align: right
+
+  .vertical-line-separator
+    display: inline-block
+    vertical-align: middle
+    width: 1px
+    height: 60px
+    margin: 0 0.875em
+    background: rgba($blueGrey400, 0.2)
+    display: none
+    @media #{$large-up}
+      display: inline-block
+    @media #{$xxlarge-up}
+      margin: 0 1em
+
+  .inline-block
+    display: inline-block
+    vertical-align: middle
+
+  .logo-container
+    width: 60px
+    height: 40px
+    svg
+      width: 100%
+      height: 100%
+    @media #{$large-up}
+      width: 86px
+      height: 66px
+
+  .languages
+    margin-left: 30px
+    @media #{$small-only}
+      margin-left: 10px
+    .smaller
+      text-transform: uppercase
+      color: $blueGrey400
+      display: inline-block
+      padding: 10px 5px
+      cursor: pointer
+      +transition(0.15s)
+      &:hover
+        color: $green
+      &.active
+        color: $green
+        font-weight: bold
+
+  .top-nav-link
+    @extend .smaller-medium
+    position: relative
+    color: $blueGrey700
+    line-height: 1em
+    margin: 0 15px
+    vertical-align: middle
+    display: none
+    svg
+      fill: $green
+      top: 0
+      left: 0
+      width: 2em
+      height: 2em
+    span
+      text-align: left
+      display: none
+    &:hover
+      color: $green
+      svg
+        +scale(1.05)
+    @media #{$large-up}
+      display: inline-block
+    @media #{$xlarge-up}
+      padding-left: 40px
+      svg
+        position: absolute
+      span
+        display: inline-block
+    @media #{$xxlarge-up}
+      margin: 0 20px
+
+  .social-container
+    display: none
+    .social-link
+      fill: $blueGrey600
+      line-height: 1
+      vertical-align: middle
+    @media #{$large-up}
+      display: inline-block
+
+  .contacts
+    display: none
+    vertical-align: middle
+    @media #{$large-up}
+      display: inline-block
+    .contact-info
+      color: $blueGrey700
+      +medium
+      line-height: 1.25
+      span
+        color: $green
+      @media #{$xxlarge-up}
+        font-size: 1.125em
+
+  .top-nav-contact-button, .login-logout-container-mobile
+    display: inline-block
+    vertical-align: middle
+    position: relative
+    width: 40px
+    height: 40px
+    @media #{$small-only}
+    svg
+      fill: $green
+      position: absolute
+      top: 50%
+      left: 50%
+      +translate(-50%,-50%)
+    @media #{$large-up}
+      display: none
+
+  .login-logout-container-desktop
+    color: $blueGrey700
+    text-transform: uppercase
+    +medium
+    display: none
+    svg
+      position: relative
+      vertical-align: middle
+      fill: $green
+      width: 24px
+      height: 24px
+      top: -4px
+    @media #{$large-up}
+      display: inline-block
+
+.main-nav-container
+  background: $green
+  text-align: right
+  @media #{$xlarge-up}
+    text-align: center
+  .main-nav-link
+    display: inline-block
+    text-transform: uppercase
+    color: white
+    line-height: 70px
+    padding: 0 15px
+    &.desktop
+      display: none
+    svg
+      fill: white
+      vertical-align: middle
+    &:hover
+      background: rgba(white,0.2)
+    &.home
+      width: 70px
+      text-align: center
+    &.desktop
+      @media #{$xlarge-up}
+        display: inline-block
+    @media #{$xxlarge-up}
+      padding: 0 20px
+  .search
+    display: inline-block
+    background: rgba(white,0.2)
+    line-height: 70px
+    padding: 0 20px
+    svg
+      fill: white
+      position: absolute
+      left: 25px
+      top: 25px
+    input
+      color: white
+      padding: 10px 10px 10px 40px
+      display: inline-block
+      &::-webkit-input-placeholder
+        color: white
+        font-style: italic
+        opacity: 0.5
+      &::-moz-placeholder
+        color: white
+        font-style: italic
+        opacity: 0.5
+      &:-moz-placeholder
+        color: white
+        font-style: italic
+        opacity: 0.5
+      &:-ms-input-placeholder
+        color: white
+        font-style: italic
+        opacity: 0.5
+  .menu-button
+    position: absolute
+    width: 70px
+    height: 70px
+    cursor: pointer
+    background: rgba(255,255,255,0.2)
+    padding-left: 22px
+    padding-top: 22px
+    +transition(0.25s)
+    @media #{$xlarge-up}
+      display: none
+    .menu-button-lines
+      +burger(26px, 3px, 5px, white, 1px)
+    &:hover
+      background: rgba(255,255,255,0.4)
+
+    &:hover
+      .menu-button-lines
+        &, &::before, &::after
+          background-color: white
+    &.opened
+      .menu-button-lines
+        +burger-to-cross
+        &::before, &::after
+          background-color: white
+      &:hover
+        .menu-button-lines
+          &::before, &::after
+            background-color: white

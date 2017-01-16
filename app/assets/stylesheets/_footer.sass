@@ -1,0 +1,102 @@
+.footer-top
+  background: $blueGrey800
+  padding: 50px 0
+
+  p.georgia-italic
+    padding-bottom: 20px
+    @media #{$small-only}
+      padding-top: 20px
+      padding-bottom: 10px
+
+  .logo-field
+    margin-bottom: 40px
+    .smaller
+      color: rgba(white, 0.5)
+      margin-top: 10px
+    @media #{$small-only}
+      margin-bottom: 20px
+    @media #{$medium-only}
+      .footer-logo
+        display: inline-block
+        vertical-align: middle
+      .smaller
+        display: inline-block
+        vertical-align: middle
+        width: 400px
+        margin-left: 20px
+    @media #{$large-up}
+      margin-bottom: 0
+      .smaller
+        width: 260px
+        max-width: 90%
+
+  .categories-field
+  a.categorie
+    +open-sans
+    font-size: 0.875em
+    font-weight: 600
+    color: white
+    margin-bottom: 10px
+    &:hover
+      color: $green
+  .contacts-field
+    .contact-info
+      color: white
+      +medium
+      line-height: 1.25
+      span
+        color: $green
+      &:hover
+        color: $green
+      @media #{$large-up}
+        font-size: 1.125em
+    .socials
+      margin-top: 20px
+    .social
+      display: inline-block
+      width: 30px
+      height: 30px
+      margin-right: 10px
+      &:first-child
+        margin-left: -10px
+      svg
+        fill: white
+      &:hover
+        svg
+          fill: $green
+
+
+
+.footer-bottom
+  background: $blueGrey900
+  padding: 10px 0
+  .v-studio-field
+    .v-logo
+      display: inline-block
+      margin-right: 10px
+      fill: white
+      width: 30px
+      height: 30px
+    .studio-text
+      +open-sans
+      font-size: 0.75em
+      color: white
+      line-height: 1
+      display: inline-block
+      opacity: 0.7
+    a.studio-text
+      &:hover
+        text-decoration: underline
+        color: $green
+        opacity: 1
+    span.studio-text
+      display: block
+  .company-field
+    a.floated
+      color: white
+      +open-sans
+      font-size: 0.75em
+      padding: 10px
+      opacity: 0.7
+      &:hover
+        opacity: 1
