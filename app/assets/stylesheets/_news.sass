@@ -17,6 +17,7 @@
       display: -ms-flex
       display: -o-flex
       display: flex
+      z-index: 1
       svg
         margin: auto
         width: 1.625em
@@ -33,7 +34,12 @@
       opacity: 0
       +transition(0.2s)
     .img-container
-      height: 250px
+      position: relative
+      width: 100%
+      &:before
+        content: ''
+        padding-bottom: 70%
+        display: block
     .date
       margin: 10px 0
     .new-title
