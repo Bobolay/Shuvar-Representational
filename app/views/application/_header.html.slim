@@ -82,6 +82,38 @@
   .input-field.search
     = inline_svg "icons/search.svg"
     input placeholder="Пошук"
+  .search-mobile = inline_svg "icons/search.svg"
 
-  .mobile-menu
-    
+  .menu-wrapper
+    a.menu-link.active-page Головна
+    a.menu-link Новини
+    a.menu-link Про нас
+    a.menu-link Послуги
+    a.menu-link План схема
+    a.menu-link Проекти
+    a.menu-link Контакти
+    .menu-blocks-container.clearfix
+      .block.clearfix
+        .floated = inline_svg "icons/clock.svg"
+        .floated
+          | Графік 
+          br
+          | роботи
+      .block.clearfix
+        .floated = inline_svg "icons/price-monitor.svg"
+        .floated
+          | Ціни на 
+          br
+          | продукцію
+      .block.clearfix
+        .floated = inline_svg "icons/local_shipping.svg"
+        .floated
+          | Тарифи 
+          br
+          | на проїзд
+      .block.clearfix
+        .floated = inline_svg "icons/network-cam.svg"
+        .floated
+          | Веб 
+          br
+          | камери

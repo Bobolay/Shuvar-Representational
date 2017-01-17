@@ -24,3 +24,4 @@
 #= require fullpage_banner_height
 #= require header
 #= require characters_limit
+#= require menu

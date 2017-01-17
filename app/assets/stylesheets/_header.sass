@@ -2,6 +2,7 @@
   position: relative
   background: $blueGrey50
   padding: 10px 20px
+  z-index: 4
   @media #{$large-up}
     padding: 20px 30px
   & > .left-container, .right-container
@@ -118,6 +119,7 @@
     position: relative
     width: 40px
     height: 40px
+    margin-left: 20px
     @media #{$small-only}
     svg
       fill: $green
@@ -144,8 +146,10 @@
       display: inline-block
 
 .main-nav-container
+  position: relative
   background: $green
   text-align: right
+  z-index: 4
   @media #{$xlarge-up}
     text-align: center
   .main-nav-link
@@ -174,6 +178,8 @@
     background: rgba(white,0.2)
     line-height: 70px
     padding: 0 20px
+    @media #{$small-only}
+      display: none
     svg
       fill: white
       position: absolute
@@ -199,6 +205,22 @@
         color: white
         font-style: italic
         opacity: 0.5
+  .search-mobile
+    position: relative
+    display: inline-block
+    background: rgba(white,0.2)
+    width: 70px
+    height: 70px
+    vertical-align: middle
+    svg
+      fill: white
+      width: 24px
+      height: 24px
+      position: absolute
+      top: 50%
+      left: 50%
+      +translate(-50%,-50%)
+
   .menu-button
     position: absolute
     width: 70px
@@ -228,3 +250,65 @@
         .menu-button-lines
           &::before, &::after
             background-color: white
+
+  .menu-wrapper
+    position: absolute
+    left: 0
+    width: 300px
+    padding-top: 20px
+    text-align: left
+    background: $blueGrey800
+    z-index: 1
+    overflow: hidden
+    box-shadow: 0 5px 20px rgba(0,0,0,0.7)
+    +translate(-110%,0)
+    +transition(1s)
+    &.opened
+      +translate(0,0)
+    @media #{$small-only}
+      width: 100%
+    .menu-link
+      position: relative
+      color: white
+      padding: 10px 30px
+      &:before
+        content: ''
+        position: absolute
+        width: 5px
+        height: 100%
+        background: $green
+        top: 0
+        left: 0
+        +transition(0.2s)
+        opacity: 0
+      &:hover, &.active-page
+        background: rgba(255,255,255,0.1)
+        &:before
+          opacity: 1  
+    a.menu-link
+      &:last-of-type
+        margin-bottom: 20px
+
+  .menu-blocks-container
+    background: rgba(255,255,255,0.1)
+    margin: -2px
+    .block.clearfix
+      width: 50%
+      float: left
+      padding: 20px
+      border: 1px solid $blueGrey800
+      margin: -0.5px
+      color: white
+      font-size: 12px
+      line-height: 1.25
+      .floated
+        width: 50%
+        cursor: pointer
+        svg
+          fill: rgba(white, 0.7)
+          width: 32px
+          height: 32px
+          +transition(0.2s)
+      &:hover
+        svg
+          fill: white

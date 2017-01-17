@@ -1,9 +1,17 @@
 .news-container
+  .inner-indent
+    padding: 50px 0 0
   .news-block-container
     position: relative
   .new-block
     position: relative
-    height: 450px
+    height: 420px
+    margin-bottom: 30px
+    @media #{$small-only}
+      height: auto
+      padding-bottom: 30px
+    @media #{$large-only}
+      height: 380px
     .icon
       position: absolute
       top: 1em
@@ -40,6 +48,10 @@
         content: ''
         padding-bottom: 70%
         display: block
+        @media #{$small-only}
+          padding-bottom: 50%
+        @media #{$medium-only}
+          padding-bottom: 60%
     .date
       margin: 10px 0
     .new-title
@@ -51,6 +63,8 @@
       +transition(0.15s)
     .smaller
       color: $blueGrey600
+      @media #{$small-only}
+        display: none
     &:hover
       .line
         opacity: 1

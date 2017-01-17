@@ -66,10 +66,44 @@ ul
         svg
           fill: $green
     .arrow-left
-      left: 20%
+      left: 10%
+      @media #{$large-up}
+        left: 20%
     .arrow-right
-      right: 20%
+      right: 10%
+      @media #{$large-up}
+        right: 20%
   @media #{$small-only}
+    height: auto
+    .main-banner-slider
+      height: 250px
+    .slide-description-container
+      width: 100%
+      max-width: 100%
+      height: 280px
+      position: initial
+      top: initial
+      left: initial
+      right: initial
+      bottom: initial
+      +translate(0,0)
+      .description-text
+        top: 30px
+      .horizontal-line-separator
+        margin: 20px auto
+      .regular
+        text-align: left
+  @media only screen and (max-width: 320px)
+    .main-banner-slider
+      height: 150px
+    .slide-description-container
+      height: 350px
+      .arrow-left, .arrow-right
+        top: 18px
+      .arrow-left
+        left: 0
+      .arrow-right
+        right: 0
   @media #{$medium-only}
   @media #{$large-only}
   @media #{$xlarge-only}
