@@ -47,7 +47,13 @@
       border: 1px solid $blueGrey100
       .title
         color: $green
-    @media #{$small-only}
+  @media #{$small-only}
+    margin-bottom: 0
+    .img-container
+      display: none
+    .shadow
+      top: 0
+    .person-type-block
       height: 140px
       .title
         font-size: 1em
@@ -92,6 +98,9 @@
         +scale(1.1)
       .title
         color: $green
+    @media #{$small-only}
+      height: auto
+      margin-bottom: 30px
 
 
 .projects-container

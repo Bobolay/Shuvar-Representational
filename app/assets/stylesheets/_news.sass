@@ -1,6 +1,8 @@
 .news-container
   .inner-indent
     padding: 50px 0 0
+    @media #{$small-only}
+      padding: 25px 0 0
   .news-block-container
     position: relative
   .new-block
@@ -9,7 +11,7 @@
     margin-bottom: 30px
     @media #{$small-only}
       height: auto
-      padding-bottom: 30px
+      margin-bottom: 50px
     @media #{$large-only}
       height: 380px
     .icon

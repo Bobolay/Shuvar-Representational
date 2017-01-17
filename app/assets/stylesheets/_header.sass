@@ -3,6 +3,8 @@
   background: $blueGrey50
   padding: 10px 20px
   z-index: 4
+  @media #{$small-only}
+    padding: 10px 0 10px 20px
   @media #{$large-up}
     padding: 20px 30px
   & > .left-container, .right-container
@@ -10,9 +12,13 @@
     display: inline-block
   .left-container
     width: 200px
+    @media #{$small-only}
+      width: 150px
   .right-container
     width: calc(100% - 210px)
     text-align: right
+    @media #{$small-only}
+      width: calc(100% - 170px)
 
   .vertical-line-separator
     display: inline-block
@@ -171,6 +177,8 @@
     &.desktop
       @media #{$xlarge-up}
         display: inline-block
+    @media #{$small-only}
+      line-height: 50px
     @media #{$xxlarge-up}
       padding: 0 20px
   .search
@@ -221,6 +229,10 @@
       left: 50%
       +translate(-50%,-50%)
 
+    @media #{$small-only}
+      width: 50px
+      height: 50px
+
   .menu-button
     position: absolute
     width: 70px
@@ -250,6 +262,11 @@
         .menu-button-lines
           &::before, &::after
             background-color: white
+
+    @media #{$small-only}
+      width: 50px
+      height: 50px
+      padding: 15px 13px
 
   .menu-wrapper
     position: absolute
