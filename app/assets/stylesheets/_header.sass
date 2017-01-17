@@ -157,7 +157,7 @@
   text-align: right
   z-index: 4
   @media #{$xlarge-up}
-    text-align: center
+    text-align: initial
   .main-nav-link
     display: inline-block
     text-transform: uppercase
@@ -169,6 +169,18 @@
     svg
       fill: white
       vertical-align: middle
+    .arrow-dropdown
+      position: relative
+      display: inline-block
+      vertical-align: middle
+      width: 24px
+      svg
+        position: relative
+        top: -5px
+        +transition(0.2s)
+      &.opened
+        svg
+          +rotate(180deg)
     &:hover
       background: rgba(white,0.2)
     &.home
@@ -183,6 +195,7 @@
       padding: 0 20px
   .search
     display: inline-block
+    float: right
     background: rgba(white,0.2)
     line-height: 70px
     padding: 0 20px
@@ -217,8 +230,8 @@
     position: relative
     display: inline-block
     background: rgba(white,0.2)
-    width: 70px
-    height: 70px
+    width: 50px
+    height: 50px
     vertical-align: middle
     svg
       fill: white
@@ -228,10 +241,8 @@
       top: 50%
       left: 50%
       +translate(-50%,-50%)
-
-    @media #{$small-only}
-      width: 50px
-      height: 50px
+    @media #{$medium-up}
+      display: none
 
   .menu-button
     position: absolute
@@ -268,64 +279,29 @@
       height: 50px
       padding: 15px 13px
 
-  .menu-wrapper
-    position: absolute
-    left: 0
-    width: 300px
-    padding-top: 20px
-    text-align: left
-    background: $blueGrey800
-    z-index: 1
-    overflow: hidden
-    box-shadow: 0 5px 20px rgba(0,0,0,0.7)
-    +translate(-110%,0)
-    +transition(1s)
-    &.opened
-      +translate(0,0)
-    @media #{$small-only}
-      width: 100%
-    .menu-link
-      position: relative
-      color: white
-      padding: 10px 30px
-      &:before
-        content: ''
-        position: absolute
-        width: 5px
-        height: 100%
-        background: $green
-        top: 0
-        left: 0
-        +transition(0.2s)
-        opacity: 0
-      &:hover, &.active-page
-        background: rgba(255,255,255,0.1)
-        &:before
-          opacity: 1  
-    a.menu-link
-      &:last-of-type
-        margin-bottom: 20px
-
-  .menu-blocks-container
-    background: rgba(255,255,255,0.1)
-    margin: -2px
-    .block.clearfix
-      width: 50%
-      float: left
-      padding: 20px
-      border: 1px solid $blueGrey800
-      margin: -0.5px
-      color: white
-      font-size: 12px
-      line-height: 1.25
-      .floated
-        width: 50%
-        cursor: pointer
-        svg
-          fill: rgba(white, 0.7)
-          width: 32px
-          height: 32px
-          +transition(0.2s)
-      &:hover
-        svg
-          fill: white
+.scheme-container-desktop
+  position: absolute
+  width: 100%
+  z-index: 1
+  background: $blueGrey800
+  display: none
+  +translate(0,-110%)
+  +transition(0.5s)
+  &.visible
+    +translate(0,0)
+  .scheme-link
+    display: inline-block
+    color: white
+    text-transform: uppercase
+    line-height: 50px
+    padding: 0 15px
+    font-size: 0.9375em
+    +transition(0.2s)
+    &:hover
+      background: rgba(255,255,255,0.2)
+  @media #{$xlarge-up}
+    display: block
+  @media #{$xxlarge-up}
+    .scheme-link
+      padding: 0 20px
+      font-size: 1em

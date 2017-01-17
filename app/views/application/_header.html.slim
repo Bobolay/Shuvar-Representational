@@ -69,51 +69,77 @@
       span вхід
 
 .main-nav-container
+
   .menu-button
     .menu-button-lines
-  a.main-nav-link.home.desktop = inline_svg "icons/home.svg"
-  a.main-nav-link.desktop новини
-  a.main-nav-link.desktop про нас
-  a.main-nav-link.desktop послуги
-  a.main-nav-link.desktop план схема
-  a.main-nav-link.desktop проекти
-  a.main-nav-link.desktop контакти
-  a.main-nav-link = inline_svg "icons/shuvar-info-logo.svg"
-  .input-field.search
-    = inline_svg "icons/search.svg"
-    input placeholder="Пошук"
-  .search-mobile = inline_svg "icons/search.svg"
+  .row.collapse
+    .columns
+      a.main-nav-link.home.desktop = inline_svg "icons/home.svg"
+      a.main-nav-link.desktop новини
+      a.main-nav-link.desktop про нас
+      a.main-nav-link.desktop послуги
+      a.main-nav-link.desktop.scheme-button
+        | план схема
+        .arrow-dropdown = inline_svg "icons/arrow-dropdown.svg"
+      a.main-nav-link.desktop проекти
+      a.main-nav-link.desktop контакти
+      a.main-nav-link = inline_svg "icons/shuvar-info-logo.svg"
+      .input-field.search
+        = inline_svg "icons/search.svg"
+        input placeholder="Пошук"
+      .search-mobile = inline_svg "icons/search.svg"
 
-  .menu-wrapper
-    a.menu-link.active-page Головна
-    a.menu-link Новини
-    a.menu-link Про нас
-    a.menu-link Послуги
-    a.menu-link План схема
-    a.menu-link Проекти
-    a.menu-link Контакти
-    .menu-blocks-container.clearfix
-      .block.clearfix
-        .floated = inline_svg "icons/clock.svg"
-        .floated
-          | Графік 
-          br
-          | роботи
-      .block.clearfix
-        .floated = inline_svg "icons/price-monitor.svg"
-        .floated
-          | Ціни на 
-          br
-          | продукцію
-      .block.clearfix
-        .floated = inline_svg "icons/local_shipping.svg"
-        .floated
-          | Тарифи 
-          br
-          | на проїзд
-      .block.clearfix
-        .floated = inline_svg "icons/network-cam.svg"
-        .floated
-          | Веб 
-          br
-          | камери
+.scheme-container-desktop
+  .row.collapse
+    .columns
+      a.scheme-link загальна
+      a.scheme-link молочні продукти
+      a.scheme-link м'ясні продукти
+      a.scheme-link риба та морепродукти
+      a.scheme-link овочі та фрукти
+      a.scheme-link бакалія
+      a.scheme-link квіти та супутні товари
+
+.menu-wrapper
+  a.menu-link.active-page Головна
+  a.menu-link Новини
+  a.menu-link Про нас
+  a.menu-link Послуги
+  a.menu-link.accordion-button
+    | План схема
+    .arrow-dropdown = inline_svg "icons/arrow-dropdown.svg"
+  .accordion-inner
+    a.scheme-link Загальна
+    a.scheme-link Молочні продукти
+    a.scheme-link М'ясні продукти
+    a.scheme-link Риба та морепродукти
+    a.scheme-link Овочі та фрукти
+    a.scheme-link Бакалія
+    a.scheme-link Квіти та супутні товари
+  a.menu-link Проекти
+  a.menu-link Контакти
+  .menu-blocks-container.clearfix
+    .block.clearfix
+      .floated = inline_svg "icons/clock.svg"
+      .floated
+        | Графік 
+        br
+        | роботи
+    .block.clearfix
+      .floated = inline_svg "icons/price-monitor.svg"
+      .floated
+        | Ціни на 
+        br
+        | продукцію
+    .block.clearfix
+      .floated = inline_svg "icons/local_shipping.svg"
+      .floated
+        | Тарифи 
+        br
+        | на проїзд
+    .block.clearfix
+      .floated = inline_svg "icons/network-cam.svg"
+      .floated
+        | Веб 
+        br
+        | камери

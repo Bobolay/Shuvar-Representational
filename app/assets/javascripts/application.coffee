@@ -25,3 +25,5 @@
 #= require header
 #= require characters_limit
 #= require menu
+#= require scheme_dropdown
+#= require accordion
