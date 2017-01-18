@@ -1,0 +1,17 @@
+.row.news-all-tag-filter-container
+  .columns.clearfix
+    ul.floated.news-all-tag
+      li.tag.active Всі новини
+      li.tag
+        | Новини галузі
+        = inline_svg "icons/shuvar-info-logo-for-news.svg"
+      li.tag Новини компанії
+      li.tag Новини спорту
+      li.tag Події
+    .input-field.floated-right.tag-search
+      select#selectize-field-1 data-placeholder="Пошук по тегах"
+        option value=""
+        option value="1" Спробуйте
+        option value="2" Писати
+        option value="3" Щось
+      .icon-search = inline_svg "icons/search.svg"

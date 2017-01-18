@@ -27,3 +27,4 @@
 #= require menu
 #= require scheme_dropdown
 #= require accordion
+#= require selectize-initialize
