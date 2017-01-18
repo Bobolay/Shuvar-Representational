@@ -1,44 +1,4 @@
-.main-banner-container
-  ul.main-banner-slider
-    li.img-background style="background-image: url(#{asset_path('photo/homeslider-1.jpg')})"
-    li.img-background style="background-image: url(#{asset_path('photo/homeslider-2.jpg')})"
-    li.img-background style="background-image: url(#{asset_path('photo/homeslider-3.jpg')})"
-    li.img-background style="background-image: url(#{asset_path('photo/homeslider-4.jpg')})"
-  .slide-description-container.shadow
-    .arrow-left = inline_svg "icons/arrow-left.svg"
-    .arrow-right = inline_svg "icons/arrow-right.svg"
-    .description-text.visible
-      p.main-title
-        | про&nbsp;
-        span шувар
-      .horizontal-line-separator
-      p.regular.slider-count-symbols
-        | Перший в Україні і найбільший в Західному регіоні гуртовий ринок сільськогосподарської продукції.&nbsp;
-        span «Шувар» 
-        | забезпечує найкращі умови проведення товарообміну між професійними операторами агроринку та невеликими виробниками сільгосппродукції з одного боку, та оптовим покупцем і кінцевим споживачем продукції &mdash; з іншого.
-    .description-text  
-      p.main-title
-        | про&nbsp;
-        span нас
-      .horizontal-line-separator
-      p.regular.slider-count-symbols
-        | В цьому текстовому блоці для прикладу подано забагато тексту. Зверніть увагу на обмежену кількість символів, в іншому випадку стрічка буде обрізана, про що свідчать крапки вкінці!!! В цьому текстовому блоці для прикладу подано забагато тексту. Зверніть увагу на обмежену кількість символів, в іншому випадку стрічка буде обрізана, про що свідчать крапки вкінці!!!
-    .description-text
-      p.main-title
-        | про&nbsp;
-        span термінали
-      .horizontal-line-separator
-      p.regular.slider-count-symbols
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laudantium ipsa, eius tempora magni dolorem minima ab expedita deserunt omnis dolore possimus, veritatis nostrum nihil repellendus soluta labore culpa explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laudantium ipsa, eius tempora magni dolorem minima ab expedita deserunt omnis dolore possimus, veritatis nostrum nihil repellendus soluta labore culpa explicabo.
-    .description-text
-      p.main-title
-        | про&nbsp;
-        span щось інше
-      .horizontal-line-separator
-      p.regular.slider-count-symbols
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor laudantium ipsa, eius tempora magni dolorem minima ab expedita deserunt omnis dolore possimus, veritatis nostrum nihil repellendus soluta labore culpa explicabo.
-    .line-container
-      .line.active-line-position
+= render "main_banner"
 
 .news-container.inner-indent
   p.main-title
@@ -93,7 +53,7 @@
       a.analytic-block
         .ext-link-icon = inline_svg "icons/ext-link.svg"
         .content
-          .block-icon = inline_svg "icons/mechanic.svg"
+          .block-icon = inline_svg "icons/icon-an-center-1.svg"
           p.title
             | новини
             = inline_svg "icons/ext-link.svg"
@@ -102,7 +62,7 @@
       a.analytic-block
         .ext-link-icon = inline_svg "icons/ext-link.svg"
         .content
-          .block-icon = inline_svg "icons/mechanic.svg"
+          .block-icon = inline_svg "icons/icon-an-center-2.svg"
           p.title
             | ціни
             = inline_svg "icons/ext-link.svg"
@@ -111,7 +71,7 @@
       a.analytic-block
         .ext-link-icon = inline_svg "icons/ext-link.svg"
         .content
-          .block-icon = inline_svg "icons/mechanic.svg"
+          .block-icon = inline_svg "icons/icon-an-center-3.svg"
           p.title
             | обсяги
             = inline_svg "icons/ext-link.svg"
@@ -120,7 +80,7 @@
       a.analytic-block
         .ext-link-icon = inline_svg "icons/ext-link.svg"
         .content
-          .block-icon = inline_svg "icons/mechanic.svg"
+          .block-icon = inline_svg "icons/icon-an-center-4.svg"
           p.title
             | виробництво
             = inline_svg "icons/ext-link.svg"
@@ -129,7 +89,7 @@
       a.analytic-block
         .ext-link-icon = inline_svg "icons/ext-link.svg"
         .content
-          .block-icon = inline_svg "icons/mechanic.svg"
+          .block-icon = inline_svg "icons/icon-an-center-5.svg"
           p.title
             | зед
             = inline_svg "icons/ext-link.svg"
@@ -138,7 +98,7 @@
       a.analytic-block
         .ext-link-icon = inline_svg "icons/ext-link.svg"
         .content
-          .block-icon = inline_svg "icons/mechanic.svg"
+          .block-icon = inline_svg "icons/icon-an-center-6.svg"
           p.title
             | консультації
             = inline_svg "icons/ext-link.svg"
@@ -157,32 +117,32 @@
         .row
           .columns.small-6.medium-4.columns
             a.person-type-block
-              = inline_svg "icons/sprout.svg"
+              = inline_svg "icons/icon-who-are-you-1.svg"
               p.title виробник
               p.georgia-italic Я маю поле і виробляю продукти.
           .columns.small-6.medium-4.columns
             a.person-type-block
-              = inline_svg "icons/sprout.svg"
+              = inline_svg "icons/icon-who-are-you-2.svg"
               p.title постачальник
               p.georgia-italic Я постачальник різної продукції.
           .columns.small-6.medium-4.columns
             a.person-type-block
-              = inline_svg "icons/sprout.svg"
+              = inline_svg "icons/icon-who-are-you-3.svg"
               p.title гуртовий покупець
               p.georgia-italic Готелі, ресторани та кафе.
           .columns.small-6.medium-4.columns
             a.person-type-block
-              = inline_svg "icons/sprout.svg"
+              = inline_svg "icons/icon-who-are-you-4.svg"
               p.title орендар
               p.georgia-italic Орендую приміщення в Шувара.
           .columns.small-6.medium-4.columns
             a.person-type-block
-              = inline_svg "icons/sprout.svg"
+              = inline_svg "icons/icon-who-are-you-5.svg"
               p.title роздрібний покупець
               p.georgia-italic Купую їжу і їм її.
           .columns.small-6.medium-4.columns
             a.person-type-block
-              = inline_svg "icons/sprout.svg"
+              = inline_svg "icons/icon-who-are-you-6.svg"
               p.title шукаю роботу
               p.georgia-italic Хочу заробляти гроші.
 
