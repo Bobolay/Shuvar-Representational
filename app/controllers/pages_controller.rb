@@ -4,10 +4,30 @@ class PagesController < ApplicationController
   self.layout "home"
 
   def index
-  #   set_page_metadata(:home)
+
+  end
+
+  def news_all
+
   end
 
   def about_us
+
+  end
+
+  def services
+
+  end
+
+  def scheme_all
+
+  end
+
+  def projects
+
+  end
+
+  def contacts_us
 
   end
 

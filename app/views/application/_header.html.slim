@@ -2,7 +2,7 @@
   
   .left-container
 
-    .inline-block.logo-container
+    a.inline-block.logo-container href=root_path
       = inline_svg "icons/logo.svg"
 
     .inline-block.languages
@@ -74,16 +74,16 @@
     .menu-button-lines
   .row.collapse
     .columns
-      a.main-nav-link.home.desktop = inline_svg "icons/home.svg"
-      a.main-nav-link.desktop новини
-      a.main-nav-link.desktop про нас
-      a.main-nav-link.desktop послуги
-      a.main-nav-link.desktop.scheme-button
+      a.main-nav-link.home.desktop href=root_path = inline_svg "icons/home.svg"
+      a.main-nav-link.desktop href=news_all_path новини
+      a.main-nav-link.desktop href=about_us_path про нас
+      a.main-nav-link.desktop href=services_path послуги
+      a.main-nav-link.desktop.scheme-button href=scheme_all_path
         | план схема
         .arrow-dropdown = inline_svg "icons/arrow-dropdown.svg"
-      a.main-nav-link.desktop проекти
-      a.main-nav-link.desktop контакти
-      a.main-nav-link = inline_svg "icons/shuvar-info-logo.svg"
+      a.main-nav-link.desktop href=projects_path проекти
+      a.main-nav-link.desktop href=contact_us_path контакти
+      a.main-nav-link href="http://shuvar-static.voroninstudio.eu" target="_blank" = inline_svg "icons/shuvar-info-logo.svg"
       .input-field.search
         = inline_svg "icons/search.svg"
         input placeholder="Пошук"
