@@ -28,3 +28,4 @@
 #= require scheme_dropdown
 #= require accordion
 #= require selectize-initialize
+#= require filter-tag

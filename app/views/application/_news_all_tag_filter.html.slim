@@ -1,13 +1,13 @@
-.row.news-all-tag-filter-container
+.row.tag-container
   .columns.clearfix
-    ul.floated.news-all-tag
+    ul.floated
       li.tag.active Всі новини
-      li.tag
+      li.tag data-tag-id="1"
         | Новини галузі
         = inline_svg "icons/shuvar-info-logo-for-news.svg"
-      li.tag Новини компанії
-      li.tag Новини спорту
-      li.tag Події
+      li.tag data-tag-id="2" Новини компанії
+      li.tag data-tag-id="3" Новини спорту
+      li.tag data-tag-id="4" Події
     .input-field.floated-right.tag-search
       select#selectize-field-1 data-placeholder="Пошук по тегах"
         option value=""
