@@ -1,1 +1,100 @@
-h1 about_us
+.about-us-container
+
+  .banner-container
+    .parallax-window data-image-src="#{asset_path('photo/about-banner.jpg')}" data-parallax="scroll"
+    / .overlay
+    .row
+      .columns
+        .banner-text
+          p.title думайте стратегічно, працюйте наполегливо і пам'яйте про тих, заради кого працюєте
+          p.smaller-medium роман федишин
+          p.small Засновник групи компаній &#171;Шувар&#187;
+  .about-us-main-text.grey-bg
+    .logo = inline_svg "icons/logo.svg"
+    p.large &#171;Шувар&#187; &ndash; перший в Україні і наймаштабніший в Західному регіоні оптовий ринок сільськогосподарської продукції. Ми українська компанія покликана часом створити цивілізований ринок свіжої сільськогосподарської продукції. Ми робимо заможними сільгоспвиробників, а кінцеві споживачі отримують якісну, безпечну, доступну за ціною сільськогосподарську продукцію!
+    .brahch-pattern = inline_svg "icons/branch-pattern.svg"
+  
+  .about-us-description.inner-indent
+    p.main-title
+      | шувар&nbsp;
+      span це
+    .row.collapse.block-container
+      .columns.small-6.medium-6.large-3
+        .block
+          .inner
+            = inline_svg "icons/about-us-icon-1.svg"
+            p.number 500 000
+            p.smaller 
+              | Тонн с/г продукції
+              br
+              | протягом року
+      .columns.small-6.medium-6.large-3
+        .block
+          .inner
+            = inline_svg "icons/about-us-icon-2.svg"
+            p.number 5 000
+            p.smaller 
+              | Робочих місць
+      .columns.small-6.medium-6.large-3
+        .block
+          .inner
+            = inline_svg "icons/about-us-icon-3.svg"
+            p.number 60 000
+            p.smaller 
+              | Виробників протягом року
+      .columns.small-6.medium-6.large-3
+        .block
+          .inner
+            = inline_svg "icons/about-us-icon-4.svg"
+            p.number 100
+            p.smaller 
+              | Соціальних проектів
+              br
+              | протягом року
+      .columns.small-6.medium-6.large-3
+        .block
+          .inner
+            = inline_svg "icons/about-us-icon-1.svg"
+            p.number 600
+            p.smaller 
+              | Постійних орендарів
+      .columns.small-6.medium-6.large-3
+        .block
+          .inner
+            = inline_svg "icons/about-us-icon-2.svg"
+            p.number 20
+            p.smaller 
+              | Гектарів облаштованої
+              br
+              | спеціалізованої території
+      .columns.small-6.medium-6.large-3
+        .block
+          .inner
+            = inline_svg "icons/about-us-icon-3.svg"
+            p.number 30 000
+            p.smaller 
+              | Найменувань продукції
+      .columns.small-6.medium-6.large-3
+        .block
+          .inner
+            = inline_svg "icons/about-us-icon-4.svg"
+            p.number 6 000 000
+            p.smaller 
+              | Клієнтів протягом року
+
+  .about-slider-container.inner-indent.grey-bg
+    .row
+      .columns.large-3.medium-4.description-column
+        p.slider-title комплекс шувар поєднує
+        .description-text.visible Великі торгівельні площі та приміщення у яких відповідально зберігається  ваша продукція на ринку Шувар
+        .description-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        .description-text Libero mollitia, similique neque expedita laborum cumque dolores repudiandae magnam numquam vero delectus repellendus.
+        .about-slider-controls
+          .arrow-left = inline_svg "icons/arrow-left.svg"
+          .arrow-right = inline_svg "icons/arrow-right.svg"
+      .columns.large-9.medium-8
+        .slider
+          ul.about-slider
+            li.img-background style="background-image: url(#{asset_path('photo/sample-1.jpg')})"
+            li.img-background style="background-image: url(#{asset_path('photo/sample-2.jpg')})"
+            li.img-background style="background-image: url(#{asset_path('photo/sample-3.jpg')})"

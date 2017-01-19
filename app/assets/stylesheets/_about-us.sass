@@ -1,0 +1,180 @@
+.about-us-container
+
+  .banner-container
+    position: relative
+  .parallax-window
+    position: absolute
+    width: 100%
+    height: 100%
+    // background: rgba($blueGrey900,0.5)
+    // background-blend-mode: multiply
+  .overlay
+    +fullsize
+    background: rgba($blueGrey900,0.5)
+  .banner-text
+    position: relative
+    padding: 100px 0 100px 4em
+    .title
+      position: relative
+      color: white
+      font-size: 2.5em
+      text-transform: uppercase
+      line-height: 1.25
+      width: 800px
+      max-width: 90%
+      padding-bottom: 2em
+      @media #{$small-only}
+        font-size: 1.5em
+      &:before
+        content: '\00AB'
+        position: absolute
+        color: white
+        opacity: 0.2
+        top: 0
+        left: 0
+        font-size: 4em
+        line-height: 0.5
+        +translate(-100%, -50%)
+    .smaller-medium
+      text-transform: uppercase
+      color: white
+    .small
+      color: white
+      font-style: italic
+      opacity: 0.7
+
+  .about-us-main-text
+    position: relative
+    padding: 100px 0 200px
+    overflow: hidden
+    @media #{$small-only}
+      padding: 3em 0 6em
+    @media #{$medium-only}
+      padding: 4em 0 6em
+    @media #{$medium-up}
+      padding: 5em 0 10em
+    @media #{$xxlarge-up}
+      padding: 6em 0 12em
+    .logo
+      width: 7em
+      margin: 0 auto
+      svg
+        width: 100%
+        height: 100%
+    .large
+      color: $blueGrey700
+      width: 900px
+      max-width: 90%
+      margin: 0 auto
+      padding-top: 30px
+      text-align: center
+    .brahch-pattern
+      position: absolute
+      bottom: 0
+      left: 0
+      svg
+        vertical-align: bottom
+        fill: white
+
+  .about-us-description
+    .block-container
+      position: relative
+      @media #{$small-only}
+        padding: 2em 0
+      @media #{$medium-only}
+        padding: 2.5em 0
+      @media #{$large-up}
+        padding: 3em 0
+    .block
+      position: relative
+      width: 100%
+      border: 1px solid $blueGrey100
+      &:before
+        content: ''
+        display: block
+        padding-bottom: 100%
+    .inner
+      position: absolute
+      top: 50%
+      left: 50%
+      +translate(-50%,-50%)
+      text-align: center
+      width: 90%
+    svg
+      max-width: 60px
+      max-height: 60px
+      @media #{$small-only}
+        width: 36%
+        height: 36%
+      @media only screen and (max-width: 320px)
+        width: 30%
+        height: 30%
+    .number
+      color: $green
+      +bold
+      @media #{$small-only}
+        font-size: 2em
+      @media only screen and (max-width: 320px)
+        font-size: 1.75em
+      @media #{$medium-up}
+        font-size: 3em
+    .smaller
+      color: $blueGrey400
+      line-height: 1.25
+      
+  .about-slider-container
+    position: relative
+    .description-column
+      position: relative
+    .slider-title
+      color: $blueGrey800
+      text-transform: uppercase
+      +bold
+    .description-text
+      position: absolute
+      color: $blueGrey800
+      font-style: italic
+      width: 400px
+      max-width: 90%
+      font-family: Georgia
+      opacity: 0
+      &.visible
+        +transition(0.75s)
+        opacity: 1
+      @media #{$small-only}
+        top: 30px
+      @media #{$medium-up}
+        top: 80px
+        max-width: 100%
+    .about-slider-controls
+      position: absolute
+      left: 0
+      bottom: 0
+    .arrow-left, .arrow-right
+      display: inline-block
+      cursor: pointer
+      padding: 10px
+      svg
+        fill: $blueGrey700
+        fill-opacity: 0.7
+        vertical-align: middle
+      &:hover
+        svg
+          fill: $green
+          fill-opacity: 1
+    .slider
+      position: relative
+      width: 100%
+      @media #{$medium-up}
+        top: 80px
+    .description-column, .slider
+      @media #{$small-only}
+        height: 150px
+      @media #{$medium-only}
+        height: 300px
+      @media #{$large-up}
+        height: 400px
+      @media #{$xxlarge-up}
+        height: 550px
+    .about-slider
+      height: 100%

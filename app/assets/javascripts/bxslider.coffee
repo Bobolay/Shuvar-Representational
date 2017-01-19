@@ -51,3 +51,25 @@ $(document).ready ->
     $('.projects-container .arrow-right').click ->
         current = projects_slider.getCurrentSlide()
         projects_slider.goToNextSlide(current) + 1
+
+    #     A B O U T     S L I D E R
+
+    about_slider = $('.about-slider').bxSlider
+        controls: false
+        pager: false
+        infiniteLoop: true
+        hideControlOnEnd: true
+        speed: 750
+        pause: 10000
+        auto: true
+        infiniteLoop: true
+        onSlideBefore: ($slideElement, oldIndex, newIndex)->
+            current = about_slider.getCurrentSlide()
+            $('.about-slider-container .description-text').removeClass('visible')
+            $('.about-slider-container .description-text').eq(current).addClass('visible')
+    $('.about-slider-controls .arrow-left').click ->
+        current = about_slider.getCurrentSlide()
+        about_slider.goToPrevSlide(current) - 1
+    $('.about-slider-controls .arrow-right').click ->
+        current = about_slider.getCurrentSlide()
+        about_slider.goToNextSlide(current) + 1
