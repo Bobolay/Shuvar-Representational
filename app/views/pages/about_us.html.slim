@@ -2,7 +2,6 @@
 
   .banner-container
     .parallax-window data-image-src="#{asset_path('photo/about-banner.jpg')}" data-parallax="scroll"
-    / .overlay
     .row
       .columns
         .banner-text
@@ -98,3 +97,34 @@
             li.img-background style="background-image: url(#{asset_path('photo/sample-1.jpg')})"
             li.img-background style="background-image: url(#{asset_path('photo/sample-2.jpg')})"
             li.img-background style="background-image: url(#{asset_path('photo/sample-3.jpg')})"
+
+  .advantages-container.inner-indent
+    p.advantages-title переваги ринку
+    .row
+      .columns
+        .clearfix.advantage-block
+          .img-container.floated
+            .img-background style="background-image: url(#{asset_path('photo/advantages-1.jpg')})"
+          .text-block.floated
+            p.large широкий спектр операторів
+            p.regular На базі ринку працюють оптові оператори аграрного сектора, представники державних та неурядових організацій України, та комерційні представництва іноземних держав. Для кожної категорії клієнтів розроблені відповідні програми лояльності.
+            .line
+        .clearfix.advantage-block
+          .img-container.floated-right
+            .img-background style="background-image: url(#{asset_path('photo/advantages-2.jpg')})"
+          .text-block.floated-right
+            p.large широкий спектр операторів
+            p.regular Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptates, porro aliquam voluptatum omnis, iure iusto quaerat quae vel illo unde in, aut dolorum illum veniam dignissimos consequuntur tenetur rerum!
+            .line
+        .clearfix.advantage-block
+          .img-container.floated
+            .img-background style="background-image: url(#{asset_path('photo/advantages-3.jpg')})"
+          .text-block.floated
+            p.large широкий спектр операторів
+            p.regular Aspernatur voluptates, porro aliquam voluptatum omnis, iure iusto quaerat quae vel illo unde in, aut dolorum illum veniam dignissimos consequuntur tenetur rerum! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            .line
+
+    .brahch-pattern = inline_svg "icons/branch-pattern.svg"
+  
+  .contact-form-container.inner-indent.grey-bg
+    p.contact-form-title зворотній зв'язок
