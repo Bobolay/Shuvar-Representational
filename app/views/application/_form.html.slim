@@ -1,0 +1,27 @@
+form.form-container
+  p.contact-form-title зворотній зв'язок
+  .row
+    .columns.large-8.large-centered
+      .row
+        .columns.medium-6
+          .input-field
+            input
+            label Прізвище та ім'я
+            span.bar
+            = inline_svg "icons/form-person.svg"
+          .input-field
+            input
+            label Контактний номер
+            span.bar
+            = inline_svg "icons/form-phone.svg"
+          .input-field
+            input
+            label Електронна скринька
+            span.bar
+            = inline_svg "icons/letter.svg"
+        .columns.medium-6
+          .input-field.form-field
+            p.textarea-label Ваш коментар
+            / label Ваш коментар
+            textarea
+  button.form-button відправити

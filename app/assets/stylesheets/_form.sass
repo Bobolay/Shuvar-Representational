@@ -35,6 +35,9 @@
   input:focus ~ .bar, input.used ~ .bar
     &:before
       width: 100%
+  input:focus ~ label, input.used ~ label, textarea:focus ~ label, textarea.used ~ label
+    top: -10px
+    font-size: 0.75em
 
 //     S U B S C R I B E     F I E L D
 
@@ -61,3 +64,50 @@
   input:focus ~ svg, input.used ~ svg
     right: 0
     fill: $green
+
+//     F O R M
+
+.input-field
+  padding-left: 40px
+  margin: 20px 0
+  @media #{$small-only}
+    padding-left: 30px
+  input
+    color: $blueGrey600
+    border-bottom: 1px solid rgba($blueGrey600, 0.3)
+    +medium
+  label
+    color: $blueGrey300
+  input:focus ~ label, input.used ~ label, textarea:focus ~ label, textarea.used ~ label
+    color: $blueGrey600
+  svg
+    position: absolute
+    top: 10px
+    left: 0
+    width: 16px
+    height: 20px
+    fill: $green
+  textarea
+    position: relative
+    border: 1px solid rgba($blueGrey600, 0.3)
+    padding: 10px
+    color: $blueGrey600
+    height: 125px
+  &.form-field
+    margin-top: 33px
+    padding-left: 0
+    .textarea-label
+      color: $blueGrey300
+
+.form-button
+  display: block
+  text-transform: uppercase
+  color: white
+  background: $green
+  +bold
+  margin: 30px auto
+  padding: 15px 30px
+  border-radius: 3px
+  +transition(0.25s)
+  &:hover
+    box-shadow: 0 3px 7px rgba(0,0,0,0.2)
