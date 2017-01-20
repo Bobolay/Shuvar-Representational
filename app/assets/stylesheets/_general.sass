@@ -1,5 +1,6 @@
 body
   font-family: 'Roboto', sans-serif
+  color: $blueGrey700
   @media #{$small-only}
     font-size: 14px
 
@@ -24,14 +25,22 @@ body
 .regular
   font-size: 1em
   color: $blueGrey600
+.regular-medium
+  font-size: 1em
+  +medium
 .regular-bold
   font-size: 1em
   +bold
+
 .smaller
   font-size: 0.875em
 .smaller-medium
   font-size: 0.875em
-  font-weight: 500
+  +medium
+.smaller-bold
+  font-size: 0.875em
+  +bold
+
 .larger
   font-size: 1.125em
 .large
@@ -122,6 +131,20 @@ a
   @media #{$large-up}
     padding: 50px 0
 
+.accordion-button
+  .arrow-dropdown
+    float: right
+    width: 24px
+    height: 24px
+    svg
+      width: 100%
+      height: 100%
+      fill: white
+      +transition(0.2s)
+  &.opened
+    .arrow-dropdown
+      svg 
+        +rotate(180deg)
 .accordion-inner
   overflow: hidden
   display: none

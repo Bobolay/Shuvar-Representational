@@ -1,3 +1,10 @@
+.service-title
+  @extend .larger
+  color: $green
+  text-transform: uppercase
+  +bold
+  margin-bottom: 1em
+
 .services-container
   .service-list
     padding: 3em 0
@@ -6,7 +13,14 @@
       +transition(0.2s)
       border: 1px solid $blueGrey100
       text-align: center
-      padding: 1.5em 0
+      height: 8.5em
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: column
+      justify-content: center
       .icon
         margin: 0 auto
         width: 50px
@@ -20,6 +34,7 @@
         +bold
         text-transform: uppercase
         margin-top: 5px
+        line-height: 1.25
       &:hover
         background: $green
         border: 1px solid $green
@@ -27,3 +42,97 @@
           fill: white
         .smaller
           color: white
+
+  .customer-cart
+    width: 15em
+    margin-bottom: 1em
+    margin-left: -7px
+
+  .consultant-field
+    position: relative
+    margin: 1em 0 2em
+    .floated
+      padding: 0.75em
+      &:first-child
+        width: 30%
+      &:nth-child(2)
+        width: 70%
+    .img-container
+      border-radius: 50%
+      overflow: hidden
+      &:before
+        +square
+    .regular-bold
+      text-transform: uppercase
+      margin-bottom: 10px
+    .smaller-medium
+      position: relative
+      // color: $blueGrey700
+      padding-left: 30px
+      margin: 10px 0
+      svg
+        position: absolute
+        width: 1.5em
+        height: 1.5em
+        fill: $green
+        top: 0
+        left: 0
+
+  .accordion-button
+    padding: 1.125em
+    background: $blueGrey50
+    // color: $blueGrey700
+    text-transform: uppercase
+    cursor: pointer
+    margin: 1px 0
+    +medium
+    .arrow-dropdown
+      svg
+        fill: $green
+    &.opened
+      background: $green
+      color: white
+      margin: 0
+      .arrow-dropdown
+        svg
+          fill: white
+  .accordion-inner
+    padding: 0 1.125em 1.125em
+    background: $green
+    .line
+      width: 100%
+      height: 1px
+      background: rgba(255,255,255,0.2)
+    .smaller
+      color: white
+      margin: 1.5em 0
+    .smaller-medium
+      color: white
+      text-transform: uppercase
+      float: right
+
+  .price-reduce-list
+    list-style: none
+    margin: 1em 0
+    padding-left: 1.25em
+    li
+      position: relative
+      font-size: 0.875em
+      padding-left: 1em
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0.5em
+        width: 5px
+        height: 5px
+        border-radius: 50%
+        background: $green
+
+  .regular-medium
+    margin: 1.75em 0
+
+  .georgia-italic
+    font-size: 1em
+    margin: 0.5em 0 2em
+    color: $blueGrey700

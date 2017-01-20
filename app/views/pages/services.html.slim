@@ -1,7 +1,7 @@
 .services-container.inner-indent
   p.secondary-title послуги
   .row
-    .columns
+    .columns.xxlarge-10.xxlarge-centered
       .row.collapse.service-list
         .columns.medium-2
           a.service-link href=""
@@ -14,7 +14,10 @@
         .columns.medium-2
           a.service-link href=""
             .icon = inline_svg "icons/icon-who-are-you-3.svg"
-            p.smaller гуртовий покупець
+            p.smaller
+              | гуртовий
+              br
+              | покупець
         .columns.medium-2
           a.service-link href=""
             .icon = inline_svg "icons/icon-who-are-you-4.svg"
@@ -22,9 +25,90 @@
         .columns.medium-2
           a.service-link href=""
             .icon = inline_svg "icons/icon-who-are-you-5.svg"
-            p.smaller роздрібний покупець
+            p.smaller
+              | роздрібний
+              br
+              | покупець
         .columns.medium-2
           a.service-link href=""
             .icon = inline_svg "icons/icon-who-are-you-6.svg"
             p.smaller шукаю роботу
-      p another part
+
+      .row
+        .columns.medium-7.xlarge-8
+          p.service-title виробник
+          p.regular Висловлюючи свою повагу до праці українського Виробника, ми створили Програму лояльності по підтримці наших постійних Клієнтів. Картка Виробника допоможе Вам отримати пільговий заїзд на торгівлю.
+          p.regular-medium Щоб отримати Картку Виробника пройдіть три наступні прості кроки:
+
+          
+
+          p.service-title карта виробника
+          img.customer-cart src="assets/photo/customer-cart.jpg"
+          p.regular Етапи формування знижки на заїзд:
+          ul.price-reduce-list
+            li 1-9 заїзди протягом року &mdash; 10% знижки
+            li 10-20 заїздів &mdash; 20% знижки
+            li більше 20 заїздів &mdash; 25% знижки
+          p.regular Ви також  Виробник може завчасно забронювати на МТА бажане місце для реалізації продукції.
+          p.georgia-italic Деталі за телефоном телефоном: 067 953 75 23, Богдан Малик. 
+          p.regular Додатковою опцією для Виробника є можливість зберігання власної продукції в холодильних камерах Шувару.
+          p.georgia-italic Деталі за тел. 068 048 32 12 Володимир Стасів
+          p.regular-medium Ми хочемо, щоб Ви ставали ще більш успішними!
+
+        .columns.medium-5.xlarge-3
+          p.service-title ваш консультант
+          p.smaller З будь-яких питань стосовно торгівлі плодоовочевою та квітковою продукцією на МТА ринку &#171;Шувар&#187;, звертайтесь до Вашого персонального помічника:
+          .grey-bg.consultant-field.clearfix
+            .floated
+              .img-container
+                .img-background style="background-image: url(#{asset_path('photo/consultant-avatar.jpg')})"
+            .floated
+              p.regular-bold олеся бондар
+              a.smaller-medium href="tel:+380676703730"
+                = inline_svg "icons/phone.svg"
+                | 067 670 3730
+              a.smaller-medium href="mailto:o.bondar@shuvar.com"
+                = inline_svg "icons/mail-filled.svg"
+                | o.bondar@shuvar.com
+
+          p.service-title послуги від виробника
+
+          .accordion-button
+            | дистанційні продажі
+            .arrow-dropdown = inline_svg "icons/arrow-dropdown.svg"
+          .accordion-inner
+            .line
+            p.smaller Для виробників ми надаємо симпатичні знижки на заїзд вашими бібіками. Ви маєте чудову можливість замовити знижку на сторінці тарифів на заїзд або за лінком нижче.
+            a.smaller-medium детальніше
+
+          .accordion-button
+            | експорт
+            .arrow-dropdown = inline_svg "icons/arrow-dropdown.svg"
+          .accordion-inner
+            .line
+            p.smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure sit fugiat nulla reiciendis laudantium quisquam suscipit nesciunt iusto odit. Voluptas, officiis, laboriosam?
+            a.smaller-medium детальніше
+
+          .accordion-button
+            | знижка на заїзд
+            .arrow-dropdown = inline_svg "icons/arrow-dropdown.svg"
+          .accordion-inner
+            .line
+            p.smaller Voluptas, officiis, laboriosam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure sit fugiat nulla reiciendis laudantium quisquam suscipit nesciunt iusto odit
+            a.smaller-medium детальніше
+
+          .accordion-button
+            | онлайн консультація
+            .arrow-dropdown = inline_svg "icons/arrow-dropdown.svg"
+          .accordion-inner
+            .line
+            p.smaller Eius iure sit fugiat nulla reiciendis laudantium quisquam suscipit nesciunt iusto odit. Voluptas, officiis, laboriosam? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            a.smaller-medium детальніше
+
+          .accordion-button
+            | відповідальне зберігання
+            .arrow-dropdown = inline_svg "icons/arrow-dropdown.svg"
+          .accordion-inner
+            .line
+            p.smaller Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius iure sit fugiat nulla reiciendis laudantium quisquam suscipit nesciunt iusto odit. Voluptas, officiis, laboriosam?
+            a.smaller-medium детальніше
