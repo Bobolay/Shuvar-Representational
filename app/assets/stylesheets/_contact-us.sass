@@ -36,3 +36,55 @@
     @media #{$small-only}
       height: 100px
       padding-top: 20px
+
+  .grey-bg
+    margin-top: 200px
+    @media #{$small-only}
+      background: transparent
+      margin-top: 50px
+  .stuff-container
+    position: relative
+    @media #{$medium-up}
+      top: -100px
+  .stuff-block
+    @media #{$small-only}
+      margin-bottom: 30px
+    .img-container
+      &:before
+        +square
+        @media #{$small-only}
+          padding-bottom: 70%
+    .name
+      font-size: 1.125em
+      line-height: 1.125em
+      +medium
+      margin: 0.875em 0
+    .position
+      font-size: 0.875em
+      font-style: italic
+      color: $blueGrey600
+      line-height: 1.25
+    .contact-info
+      position: relative
+      margin: 0.875em 0
+      .smaller-medium
+        position: relative
+        padding-left: 40px
+        color: $blueGrey800
+        &:hover
+          color: $green
+      svg
+        fill: $green
+        width: 1.25em
+        height: 1.25em
+        position: absolute
+        top: 0
+        left: 0
+
+  .form-container
+    @media #{$small-only}
+      padding: 30px 0 0
+    @media #{$medium-only}
+      padding: 40px 0 0
+    @media #{$large-up}
+      padding: 50px 0 0

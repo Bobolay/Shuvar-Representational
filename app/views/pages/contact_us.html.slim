@@ -25,4 +25,64 @@
               | м. Львів
               br
               | вул. Хуторівка, 4б, 79031
+
+  .grey-bg
+    .row.stuff-container.columns-left
+
+      .columns.medium-4.large-2.large-push-2.stuff-block
+        .img-container
+          .img-background style="background-image: url(#{asset_path('photo/consultant-avatar.jpg')})"
+        p.name
+          | Плотниця Ігор
+          br
+          | Іванович
+        p.position Директор
+        .contact-info
+          = inline_svg "icons/phone.svg"
+          a.smaller-medium href="tel:+38(032)2951919" +38 (032) 295 19 19
+          a.smaller-medium href="tel:+38(050)3170932" +38 (050) 317 09 32
+        .contact-info
+          = inline_svg "icons/mail-filled.svg"
+          a.smaller-medium href="mailto:i.plotycia@shuvar.com" i.plotycia@shuvar.com
+        .contact-info
+          = inline_svg "icons/phone.svg"
+          a.smaller-medium href="skype:plotycia1" plotycia1
       
+
+      .columns.medium-4.large-2.large-push-3.stuff-block
+        .img-container
+          .img-background style="background-image: url(#{asset_path('photo/consultant-avatar.jpg')})"
+        p.name
+          | Сєртаков Дмитро
+          br
+          | Вікторович
+        p.position заступник директора з операційної діяльності
+        .contact-info
+          = inline_svg "icons/phone.svg"
+          a.smaller-medium href="tel:+38(032)2951919" +38 (032) 295 19 19
+          a.smaller-medium href="tel:+38(050)3170932" +38 (050) 317 09 32
+        .contact-info
+          = inline_svg "icons/mail-filled.svg"
+          a.smaller-medium href="mailto:d.sertakov@shuvar.com" d.sertakov@shuvar.com
+        .contact-info
+          = inline_svg "icons/phone.svg"
+          a.smaller-medium href="skype:dsertakov1" dsertakov1
+
+      .columns.medium-4.large-2.large-push-4.stuff-block
+        .img-container
+          .img-background style="background-image: url(#{asset_path('photo/consultant-avatar.jpg')})"
+        p.name
+          | Гордієнко Клавдія
+          br
+          | Максимівна
+        p.position Заступник директора із зв'язків з зовнішнім середовищем
+        .contact-info
+          = inline_svg "icons/phone.svg"
+          a.smaller-medium href="tel:+38(032)2951919" +38 (032) 295 19 19
+          a.smaller-medium href="tel:+38(050)3170932" +38 (050) 317 09 32
+        .contact-info
+          = inline_svg "icons/mail-filled.svg"
+          a.smaller-medium href="mailto:hordi@shuvar.com" hordi@shuvar.com
+
+  .form-container
+    = render "form"
