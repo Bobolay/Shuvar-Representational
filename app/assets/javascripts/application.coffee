@@ -20,6 +20,7 @@
 
 #     I N I T I A L I Z E
 
+#= require google_map
 #= require appear-initialize
 #= require bxslider
 #= require fullpage_banner_height

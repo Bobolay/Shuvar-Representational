@@ -1,1 +1,28 @@
-h1 contact_us
+.contact-us-container.inner-indent
+  p.secondary-title контакти
+
+  .row.collapse
+    .columns
+      #googleMap
+
+  .row.collapse
+    .columns.medium-12.large-10.large-centered
+
+      .row.collapse.shadow
+
+        .columns.medium-4
+          a.contact-block href="tel:+38(032)2951919"
+            = inline_svg "icons/phone.svg"
+            span.regular-medium +38 (032) 295 19 19
+        .columns.medium-4
+          a.contact-block href="mailto:office@shuvar.com"
+            = inline_svg "icons/mail-filled.svg"
+            span.regular-medium office@shuvar.com
+        .columns.medium-4
+          .contact-block
+            = inline_svg "icons/map-marker.svg"
+            span.regular-medium
+              | м. Львів
+              br
+              | вул. Хуторівка, 4б, 79031
+      

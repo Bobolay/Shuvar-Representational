@@ -1,0 +1,38 @@
+.contact-us-container
+  
+  #googleMap
+    height: 500px
+    margin-top: 50px
+    @media #{$small-only}
+      margin-top: 30px
+      height: 300px
+
+  .shadow
+    position: relative
+    z-index: 1
+    background: white
+    @media #{$large-up}
+      margin-top: -70px
+
+  .contact-block
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    height: 150px
+    padding-top: 50px
+    border: 1px solid $blueGrey50
+    text-align: center
+    .regular-medium
+      margin-top: 10px
+      line-height: 1
+    svg
+      fill: $green
+      width: 24px
+      height: 24px
+    @media #{$small-only}
+      height: 100px
+      padding-top: 20px
