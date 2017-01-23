@@ -48,6 +48,12 @@ body
 .small
   font-size: 0.75em
 
+.georgia-italic
+  +georgia
+  font-size: 0.875em
+  font-style: italic
+  color: $blueGrey400
+
 .main-title
   font-size: 1.75em
   color: $blueGrey800
@@ -69,17 +75,13 @@ body
   +bold
 
 .main-subtitle
-  @extend .georgia-italic
+  font-size: 0.875em
+  font-style: italic
+  color: $blueGrey400
   text-align: center
   width: 400px
   max-width: 90%
   margin: 0 auto
-
-.georgia-italic
-  font-family: Georgia
-  font-size: 0.875em
-  color: $blueGrey400
-  font-style: italic
 
 .img-container
   position: relative

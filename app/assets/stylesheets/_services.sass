@@ -6,9 +6,17 @@
   margin-bottom: 1em
 
 .services-container
+
+  .secondary-title
+    @media #{$small-only}
+      display: none
+
   .service-list
     padding: 3em 0
+    @media #{$small-only}
+      padding: 0 0 3em
     .service-link
+      position: relative
       background: $blueGrey50
       +transition(0.2s)
       border: 1px solid $blueGrey100
@@ -25,6 +33,39 @@
         margin: 0 auto
         width: 50px
         height: 50px
+      @media #{$small-only}
+        height: 4.5em
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        display: none
+        .icon
+          margin: 15px
+        &.active
+          display: -webkit-flex
+          display: -moz-flex
+          display: -ms-flex
+          display: -o-flex
+          display: flex
+          &:after
+            content: ''
+            width: 0
+            height: 0
+            border: 6px solid transparent
+            border-color: white transparent transparent transparent
+            position: absolute
+            top: 25px
+            right: 20px
+        &.visible
+          display: -webkit-flex
+          display: -moz-flex
+          display: -ms-flex
+          display: -o-flex
+          display: flex
+        &.opened
+          &:after
+            top: 22px
+            border-color: transparent transparent white transparent
       svg
         fill: $blueGrey300
         width: 100%
@@ -35,13 +76,89 @@
         text-transform: uppercase
         margin-top: 5px
         line-height: 1.25
-      &:hover
+      &:hover, &.active
         background: $green
         border: 1px solid $green
         svg
           fill: white
         .smaller
           color: white
+
+  .card-steps
+    counter-reset: item
+    margin-top: -30px
+    margin-bottom: 50px
+    .step
+      position: relative
+      padding: 30px 0 30px 50px
+      display: none
+      .prev, .next
+        cursor: pointer
+        position: absolute
+        left: 0
+        font-size: 0.875em
+        font-style: italic
+        color: $blueGrey300
+        display: none
+        +transition(0.2s)
+        &:hover
+          color: $green
+      .prev
+        top: 0
+      .next
+        bottom: 0
+      &:first-child
+        display: block
+      &.active
+        .prev, .next
+          display: block
+        .count-block
+          background: $green
+        .text
+          color: $blueGrey700
+        .download-link
+          opacity: 1
+      &:first-child
+        .prev
+          display: none
+      &:last-child
+        .next
+          display: none
+
+      .count-block
+        position: absolute
+        top: 27px
+        left: 0
+        background: $blueGrey200
+        width: 40px
+        height: 30px
+        line-height: 30px
+        color: white
+        text-align: center
+        &:before
+          counter-increment: item
+          content: counter(item) "/3"
+      .text
+        +georgia
+        font-style: italic
+        color: $blueGrey200
+      .download-link
+        color: $blueGrey700
+        text-transform: uppercase
+        +medium
+        font-size: 0.875em
+        margin-top: 1em
+        opacity: 0.5
+        span
+          color: $green
+          text-transform: none
+      .smaller-medium
+        color: $blueGrey200
+      .contact-info
+        font-size: 0.875em
+        +medium
+      .call-us-button
+        margin-top: 1em
 
   .customer-cart
     width: 15em
@@ -67,7 +184,6 @@
       margin-bottom: 10px
     .smaller-medium
       position: relative
-      // color: $blueGrey700
       padding-left: 30px
       margin: 10px 0
       svg
@@ -81,7 +197,6 @@
   .accordion-button
     padding: 1.125em
     background: $blueGrey50
-    // color: $blueGrey700
     text-transform: uppercase
     cursor: pointer
     margin: 1px 0
@@ -100,7 +215,9 @@
     padding: 0 1.125em 1.125em
     background: $green
     .line
-      width: 100%
+      position: absolute
+      width: calc(100% - 2.25em)
+      left: 1.125em
       height: 1px
       background: rgba(255,255,255,0.2)
     .smaller
@@ -132,7 +249,7 @@
   .regular-medium
     margin: 1.75em 0
 
-  .georgia-italic
-    font-size: 1em
+  .contact-details
+    +georgia
+    font-style: italic
     margin: 0.5em 0 2em
-    color: $blueGrey700

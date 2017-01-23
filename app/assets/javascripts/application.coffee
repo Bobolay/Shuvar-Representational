@@ -30,3 +30,4 @@
 #= require accordion
 #= require selectize-initialize
 #= require filter-tag
+#= require services
