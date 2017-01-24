@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   controller :pages do
     get "news_all", action: "news_all"
+    get "news_one", action: "news_one"
     get "about_us", action: "about_us"
     get "services", action: "services"
     get "scheme_all", action: "scheme_all"

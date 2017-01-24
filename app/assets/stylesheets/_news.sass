@@ -1,86 +1,88 @@
+.new-block
+  position: relative
+  height: 420px
+  margin-bottom: 30px
+  &.hide
+    display: none
+  @media #{$small-only}
+    height: auto
+    margin-bottom: 50px
+  @media #{$large-only}
+    height: 380px
+  .icon
+    position: absolute
+    top: 1em
+    left: 1em
+    width: 2.25em
+    height: 2.25em
+    background: $green
+    border-radius: 2px
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    z-index: 1
+    +transition(0.2s)
+    svg
+      +transition(0.2s)
+      margin: auto
+      width: 1.625em
+      height: 1.625em
+      fill: white
+  .line
+    content: ''
+    position: absolute
+    width: 100%
+    height: 5px
+    left: 0
+    bottom: 0
+    background: $green
+    opacity: 0
+    +transition(0.2s)
+  .img-container
+    position: relative
+    width: 100%
+    &:before
+      content: ''
+      padding-bottom: 70%
+      display: block
+      @media #{$small-only}
+        padding-bottom: 50%
+      @media #{$medium-only}
+        padding-bottom: 60%
+  .date
+    margin: 10px 0
+  .new-title
+    @extend .regular-bold
+    color: $blueGrey800
+    text-transform: uppercase
+    margin: 10px 0
+    line-height: 1.25
+    +transition(0.15s)
+  .smaller
+    color: $blueGrey600
+    @media #{$small-only}
+      display: none
+  &:hover
+    .icon
+      background: white
+      box-shadow: 0 2px 3px rgba(0,0,0,0.1)
+      svg
+        fill: $green
+    .line
+      opacity: 1
+    .new-title
+      color: $green
+
 .news-container
+
   .inner-indent
     padding: 50px 0 0
     @media #{$small-only}
       padding: 25px 0 0
   .news-block-container
     position: relative
-  .new-block
-    position: relative
-    height: 420px
-    margin-bottom: 30px
-    &.hide
-      display: none
-    @media #{$small-only}
-      height: auto
-      margin-bottom: 50px
-    @media #{$large-only}
-      height: 380px
-    .icon
-      position: absolute
-      top: 1em
-      left: 1em
-      width: 2.25em
-      height: 2.25em
-      background: $green
-      border-radius: 2px
-      display: -webkit-flex
-      display: -moz-flex
-      display: -ms-flex
-      display: -o-flex
-      display: flex
-      z-index: 1
-      +transition(0.2s)
-      svg
-        +transition(0.2s)
-        margin: auto
-        width: 1.625em
-        height: 1.625em
-        fill: white
-    .line
-      content: ''
-      position: absolute
-      width: 100%
-      height: 5px
-      left: 0
-      bottom: 0
-      background: $green
-      opacity: 0
-      +transition(0.2s)
-    .img-container
-      position: relative
-      width: 100%
-      &:before
-        content: ''
-        padding-bottom: 70%
-        display: block
-        @media #{$small-only}
-          padding-bottom: 50%
-        @media #{$medium-only}
-          padding-bottom: 60%
-    .date
-      margin: 10px 0
-    .new-title
-      @extend .regular-bold
-      color: $blueGrey800
-      text-transform: uppercase
-      margin: 10px 0
-      line-height: 1.25
-      +transition(0.15s)
-    .smaller
-      color: $blueGrey600
-      @media #{$small-only}
-        display: none
-    &:hover
-      .icon
-        background: white
-        box-shadow: 0 2px 3px rgba(0,0,0,0.1)
-        svg
-          fill: $green
-      .line
-        opacity: 1
-      .new-title
-        color: $green
 
   a.georgia-italic
     color: $blueGrey800
@@ -133,3 +135,99 @@
       width: calc(100% - 30px)
       margin-left: 30px
 
+.new-one-container
+  
+  .new-one-short-info
+    margin: 2em 0
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: center
+    @media #{$small-only}
+      justify-content: flex-start
+      flex-wrap: wrap
+  .info-block
+    padding-right: 2em
+    padding-bottom: 1em
+    .icon
+      position: relative
+      width: 2.5em
+      height: 2.5em
+      display: inline-block
+      border: 1px solid $blueGrey100
+      vertical-align: middle
+      +transition(0.2s)
+      svg
+        width: 1.5em
+        height: 1.5em
+        fill: $green
+        +xy-align
+    .georgia-italic
+      display: inline-block
+      vertical-align: middle
+      padding-left: 0.5em
+    &.share
+      cursor: pointer
+      +transition(0.2s)
+      &:hover
+        .icon
+          background: $green
+          border: 1px solid $green
+          svg
+            fill: white
+        .georgia-italic
+          color: $green
+
+  .new-banner
+    &:before
+      content: ''
+      padding-bottom: 50%
+      display: block
+
+  .new-one-main-text
+    padding-bottom: 2em
+    @media #{$medium-up}
+      margin-top: -150px
+      padding-top: 150px
+      padding-bottom: 5em
+    .large
+      margin: 2em 0
+    .regular
+      margin: 1em 0
+
+    .line
+      width: 100%
+      height: 2px
+      background: $blueGrey100
+      margin-top: 3em
+
+    .tags-container
+      position: relative
+      float: left
+      padding-left: 1.75em
+      margin-top: 20px
+      svg
+        position: absolute
+        top: 0.375em
+        left: 0
+        width: 1.125em
+        height: 1.125em
+        fill: $blueGrey400
+      .tag
+        float: left
+        background: $blueGrey200
+        color: white
+        font-size: 0.875em
+        padding: 0 0.5em
+        line-height: 2em
+        margin-right: 0.875em
+    .rules-of-quote
+      float: right
+      font-size: 12px
+      color: $green
+      margin-top: 20px
+    @media #{$small-only}
+      .tags-container, .rules-of-quote
+        float: none
