@@ -31,6 +31,10 @@ class PagesController < ApplicationController
 
   end
 
+  def projects_one
+
+  end
+
   def contacts_us
 
   end

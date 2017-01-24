@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     get "services", action: "services"
     get "scheme_all", action: "scheme_all"
     get "projects", action: "projects"
+    get "projects_one", action: "projects_one"
     get "contact_us", action: "contact_us"
   end
 
