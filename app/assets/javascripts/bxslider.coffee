@@ -52,6 +52,31 @@ $(document).ready ->
         current = projects_slider.getCurrentSlide()
         projects_slider.goToNextSlide(current) + 1
 
+    #     P R O J E C T     O N E     S L I D E R
+
+    $blockWidth = $('.project-one-slider-container .slide-width').width()
+    project_one_slider = $('.project-one-slider').bxSlider
+        controls: false
+        pager: false
+        infiniteLoop: true
+        hideControlOnEnd: true
+        speed: 750
+        pause: 10000
+        auto: true
+        infiniteLoop: true
+        minSlides: 2
+        maxSlides: 5
+        slideWidth: $blockWidth
+        slideMargin: 10
+    if project_one_slider.getSlideCount
+        $('.slider-custom-pager .total-slides span').text((project_one_slider.getSlideCount()))
+    $('.project-one-slider-container .arrow-left').click ->
+        current = project_one_slider.getCurrentSlide()
+        project_one_slider.goToPrevSlide(current) - 1
+    $('.project-one-slider-container .arrow-right').click ->
+        current = project_one_slider.getCurrentSlide()
+        project_one_slider.goToNextSlide(current) + 1
+
     #     A B O U T     S L I D E R
 
     about_slider = $('.about-slider').bxSlider

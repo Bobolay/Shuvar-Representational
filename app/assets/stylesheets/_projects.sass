@@ -216,8 +216,42 @@
           flex-basis: 100%
           padding: 1.5em
 
-  .projects-slider-container
+  .project-one-slider-container
     margin: 1em 0
+    .slide-width
+      @media #{$small-only}
+        width: calc(50%)
+      @media #{$medium-only}
+        width: calc(25%)
+      @media #{$large-up}
+        width: calc(20%)
+
     .regular-medium
       color: $green
       text-transform: uppercase
+      margin-bottom: 1em
+    .project-one-slider
+      height: 200px
+    .slider-custom-pager
+      display: inline-block
+      margin: 2em 0
+      +x-align
+      .arrow-left, .arrow-right, .total-slides
+        display: inline-block
+        vertical-align: middle
+      .total-slides
+        color: $blueGrey300
+        font-size: 0.875em
+        text-transform: uppercase
+        +medium
+        padding: 1em
+      .arrow-left, .arrow-right
+        width: 2em
+        height: 2em
+        cursor: pointer
+        svg
+          fill: $blueGrey300
+          +xy-align
+        &:hover
+          svg
+            fill: $green

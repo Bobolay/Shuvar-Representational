@@ -38,10 +38,25 @@
       p.regular
         | Ми самі хочемо їсти здорові та корисні екологічно чисті продукти. І хочемо запропонувати нашим гостям смачну та здорову їжу. Ми віримо, що Дідо &mdash; проект майбутнього! Придбати продукцію Діда можна в фірмовому магазині або замовити через інтернет-ринок Шувар.бізнесу, які запропонують свій формат співпраці з оптовими ринками з огляду на наявні потреби в умовах динамічного розвитку індустрії громадського харчування.
 
-      .projects-slider-container
+      .project-one-slider-container
+        .slide-width
         p.regular-medium галерея
-        .slider
-          
+        ul.project-one-slider
+          li.img-background style="background-image: url(#{asset_path('photo/sample-1.jpg')})"
+          li.img-background style="background-image: url(#{asset_path('photo/sample-2.jpg')})"
+          li.img-background style="background-image: url(#{asset_path('photo/sample-3.jpg')})"
+          li.img-background style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
+          li.img-background style="background-image: url(#{asset_path('photo/sample-5.jpg')})"
+          li.img-background style="background-image: url(#{asset_path('photo/sample-6.jpg')})"
+          li.img-background style="background-image: url(#{asset_path('photo/sample-1.jpg')})"
+          li.img-background style="background-image: url(#{asset_path('photo/sample-2.jpg')})"
+        .slider-custom-pager
+          .arrow-left = inline_svg "icons/arrow-left.svg"
+          p.total-slides
+            span
+            | &nbsp;фото
+          .arrow-right = inline_svg "icons/arrow-right.svg"
+
 
 .projects-container.inner-indent
   p.secondary-title інші новини розділу
