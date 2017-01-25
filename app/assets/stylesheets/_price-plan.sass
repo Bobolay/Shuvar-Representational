@@ -18,13 +18,6 @@
     @media #{$medium-only}
       margin-bottom: 30px
   .person-type-block
-    display: -webkit-flex
-    display: -moz-flex
-    display: -ms-flex
-    display: -o-flex
-    display: flex
-    justify-content: center
-    align-items: center
     background: $blueGrey50
     cursor: pointer
     +transition(0.2s)
@@ -34,10 +27,18 @@
     svg
       width: 30px
       height: 30px
+      vertical-align: middle
     .regular-medium
+      font-size: 0.875em
       text-transform: uppercase
-      margin-left: 1em
       line-height: 1.25
+      vertical-align: middle
+      margin-top: 10px
+      @media #{$xxlarge-up}
+        display: inline-block
+        margin-left: 1em
+        font-size: 1.25em
+        margin-top: 0
     @media #{$small-only}
       margin-bottom: 0.625rem
     @media #{$medium-only}
