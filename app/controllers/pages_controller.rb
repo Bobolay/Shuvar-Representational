@@ -43,6 +43,10 @@ class PagesController < ApplicationController
 
   end
 
+  def webcams
+
+  end
+
   private
 
   def set_page_instance

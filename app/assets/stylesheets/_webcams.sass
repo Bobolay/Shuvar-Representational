@@ -1,0 +1,37 @@
+.webcams-container
+  @media #{$small-only}
+    padding: 40px 0 0
+  @media #{$medium-only}
+    padding: 60px 0 0
+  @media #{$large-up}
+    padding: 80px 0 0
+  .camera-button
+    padding: 1em
+    cursor: pointer
+    .regular-bold
+      margin-top: 0.75em
+      line-height: 1.25
+    &:hover, &.active
+      background: $blueGrey50
+      .georgia-italic, .regular-bold
+        color: $green
+
+  .video-container
+    position: relative
+    width: 100%
+    height: 500px
+    margin-bottom: 50px
+    .live-video
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      opacity: 0
+      pointer-events: none
+      &.visible
+        pointer-events: initial
+        opacity: 1
+      iframe
+        width: 100%
+        height: 100%

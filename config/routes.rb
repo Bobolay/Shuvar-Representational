@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     get "projects_one", action: "projects_one"
     get "contact_us", action: "contact_us"
     get "price_plan", action: "price_plan"
+    get "webcams", action: "webcams"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]
