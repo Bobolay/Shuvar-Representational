@@ -39,6 +39,10 @@ class PagesController < ApplicationController
 
   end
 
+  def price_plan
+
+  end
+
   private
 
   def set_page_instance

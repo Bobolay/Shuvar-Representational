@@ -1,0 +1,49 @@
+.price-plan-container
+
+  .table-remarks
+    color: $green
+    text-align: right
+    span
+      vertical-align: super
+
+  .center
+    text-align: center
+    margin-top: 1em
+
+  .person-type-container
+    padding: 3em 0
+    margin-bottom: 50px
+    @media #{$small-only}
+      margin-bottom: 0
+    @media #{$medium-only}
+      margin-bottom: 30px
+  .person-type-block
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $blueGrey50
+    cursor: pointer
+    +transition(0.2s)
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2)
+    height: initial
+    margin-bottom: 0.9375em
+    svg
+      width: 30px
+      height: 30px
+    .regular-medium
+      text-transform: uppercase
+      margin-left: 1em
+      line-height: 1.25
+    @media #{$small-only}
+      margin-bottom: 0.625rem
+    @media #{$medium-only}
+    &:hover
+      background: $green
+      svg
+        fill: white
+      .regular-medium
+        color: white

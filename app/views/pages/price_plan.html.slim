@@ -1,0 +1,127 @@
+.price-plan-container.page-content-indent
+  p.secondary-title тарифи на заїзд
+  .row.inner-indent
+    .columns
+      table
+        tr
+          th
+            | Тип автомобіля
+          th
+          th 
+            | Торгівля, грн.
+          th
+            | Закупівля, грн.
+          th
+            | Постачання, грн
+            span.stars &lowast;
+        tr
+          td data-label="Тип автомобіля"
+            | Легковий
+          td = inline_svg "icons/cars/car-1.svg"
+          td data-label="Торгівля, грн." 150
+          td data-label="Закупівля, грн." 8
+          td data-label="Постачання, грн*" 25
+
+        tr
+          td data-label="Тип автомобіля"
+            | Легковий
+            span.stars &lowast;&lowast;
+            span.add-info до 2,3т
+          td = inline_svg "icons/cars/car-2.svg"
+          td data-label="Торгівля, грн." 150
+          td data-label="Закупівля, грн." 10
+          td data-label="Постачання, грн*" 25
+
+        tr
+          td data-label="Тип автомобіля"
+            | Легковий
+            br
+            | з причепом
+          td = inline_svg "icons/cars/car-3.svg"
+          td data-label="Торгівля, грн." 220
+          td data-label="Закупівля, грн." 20
+          td data-label="Постачання, грн*" 40
+
+        tr
+          td data-label="Тип автомобіля"
+            | Мікроавтобус
+            span.add-info до 3,5т
+          td = inline_svg "icons/cars/car-4.svg"
+          td data-label="Торгівля, грн." 220
+          td data-label="Закупівля, грн." 20
+          td data-label="Постачання, грн*" 40
+
+        tr
+          td data-label="Тип автомобіля"
+            | Мікроавтобус
+            br
+            | з причепом
+          td = inline_svg "icons/cars/car-5.svg"
+          td data-label="Торгівля, грн." 240
+          td data-label="Закупівля, грн." 60
+          td data-label="Постачання, грн*" 50
+
+        tr
+          td data-label="Тип автомобіля"
+            | Вантажний
+            span.add-info до 7т
+          td = inline_svg "icons/cars/car-6.svg"
+          td data-label="Торгівля, грн." 240
+          td data-label="Закупівля, грн." 60
+          td data-label="Постачання, грн*" 50
+
+        tr
+          td data-label="Тип автомобіля"
+            | Вантажний
+            span.add-info до 10т
+          td = inline_svg "icons/cars/car-7.svg"
+          td data-label="Торгівля, грн." 280
+          td data-label="Закупівля, грн." 60
+          td data-label="Постачання, грн*" 50
+
+        tr
+          td data-label="Тип автомобіля"
+            | Вантажний
+            br
+            | з причепом
+          td = inline_svg "icons/cars/car-8.svg"
+          td data-label="Торгівля, грн." 350
+          td data-label="Закупівля, грн." 120
+          td data-label="Постачання, грн*" 60
+
+        tr
+          td data-label="Тип автомобіля"
+            | Вантажний
+            span.add-info від 10т
+          td = inline_svg "icons/cars/car-9.svg"
+          td data-label="Торгівля, грн." 350
+          td data-label="Закупівля, грн." 120
+          td data-label="Постачання, грн*" 60
+
+      p.georgia-italic.table-remarks
+        span &lowast;
+        | &nbsp;Тариф діє лише для власників картки постачальника
+      p.georgia-italic.table-remarks
+        span &lowast;&lowast;
+        | &nbsp;Фургон, пікап, універсал,пасажирський, вантажопасажирський
+
+  p.secondary-title отримати знижку на заїзд
+  p.georgia-italic.center Оберіть хто Ви та отримайте знижку на заїзд
+
+  .row.person-type-container
+    .columns.small-6.large-3
+      .person-type-block.grey-bg
+        = inline_svg "icons/icon-who-are-you-1.svg"
+        p.regular-medium виробник
+    .columns.small-6.large-3
+      .person-type-block.grey-bg
+        = inline_svg "icons/icon-who-are-you-2.svg"
+        p.regular-medium постачальник
+    .columns.small-6.large-3
+      .person-type-block.grey-bg
+        = inline_svg "icons/icon-who-are-you-3.svg"
+        p.regular-medium гуртовий покупець
+    .columns.small-6.large-3
+      .person-type-block.grey-bg
+        = inline_svg "icons/icon-who-are-you-5.svg"
+        p.regular-medium роздрібний покупець

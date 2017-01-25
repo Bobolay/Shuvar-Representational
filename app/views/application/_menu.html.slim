@@ -17,25 +17,25 @@
   a.menu-link href=projects_path Проекти
   a.menu-link href=contact_us_path Контакти
   .menu-blocks-container.clearfix
-    .block.clearfix
+    a.block.clearfix
       .floated = inline_svg "icons/clock.svg"
       .floated
         | Графік 
         br
         | роботи
-    .block.clearfix
+    a.block.clearfix
       .floated = inline_svg "icons/price-monitor.svg"
       .floated
         | Ціни на 
         br
         | продукцію
-    .block.clearfix
-      .floated = inline_svg "icons/local_shipping.svg"
+    a.block.clearfix href=price_plan_path
+      .floated = inline_svg "icons/local-shipping.svg"
       .floated
         | Тарифи 
         br
         | на проїзд
-    .block.clearfix
+    a.block.clearfix
       .floated = inline_svg "icons/network-cam.svg"
       .floated
         | Веб 

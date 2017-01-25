@@ -1,0 +1,75 @@
+table
+  width: 100%
+  margin-bottom: 2em
+
+  span.stars
+    position: relative
+    top: -10px
+    right: -15px
+    color: $green
+    margin-left: -15px
+  span.add-info
+    color: $green
+    display: block
+    font-size: 0.875rem
+    +medium
+
+  th
+    +georgia
+    background: $blueGrey50
+    font-style: italic
+    font-weight: 400
+    padding: 1em
+    line-height: 1.25
+
+  tr
+    border-bottom: 1px solid $blueGrey50
+
+  th, td
+    text-align: center
+    @media #{$medium-up}
+      &:first-child
+        text-align: right
+      &:nth-child(2)
+        text-align: left
+
+  td
+    color: $blueGrey800
+    font-size: 1.375rem
+    +medium
+    padding: 1em
+    &:first-child
+      font-size: 1rem
+      font-weight: 400
+    svg
+      fill: $green
+      vertical-align: middle
+
+  @media #{$small-only}
+
+    th
+      display: none
+    tr
+      display: block
+      margin-bottom: 15px
+      padding: 10px
+      border-bottom: 0
+      box-shadow: 0 1px 2px rgba(0,0,0,0.2)
+      background: $grey50
+      &:first-child
+        display: none
+    td
+      display: block
+      text-align: right
+      font-size: 14px
+      padding: 5px
+      &:before
+        font-size: 14px
+        content: attr(data-label)": "
+        float: left
+        font-weight: 400
+      &:first-child
+        font-size: 14px
+        border-bottom: 1px solid $blueGrey50
+      &:nth-child(2)
+        display: none
