@@ -1,0 +1,137 @@
+.workhours-container
+
+  .large
+    text-transform: uppercase
+    color: $blueGrey800
+    +bold
+    margin-bottom: 1.5em
+    @media #{$small-only}
+      margin-bottom: 1em
+  .button-container
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-direction: row
+    margin-bottom: 1.5em
+    @media #{$small-only}
+      justify-content: space-between
+      margin-bottom: 1em
+  .floor-button
+    color: $blueGrey300
+    border-bottom: 2px solid transparent
+    margin-right: 2em
+    line-height: 2em
+    cursor: pointer
+    &:last-child
+      margin-right: 0
+    &:hover, &.active
+      border-bottom: 2px solid $green
+      color: $green
+      line-height: 2em
+
+  .floor-wrapper
+    position: relative
+    margin-bottom: 4em
+
+  .floor-container
+    display: none
+    &.visible
+      display: block
+
+  .store-panel
+    position: relative
+    padding: 0.75em 1em 3em
+    margin-bottom: 1.5em
+    background: $grey50
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+
+    .scheme-link
+      position: absolute
+      right: 1em
+      bottom: 1em
+      color: $blueGrey400
+      text-transform: uppercase
+      font-size: 0.875em
+      +bold
+      svg
+        fill: $blueGrey400
+        width: 14px
+        height: 14px
+        vertical-align: middle
+        margin-right: 5px
+      &:hover
+        color: $green
+        svg
+          fill: $green
+
+    .floated
+      width: 50%
+
+    .floated.half
+
+      &:nth-of-type(1), &:nth-of-type(2)
+        width: 100%
+      &:nth-of-type(2)
+        @media #{$small-only}
+          .panel-title
+            margin-top: 10px
+            margin-bottom: 0
+            border-bottom: 0
+      @media #{$large-up}
+        &:nth-of-type(1)
+          width: 60%
+        &:nth-of-type(2)
+          width: 40%
+
+    .panel-title
+      font-size: 12px
+      color: $blueGrey300
+      text-transform: uppercase
+      +bold
+      border-bottom: 1px solid $blueGrey100
+      line-height: 3em
+      margin-bottom: 20px
+
+    .store-icon
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      overflow: hidden
+      background-position: center
+      background-size: cover
+      @media #{$small-only}
+        display: none
+
+    .store-info
+      width: calc(100% - 50px)
+
+    .store-name
+      color: $green
+      text-transform: uppercase
+      +bold
+      line-height: 1.25
+      padding-top: 5px
+      padding-left: 10px
+      @media #{$small-only}
+        padding-left: 0
+
+    .georgia-italic
+      padding-left: 60px
+      line-height: 1.25
+      @media #{$small-only}
+        padding-left: 0
+        padding-top: 10px
+
+    .aligned
+      @media #{$medium-up}
+        text-align: right
+
+    .smaller
+      color: $blueGrey600
+
+    .regular-medium
+      span
+        font-size: 0.5em
+        vertical-align: super

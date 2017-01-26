@@ -47,6 +47,10 @@ class PagesController < ApplicationController
 
   end
 
+  def workhours
+
+  end
+
   private
 
   def set_page_instance

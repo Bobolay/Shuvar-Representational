@@ -33,3 +33,4 @@
 #= require filter-tag
 #= require services
 #= require webcams
+#= require workhours
