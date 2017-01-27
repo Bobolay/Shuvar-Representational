@@ -1,9 +1,4 @@
-<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In  -->
-<svg version="1.1"
-   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-   x="0px" y="0px" width="18px" height="14.4px" viewBox="0 0 18 14.4" enable-background="new 0 0 18 14.4" xml:space="preserve">
-<defs>
-</defs>
-<path d="M16.2,0H1.8C0.8,0,0,0.8,0,1.8l0,10.8c0,1,0.8,1.8,1.8,1.8h14.4c1,0,1.8-0.8,1.8-1.8V1.8
-  C18,0.8,17.2,0,16.2,0z M16.2,12.6H1.8v-9L9,8.1l7.2-4.5V12.6z M9,6.3L1.8,1.8h14.4L9,6.3z"/>
+<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
 </svg>

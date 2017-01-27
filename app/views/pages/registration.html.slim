@@ -1,0 +1,147 @@
+.registration-container.page-content-indent
+  p.secondary-title реєстрація
+
+  form.form-container.row
+    .columns.medium-10.medium-centered.large-8
+
+      .clearfix.tab-buttons
+        .tab-button.floated.active
+          p я власник карти заїзду
+        .tab-button.floated
+          p у мене немає карти
+
+      .tab-content-wrapper
+
+        .tab-content.active
+
+          p.regular-medium інформація про автомобіль
+          p.georgia-italic Дані про ваш автомобіль на який зареєстрована картка для в’їзду
+          .row
+            .columns.medium-6.end
+              .input-field.no-icon
+                input
+                label
+                  | Номер авто&nbsp;
+                  span*
+                span.bar
+          p.regular-medium реєстраційні дані
+          p.georgia-italic Дані про ваш автомобіль на який зареєстрована картка для в’їзду
+          .row
+            .columns.medium-6
+              .input-field
+                input
+                label
+                  | Логін&nbsp;
+                  span*
+                span.bar
+                = inline_svg "icons/login-arrow.svg"
+              .input-field
+                input
+                label
+                  | E-mail&nbsp;
+                  span*
+                span.bar
+                = inline_svg "icons/letter.svg"
+            .columns.medium-6
+              .input-field.last
+                input type="password"
+                label
+                  | Пароль&nbsp;
+                  span*
+                span.bar
+                = inline_svg "icons/lock.svg"
+
+        .tab-content
+
+          p.regular-medium інформація про автомобіль
+          p.georgia-italic Дані про ваш автомобіль на який зареєстрована картка для в’їзду
+          .row
+            .columns.medium-6
+              .input-field.no-icon
+                input
+                label
+                  | Номер авто&nbsp;
+                  span*
+                span.bar
+              .input-field.no-icon
+                select#selectize-field-1 data-placeholder="Категорія автомобіля ? *"
+                  option value=""
+                  option value="1" Легковий
+                  option value="2" Легковий (до 2.3т)
+                  option value="3" Легковий з причепом
+                  option value="4" Мікроавтобус (до 3.5т)
+                  option value="5" Мікроавтобус з причепом
+                  option value="6" Вантажний (до 7т)
+                  option value="7" Вантажний (до 10т)
+                  option value="8" Вантажний з причепом
+                  option value="8" Вантажний (від 10т)
+            .columns.medium-6
+              .input-field.no-icon.last
+                select#selectize-field-2 data-placeholder="Тип кузова ? *"
+                  option value=""
+                  option value="1" Легковий
+                  option value="2" Легковий (до 2.3т)
+                  option value="3" Легковий з причепом
+                  option value="4" Мікроавтобус (до 3.5т)
+                  option value="5" Мікроавтобус з причепом
+                  option value="6" Вантажний (до 7т)
+                  option value="7" Вантажний (до 10т)
+                  option value="8" Вантажний з причепом
+                  option value="8" Вантажний (від 10т)
+          p.regular-medium реєстраційні дані
+          p.georgia-italic Дані про ваш автомобіль на який зареєстрована картка для в’їзду
+          .row
+            .columns.medium-6
+              .input-field
+                input
+                label
+                  | Логін&nbsp;
+                  span*
+                span.bar
+                = inline_svg "icons/login-arrow.svg"
+              .input-field
+                input
+                label
+                  | Логін&nbsp;
+                  span*
+                span.bar
+                = inline_svg "icons/form-person.svg"
+              .input-field
+                input
+                label
+                  | E-mail&nbsp;
+                  span*
+                span.bar
+                = inline_svg "icons/letter.svg"
+            .columns.medium-6
+              .input-field.last
+                input type="password"
+                label
+                  | Пароль&nbsp;
+                  span*
+                span.bar
+                = inline_svg "icons/lock.svg"
+              .input-field
+                input
+                label
+                  | Контактний номер&nbsp;
+                  span*
+                span.bar
+                = inline_svg "icons/phone.svg"
+              .input-field
+                select#selectize-field-3 data-placeholder="Хто Ви ? *"
+                  option value=""
+                  option value="1" Виробник
+                  option value="2" Постачальник
+                  option value="3" Гуртовий покупець
+                  option value="4" Орендар
+                  option value="5" Роздрібний покупець
+                = inline_svg "icons/business_black.svg"
+
+
+
+      .georgia-italic.remarks
+        span &lowast;
+        | всі поля обов'язкові для заповнення
+      .button-container
+        button.form-button зареєструватись!

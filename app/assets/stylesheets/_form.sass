@@ -70,6 +70,11 @@
 .form-container .input-field
   padding-left: 40px
   margin: 20px 0
+  &.no-icon
+    padding-left: 0
+  &.last
+    @media #{$small-only}
+      margin-top: 0
   @media #{$small-only}
     padding-left: 30px
   input
@@ -113,3 +118,8 @@
   +transition(0.25s)
   &:hover
     box-shadow: 0 3px 7px rgba(0,0,0,0.2)
+
+.form-container
+  .selectize-input > *
+    color: $blueGrey600 !important
+    +medium

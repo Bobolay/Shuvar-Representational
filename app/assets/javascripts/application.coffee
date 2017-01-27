@@ -35,3 +35,4 @@
 #= require webcams
 #= require workhours
 #= require popups
+#= require register_account

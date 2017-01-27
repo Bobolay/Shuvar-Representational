@@ -1,0 +1,56 @@
+.registration-container
+
+  .tab-button
+    width: 50%
+    margin: 3em 0
+    background: $blueGrey50
+    border: 1px solid $blueGrey100
+    +medium
+    text-transform: uppercase
+    line-height: 1.25
+    text-align: center
+    color: $blueGrey200
+    cursor: pointer
+    height: 100px
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: center
+    align-items: center
+    +transition(0.1s)
+    @media #{$small-only}
+      height: 60px
+    @media #{$medium-only}
+      height: 80px
+    &.active
+      background: $green
+      border: 1px solid $green
+      color: white
+
+  .tab-content-wrapper
+    .georgia-italic
+      max-width: 40%
+      @media #{$small-only}
+        max-width: 100%
+
+  .tab-content
+    display: none
+    &.active
+      display: block
+
+  .regular-medium
+    text-transform: uppercase
+    margin-bottom: 0.5em
+    &:nth-child(n+2)
+      margin-top: 4em
+
+  .remarks
+    margin-top: 2em
+
+  .button-container
+    text-align: right
+    .form-button
+      display: inline-block
+      margin: 10px auto 30px

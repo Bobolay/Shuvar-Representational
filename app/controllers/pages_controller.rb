@@ -51,6 +51,10 @@ class PagesController < ApplicationController
 
   end
 
+  def registration
+
+  end
+
   private
 
   def set_page_instance
