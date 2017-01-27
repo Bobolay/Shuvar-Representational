@@ -1130,6 +1130,7 @@
 			}else{
 				slider.active.index = slideIndex;
 			}
+
 			// onSlideBefore, onSlideNext, onSlidePrev callbacks
 			slider.settings.onSlideBefore(slider.children.eq(slider.active.index), slider.oldIndex, slider.active.index);
 			if(direction == 'next'){

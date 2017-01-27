@@ -10,10 +10,15 @@ html
     = stylesheet_link_tag    "application", media: 'all', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
+
     .mask
+    .mask-full
+
     = render "header"
     = yield
     = render "footer"
+
+    = render "login_popup"
 
     script src="//maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAPS_API_KEY']}"
     = javascript_include_tag "application", 'data-turbolinks-track' => true

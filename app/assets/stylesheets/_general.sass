@@ -21,6 +21,10 @@ body
   +transition(0.25s)
   &.visible
     opacity: 1
+    pointer-events: initial
+.mask-full
+  @extend .mask
+  z-index: 5
 
 .regular
   font-size: 1em

@@ -34,3 +34,4 @@
 #= require services
 #= require webcams
 #= require workhours
+#= require popups

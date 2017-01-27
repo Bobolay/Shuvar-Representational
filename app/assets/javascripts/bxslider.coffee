@@ -71,11 +71,9 @@ $(document).ready ->
     if project_one_slider.getSlideCount
         $('.slider-custom-pager .total-slides span').text((project_one_slider.getSlideCount()))
     $('.project-one-slider-container .arrow-left').click ->
-        current = project_one_slider.getCurrentSlide()
-        project_one_slider.goToPrevSlide(current) - 1
+        project_one_slider.goToPrevSlide()
     $('.project-one-slider-container .arrow-right').click ->
-        current = project_one_slider.getCurrentSlide()
-        project_one_slider.goToNextSlide(current) + 1
+        project_one_slider.goToNextSlide()
 
     #     A B O U T     S L I D E R
 

@@ -1,0 +1,29 @@
+form.login-popup-wrapper.shadow.form-container
+
+  .close = inline_svg "icons/close-cross.svg"
+
+  p.large вхід у кабінет
+
+  .input-field
+    input
+    label
+      | Логін&nbsp;
+      span*
+    span.bar
+    = inline_svg "icons/login-arrow.svg"
+
+  .input-field
+    input type="password"
+    label
+      | Пароль&nbsp;
+      span*
+    span.bar
+    = inline_svg "icons/lock.svg"
+
+  a.georgia-italic.forgot-password Забули пароль?
+
+  button.form-button увійти
+
+  .bottom-text
+    p.smaller Немає акаунту?
+    a.smaller-medium зареєструватись
