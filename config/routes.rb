@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     get "webcams", action: "webcams"
     get "workhours", action: "workhours"
     get "registration", action: "registration"
+    get "account", action: "account"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]

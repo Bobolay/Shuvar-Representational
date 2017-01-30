@@ -7,7 +7,7 @@ $document.on 'click', '.tab-button', ->
   tab_button_index = tab_button.index()
 
   #     T A B     C O N T E N T
-  tab_content_wrapper = tab_buttons_wrapper.parent().find('.tab-content-wrapper')
+  tab_content_wrapper = tab_buttons_wrapper.parent().parent().find('.tab-content-wrapper')
   tab_content = tab_content_wrapper.children()
 
   #     P E R F O R M     A C T I O N S

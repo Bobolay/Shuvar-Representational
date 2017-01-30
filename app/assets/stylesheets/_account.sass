@@ -1,0 +1,94 @@
+.account-container
+  
+  .secondary-title
+    text-align: left
+    margin-bottom: 2em
+
+  .my-balance-field
+    background: $green
+    border-radius: 5px
+    padding: 1em
+    .ballance-ammount
+      font-size: 2.25em
+      color: white
+      +bold
+      line-height: 1
+      span
+        opacity: 0.7
+        font-weight: 400
+    .smaller-bold
+      color: white
+      text-transform: uppercase
+      text-align: right
+      margin-top: 1em
+
+  .logout
+    text-transform: uppercase
+    opacity: 0.5
+    cursor: pointer
+    &:hover
+      color: $green
+      opacity: 1
+
+  .tab-buttons
+    margin: 1em 0
+    .tab-button
+      +medium
+      border-bottom: 1px solid $blueGrey50
+      cursor: pointer
+      padding: 0.75em 0
+      &.active
+        color: $green
+  .tab-content-wrapper
+    @media #{$small-only}
+      padding: 3em 0
+    .tab-content
+      display: none
+      &.active
+        display: block
+
+  .accordion-button, .accordion-inner
+    background: $blueGrey50
+    padding: 1em 1.5em
+  .accordion-button
+    .larger
+      text-transform: uppercase
+      +medium
+      line-height: 1.25
+    .smaller-medium
+      color: $blueGrey300
+      margin-top: 1em
+      span
+        color: $green
+    .arrow-dropdown
+      svg
+        fill: $green
+    &:nth-child(n+2)
+      margin-top: 1em
+
+  .accordion-inner
+    border-top: 1px solid $blueGrey100
+    .regular
+      margin-bottom: 1em
+
+  .account-title
+    font-size: 0.875em
+    +medium
+    text-transform: uppercase
+    background: $blueGrey50
+    padding: 1em
+
+  .save
+    color: $green
+    text-align: right
+    +bold
+    margin: 2em 0
+    text-transform: uppercase
+    position: relative
+    cursor: pointer
+    svg
+      display: inline-block
+      fill: $green
+      width: 16px
+      height: 16px
+      margin-top: 6px
