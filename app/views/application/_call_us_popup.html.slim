@@ -1,0 +1,22 @@
+.call-us-popup
+
+  .call-us-container.indent-container
+    p.regular
+      | Зателефонуйте нам
+      = inline_svg "icons/phone.svg"
+    a href="tel:+380322953636" +38 (032) 295-36-36
+    a href="tel:+380965321078" +38 (096) 532-10-78
+
+  .leave-ur-number-container.indent-container   
+    .input-field
+      input
+      label Або вкажіть свій номер:
+      span.bar
+      = inline_svg "icons/pencil.svg"
+
+  a.button замовити
+
+  .success
+    span = inline_svg "icons/done.svg"
+    p Ваша заявка успішно прийнята!
+    p Очікуйте дзвінок оператора.
