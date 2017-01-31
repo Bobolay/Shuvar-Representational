@@ -72,26 +72,28 @@
       p.regular
         | Роман Камінечний
 
-.main-nav-container
+.main-nav-wrapper
 
-  .menu-button
-    .menu-button-lines
-  .row.collapse
-    .columns
-      a.main-nav-link.home.desktop href=root_path = inline_svg "icons/home-icon.svg"
-      a.main-nav-link.desktop href=news_all_path новини
-      a.main-nav-link.desktop href=about_us_path про нас
-      a.main-nav-link.desktop href=services_path послуги
-      a.main-nav-link.desktop.scheme-button
-        | план схема
-        .arrow-dropdown = inline_svg "icons/arrow-dropdown.svg"
-      a.main-nav-link.desktop href=projects_path проекти
-      a.main-nav-link.desktop href=contact_us_path контакти
-      a.main-nav-link href="http://shuvar-static.voroninstudio.eu" target="_blank" = inline_svg "icons/shuvar-info-logo.svg"
-      .input-field.search
-        = inline_svg "icons/search.svg"
-        input placeholder="Пошук"
-      .search-mobile = inline_svg "icons/search.svg"
+  .main-nav-container
+
+    .menu-button
+      .menu-button-lines
+    .row.collapse
+      .columns
+        a.main-nav-link.home.desktop href=root_path = inline_svg "icons/home-icon.svg"
+        a.main-nav-link.desktop href=news_all_path новини
+        a.main-nav-link.desktop href=about_us_path про нас
+        a.main-nav-link.desktop href=services_path послуги
+        a.main-nav-link.desktop.scheme-button
+          | план схема
+          .arrow-dropdown = inline_svg "icons/arrow-dropdown.svg"
+        a.main-nav-link.desktop href=projects_path проекти
+        a.main-nav-link.desktop href=contact_us_path контакти
+        a.main-nav-link href="http://shuvar-static.voroninstudio.eu" target="_blank" = inline_svg "icons/shuvar-info-logo.svg"
+        .input-field.search
+          = inline_svg "icons/search.svg"
+          input placeholder="Пошук"
+        .search-mobile = inline_svg "icons/search.svg"
 
 .scheme-container-desktop
   .row.collapse

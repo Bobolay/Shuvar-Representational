@@ -171,11 +171,22 @@
     .regular
       line-height: 1.125
 
+.main-nav-wrapper
+  position: relative
+  height: 70px
+  @media #{$small-only}
+    height: 50px
+
 .main-nav-container
   position: relative
+  width: 100%
+  top: 0
+  left: 0
   background: $green
   text-align: right
   z-index: 4
+  &.fixed
+    position: fixed
   @media #{$xlarge-up}
     text-align: initial
   .main-nav-link
