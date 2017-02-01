@@ -31,4 +31,8 @@ scroll = (e)->
   else
     scheme_menu.css('top', main_nav_height+main_nav_top)
 
+  #     C O N T A C T     P A N E L
+  
+
+
 $(window).on "scrolldelta", scroll

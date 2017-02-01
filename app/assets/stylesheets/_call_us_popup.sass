@@ -1,21 +1,25 @@
 .call-us-popup
   position: fixed
   // width: 300px
-  top: 100px
+  top: 60px
+  right: 50px
   // right: 0
-  z-index: 4
-  +translate(0,-120%)
+  z-index: 5
+  // +translate(0,-120%)
   +transition(0.5s)
   +animation-timing-function(cubic-bezier(0.86, 0, 0.07, 1))
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2)
+  box-shadow: 0 5px 40px rgba(0,0,0,0.5)
   overflow: hidden
+  opacity: 0
+  pointer-events: none
   @media #{$small-only}
     width: 90%
     right: 5%
-  @media #{$medium-up}
+  @media #{$large-up}
     display: none
   &.visible
-    +translate(0,0)
+    opacity: 1
+    pointer-events: initial
 
   .indent-container
     padding: 30px 50px
