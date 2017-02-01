@@ -1,4 +1,4 @@
-$('.accordion-button').click((e)->
+$document.on 'click', '.accordion-button', (e)->
 
     e.preventDefault()
     
@@ -22,4 +22,3 @@ $('.accordion-button').click((e)->
         $this.parent().parent().find('.accordion-inner').slideUp(350)
         $this.next().toggleClass('show')
         $this.next().slideToggle(350)
-)

@@ -36,4 +36,4 @@
 #= require workhours
 #= require popups
 #= require register_account
-#= require fixed_header
+#= require navigation
