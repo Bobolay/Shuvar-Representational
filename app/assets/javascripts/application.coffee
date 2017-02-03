@@ -37,3 +37,4 @@
 #= require popups
 #= require register_account
 #= require navigation
+#= require links

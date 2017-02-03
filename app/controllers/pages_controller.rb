@@ -63,6 +63,30 @@ class PagesController < ApplicationController
 
   end
 
+  def terminal_1
+
+  end
+
+  def terminal_2
+
+  end
+
+  def terminal_3
+
+  end
+
+  def terminal_4
+
+  end
+
+  def terminal_5
+
+  end
+
+  def terminal_6
+
+  end
+
   private
 
   def set_page_instance

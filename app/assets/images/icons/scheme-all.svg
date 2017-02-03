@@ -352,7 +352,7 @@
 
 
 
-<g class="link">
+<g class="link" data-terminal="terminal_1">
 	<g>
 		<image overflow="visible" opacity="0.2" width="191" height="127" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL8AAAB/CAYAAAC+AhOyAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
 		GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAB5hJREFUeNrsnQlTG0cQRkdaSQhk
@@ -499,7 +499,7 @@
 
 
 
-<g class="link">
+<g class="link" data-terminal="terminal_2">
 	<g>
 		<image overflow="visible" opacity="0.2" width="113" height="212" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHEAAADUCAYAAACrr8yNAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
 		GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+xJREFUeNrs2utuE1cUgFF7PElM
@@ -614,7 +614,7 @@
 
 
 
-<g class="link">
+<g class="link" data-terminal="terminal_3">
 
 	<g>
 		<image overflow="visible" opacity="0.25" width="74" height="212" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAADUCAYAAAA7vLVCAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
@@ -749,7 +749,7 @@
 
 
 
-<g class="link">
+<g class="link" data-terminal="terminal_4">
 	<g>
 		<image overflow="visible" opacity="0.25" width="59" height="186" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAC6CAYAAAAQyTXOAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
 		GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABAtJREFUeNrs1wtv0zAUhuE4cy+M
@@ -894,7 +894,8 @@
 
 
 
-<g class="link">
+<g class="link" data-terminal="terminal_5">
+
 	<g>
 		<image overflow="visible" opacity="0.2" width="243" height="203" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAADLCAYAAAC736X/AAAACXBIWXMAAAsSAAALEgHS3X78AAAA
 		GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACM5JREFUeNrs3GlvG9cBRmFq85bE
@@ -1098,7 +1099,7 @@
 
 
 
-<g class="link">
+<g class="link" data-terminal="terminal_6">
 	<g>
 		<image overflow="visible" opacity="0.2" width="124" height="157" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAACdCAYAAAB2BhyZAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
 		GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACNVJREFUeNrsm1tvGzcQhVd32ZZj

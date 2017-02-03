@@ -4,42 +4,43 @@
       p.secondary-title
         | загальна план схема
       .row
-        .columns.medium-3
+
+        .columns.medium-12.large-9.float-right
+          .scheme-container = inline_svg "icons/scheme-all.svg"
+
+        .columns.medium-6.large-3.float-left
 
           p.block-title термінали
           
-          a.terminal-link
+          a.terminal-link href=terminal_1_path
             .terminal-icon = inline_svg "icons/terminal-icon-1.svg"
             p.smaller-medium Молочні продукти ковбаси та копченості
-          a.terminal-link
+          a.terminal-link href=terminal_2_path
             .terminal-icon = inline_svg "icons/terminal-icon-2.svg"
             p.smaller-medium Риба та морепродукти
-          a.terminal-link
+          a.terminal-link href=terminal_3_path
             .terminal-icon = inline_svg "icons/terminal-icon-3.svg"
             p.smaller-medium Свіже м’ясо
-          a.terminal-link
+          a.terminal-link href=terminal_4_path
             .terminal-icon = inline_svg "icons/terminal-icon-4.svg"
             p.smaller-medium Овочі та фрукти
-          a.terminal-link
+          a.terminal-link href=terminal_5_path
             .terminal-icon = inline_svg "icons/terminal-icon-5.svg"
             p.smaller-medium Бакалія
-          a.terminal-link
+          a.terminal-link href=terminal_6_path
             .terminal-icon = inline_svg "icons/terminal-icon-6.svg"
             p.smaller-medium Квіти та супутні товари
 
+        .columns.medium-6.large-3.float-left
+
           p.block-title термінали
 
-          a.terminal-link
+          .terminal-link
             .terminal-icon = inline_svg "icons/terminal-icon-7.svg"
             p.smaller-medium Пропускний пункт
-          a.terminal-link
+          .terminal-link
             .terminal-icon = inline_svg "icons/terminal-icon-8.svg"
             p.smaller-medium Зона паркінгу
-          a.terminal-link
+          .terminal-link
             .terminal-icon = inline_svg "icons/terminal-icon-9.svg"
             p.smaller-medium Майданчик для торгівлі з автомобілів
-
-
-        .columns.medium-9
-
-          .scheme-container = inline_svg "icons/scheme-all.svg"

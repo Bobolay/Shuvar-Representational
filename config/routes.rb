@@ -16,6 +16,12 @@ Rails.application.routes.draw do
     get "registration", action: "registration"
     get "account", action: "account"
     get "scheme_all", action: "scheme_all"
+    get "terminal_1", action: "terminal_1"
+    get "terminal_2", action: "terminal_2"
+    get "terminal_3", action: "terminal_3"
+    get "terminal_4", action: "terminal_4"
+    get "terminal_5", action: "terminal_5"
+    get "terminal_6", action: "terminal_6"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]
