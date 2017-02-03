@@ -1,0 +1,49 @@
+.scheme-wrapper
+  margin: 2em 0
+  border: 1px solid $blueGrey100
+  padding: 2em
+  .secondary-title
+    text-align: left
+
+  .block-title
+    color: $blueGrey300
+    font-size: 12px
+    text-transform: uppercase
+    margin-top: 3em
+
+  .terminal-link
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin: 1em 0
+    .terminal-icon
+      width: 40px
+      height: 40px
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3)
+    .smaller-medium
+      color: $blueGrey800
+      line-height: 1.25
+      margin-left: 1em
+      +transition(0.2s)
+    &:hover
+      .smaller-medium
+        color: $green
+
+  .scheme-container
+    width: 100%
+    svg
+      width: 100%
+      .link
+        cursor: pointer
+        .hover-block
+          opacity: 0
+          +transition(0.1s)
+        &:hover
+          .hover-block
+            opacity: 1
+      .terminal-info
+        box-shadow: 0 2px 5px rgba(0,0,0,0.5)

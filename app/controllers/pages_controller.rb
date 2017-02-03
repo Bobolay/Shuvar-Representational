@@ -59,6 +59,10 @@ class PagesController < ApplicationController
 
   end
 
+  def scheme_all
+
+  end
+
   private
 
   def set_page_instance

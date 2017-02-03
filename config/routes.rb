@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     get "workhours", action: "workhours"
     get "registration", action: "registration"
     get "account", action: "account"
+    get "scheme_all", action: "scheme_all"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]
