@@ -3,7 +3,8 @@
     .scheme-wrapper
       p.secondary-title
         | загальна план схема
-      .row
+      
+      .row.desktop
 
         .columns.medium-12.large-9.float-right
           .scheme-container = inline_svg "icons/scheme-all.svg"
@@ -44,3 +45,48 @@
           .terminal-link
             .terminal-icon = inline_svg "icons/terminal-icon-9.svg"
             p.smaller-medium Майданчик для торгівлі з автомобілів
+
+      .mobile
+        a.download-pdf
+          .clearfix
+            p.floated Завантажити загальну карту
+            .floated-right icon
+          p.regular .pdf 1.4мб
+        p.secondary-title
+          | всі термінали
+        a.clearfix.terminal-link-mobile href=terminal_1_path
+          .floated
+            .img-background style="background-image: url(#{asset_path('photo/product-category-3.jpg')})"
+          .floated
+            p.georgia-italic План схема павільйону
+            p.larger молочні продукти
+        a.clearfix.terminal-link-mobile href=terminal_2_path
+          .floated
+            .img-background style="background-image: url(#{asset_path('photo/product-category-1.jpg')})"
+          .floated
+            p.georgia-italic План схема павільйону
+            p.larger риба та морепродукти
+        a.clearfix.terminal-link-mobile href=terminal_3_path
+          .floated
+            .img-background style="background-image: url(#{asset_path('photo/product-category-4.jpg')})"
+          .floated
+            p.georgia-italic План схема павільйону
+            p.larger свіже м'ясо
+        a.clearfix.terminal-link-mobile href=terminal_4_path
+          .floated
+            .img-background style="background-image: url(#{asset_path('photo/product-category-2.jpg')})"
+          .floated
+            p.georgia-italic План схема павільйону
+            p.larger овочі та фрукти
+        a.clearfix.terminal-link-mobile href=terminal_5_path
+          .floated
+            .img-background style="background-image: url(#{asset_path('photo/product-category-5.jpg')})"
+          .floated
+            p.georgia-italic План схема павільйону
+            p.larger бакалія
+        a.clearfix.terminal-link-mobile href=terminal_6_path
+          .floated
+            .img-background style="background-image: url(#{asset_path('photo/product-category-6.jpg')})"
+          .floated
+            p.georgia-italic План схема павільйону
+            p.larger квіти та супутні товари

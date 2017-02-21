@@ -1,8 +1,8 @@
-.project-one-container.page-content-indent
+.project-one-container.page-content-indent itemscope="" itemtype="http://schema.org/Organization"
   p.main-title
     | проект 
     span &#171;дідо&#187;
-  p.under-title Проект майбутнього-спрямований продовжити наше життя
+  p.under-title itemProp="brand" Проект майбутнього-спрямований продовжити наше життя
   .row.project-main-info
     .columns.large-10.large-centered
       .project-panel.grey-bg
@@ -11,20 +11,20 @@
         .flex-box
           .row
             .columns.medium-5
-              .info-block
+              .info-block itemProp="employee" itemscope="" itemtype="http://schema.org/Person"
                 = inline_svg "icons/form-person.svg"
                 p.smaller Контактна особа
-                p.smaller-medium Камінечний Роман
-              a.info-block href="tel:+390984874521"
+                p.smaller-medium itemProp="name" Камінечний Роман
+              a.info-block href="tel:+390984874521" itemprop="telephone"
                 = inline_svg "icons/phone.svg"
                 p.smaller Телефон
                 p.smaller-medium 098 4874521
-              a.info-block target="_blank" href=""
+              a.info-block target="_blank" href="" itemProp="url"
                 = inline_svg "icons/planet.svg"
                 p.smaller Веб сторінка
                 p.smaller-medium dido.com.ua
             .columns.medium-7
-              .info-block
+              .info-block itemProp="address"
                 = inline_svg "icons/map-marker.svg"
                 p.smaller Адреса
                 p.smaller-medium м. Львів, вул. Хуторівка, 4б
@@ -41,15 +41,31 @@
       .project-one-slider-container
         .slide-width
         p.regular-medium галерея
-        ul.project-one-slider
+        ul.project-one-slider#animated-thumbnails
           li.img-background style="background-image: url(#{asset_path('photo/sample-1.jpg')})"
+            a href=asset_path('photo/sample-1.jpg')
+              img src=asset_path('photo/sample-1.jpg')
           li.img-background style="background-image: url(#{asset_path('photo/sample-2.jpg')})"
+            a href=asset_path('photo/sample-2.jpg')
+              img src=asset_path('photo/sample-2.jpg')
           li.img-background style="background-image: url(#{asset_path('photo/sample-3.jpg')})"
+            a href=asset_path('photo/sample-3.jpg')
+              img src=asset_path('photo/sample-3.jpg')
           li.img-background style="background-image: url(#{asset_path('photo/sample-4.jpg')})"
+            a href=asset_path('photo/sample-4.jpg')
+              img src=asset_path('photo/sample-4.jpg')
           li.img-background style="background-image: url(#{asset_path('photo/sample-5.jpg')})"
+            a href=asset_path('photo/sample-5.jpg')
+              img src=asset_path('photo/sample-5.jpg')
           li.img-background style="background-image: url(#{asset_path('photo/sample-6.jpg')})"
+            a href=asset_path('photo/sample-6.jpg')
+              img src=asset_path('photo/sample-6.jpg')
           li.img-background style="background-image: url(#{asset_path('photo/sample-3.jpg')})"
+            a href=asset_path('photo/sample-3.jpg')
+              img src=asset_path('photo/sample-4.jpg')
           li.img-background style="background-image: url(#{asset_path('photo/sample-5.jpg')})"
+            a href=asset_path('photo/sample-5.jpg')
+              img src=asset_path('photo/sample-5.jpg')
         .slider-custom-pager
           .arrow-left = inline_svg "icons/arrow-left.svg"
           p.total-slides
@@ -62,38 +78,38 @@
   p.secondary-title інші новини розділу
   .row.columns-left.inner-indent
     .columns.small-6.large-4
-      a.project-block href=projects_one_path
+      a.project-block href=projects_one_path itemprop="relatedLink"
         .img-container style="background-image: url(#{asset_path('photo/project-dido.jpg')})"
         p.georgia-italic Проект
-        p.project-title дідо правдива їжа
+        p.project-title itemProp="brand" дідо правдива їжа
         .line
     .columns.small-6.large-4
-      a.project-block href=projects_one_path
+      a.project-block href=projects_one_path itemprop="relatedLink"
         .img-container style="background-image: url(#{asset_path('photo/sample-2.jpg')})"
         p.georgia-italic Проект
-        p.project-title галичагропарк
+        p.project-title itemProp="brand" галичагропарк
         .line
     .columns.small-6.large-4
-      a.project-block href=projects_one_path
+      a.project-block href=projects_one_path itemprop="relatedLink"
         .img-container style="background-image: url(#{asset_path('photo/project-sophia.jpg')})"
         p.georgia-italic Проект
-        p.project-title софія торг
+        p.project-title itemProp="brand" софія торг
         .line
     .columns.small-6.large-4
-      a.project-block href=projects_one_path
+      a.project-block href=projects_one_path itemprop="relatedLink"
         .img-container style="background-image: url(#{asset_path('photo/project-export.jpg')})"
         p.georgia-italic Проект
-        p.project-title експорт
+        p.project-title itemProp="brand" експорт
         .line
     .columns.small-6.large-4
-      a.project-block href=projects_one_path
+      a.project-block href=projects_one_path itemprop="relatedLink"
         .img-container style="background-image: url(#{asset_path('photo/project-internet.jpg')})"
         p.georgia-italic Проект
-        p.project-title інтернет магазин
+        p.project-title itemProp="brand" інтернет магазин
         .line
     .columns.small-6.large-4
-      a.project-block href=projects_one_path
+      a.project-block href=projects_one_path itemprop="relatedLink"
         .img-container style="background-image: url(#{asset_path('photo/project-sales.jpg')})"
         p.georgia-italic Проект
-        p.project-title дистанційні продажі
+        p.project-title itemProp="brand" дистанційні продажі
         .line

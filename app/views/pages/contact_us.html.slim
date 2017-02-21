@@ -8,20 +8,20 @@
   .row.collapse
     .columns.medium-12.large-10.large-centered
 
-      .row.collapse.shadow
+      .row.collapse.shadow href="tel:+380324567887" itemscope="" itemtype="http://schema.org/PostalAddress"
 
         .columns.medium-4
-          a.contact-block href="tel:+38(032)2951919"
+          a.contact-block href="tel:+38(032)2951919" itemprop="telephone"
             = inline_svg "icons/phone.svg"
             span.regular-medium +38 (032) 295 19 19
         .columns.medium-4
-          a.contact-block href="mailto:office@shuvar.com"
+          a.contact-block href="mailto:office@shuvar.com" itemprop="email"
             = inline_svg "icons/mail-filled.svg"
             span.regular-medium office@shuvar.com
         .columns.medium-4
           .contact-block
             = inline_svg "icons/map-marker.svg"
-            span.regular-medium
+            span.regular-medium itemprop="address"
               | м. Львів
               br
               | вул. Хуторівка, 4б, 79031
@@ -29,60 +29,60 @@
   .grey-bg
     .row.stuff-container.columns-left
 
-      .columns.medium-4.large-2.large-push-2.stuff-block
+      .columns.medium-4.large-2.large-push-2.stuff-block itemscope="" itemtype="http://schema.org/Person"
         .img-container
-          .img-background style="background-image: url(#{asset_path('photo/consultant-avatar.jpg')})"
-        p.name
+          .img-background itemProp="image" style="background-image: url(#{asset_path('photo/consultant-avatar.jpg')})"
+        p.name itemprop="name"
           | Плотниця Ігор
           br
           | Іванович
-        p.position Директор
+        p.position itemprop="jobTitle" Директор
         .contact-info
           = inline_svg "icons/phone.svg"
-          a.smaller-medium href="tel:+38(032)2951919" +38 (032) 295 19 19
-          a.smaller-medium href="tel:+38(050)3170932" +38 (050) 317 09 32
+          a.smaller-medium itemprop="telephone" href="tel:+38(032)2951919" +38 (032) 295 19 19
+          a.smaller-medium itemprop="telephone" href="tel:+38(050)3170932" +38 (050) 317 09 32
         .contact-info
           = inline_svg "icons/mail-filled.svg"
-          a.smaller-medium href="mailto:i.plotycia@shuvar.com" i.plotycia@shuvar.com
+          a.smaller-medium itemprop="email" href="mailto:i.plotycia@shuvar.com" i.plotycia@shuvar.com
         .contact-info
-          = inline_svg "icons/phone.svg"
-          a.smaller-medium href="skype:plotycia1" plotycia1
+          = inline_svg "icons/social-skype.svg"
+          a.smaller-medium itemprop="sameAs" href="skype:plotycia1" plotycia1
       
 
       .columns.medium-4.large-2.large-push-3.stuff-block
         .img-container
-          .img-background style="background-image: url(#{asset_path('photo/consultant-avatar.jpg')})"
-        p.name
+          .img-background itemProp="image" style="background-image: url(#{asset_path('photo/consultant-avatar.jpg')})"
+        p.name itemprop="name"
           | Сєртаков Дмитро
           br
           | Вікторович
-        p.position заступник директора з операційної діяльності
+        p.position itemprop="jobTitle" заступник директора з операційної діяльності
         .contact-info
           = inline_svg "icons/phone.svg"
-          a.smaller-medium href="tel:+38(032)2951919" +38 (032) 295 19 19
-          a.smaller-medium href="tel:+38(050)3170932" +38 (050) 317 09 32
+          a.smaller-medium itemprop="telephone" href="tel:+38(032)2951919" +38 (032) 295 19 19
+          a.smaller-medium itemprop="telephone" href="tel:+38(050)3170932" +38 (050) 317 09 32
         .contact-info
           = inline_svg "icons/mail-filled.svg"
-          a.smaller-medium href="mailto:d.sertakov@shuvar.com" d.sertakov@shuvar.com
+          a.smaller-medium itemprop="email" href="mailto:d.sertakov@shuvar.com" d.sertakov@shuvar.com
         .contact-info
-          = inline_svg "icons/phone.svg"
-          a.smaller-medium href="skype:dsertakov1" dsertakov1
+          = inline_svg "icons/social-skype.svg"
+          a.smaller-medium itemprop="sameAs" href="skype:dsertakov1" dsertakov1
 
       .columns.medium-4.large-2.large-push-4.stuff-block
         .img-container
-          .img-background style="background-image: url(#{asset_path('photo/consultant-avatar.jpg')})"
-        p.name
+          .img-background itemProp="image" style="background-image: url(#{asset_path('photo/consultant-avatar.jpg')})"
+        p.name itemprop="name"
           | Гордієнко Клавдія
           br
           | Максимівна
-        p.position Заступник директора із зв'язків з зовнішнім середовищем
+        p.position itemprop="jobTitle" Заступник директора із зв'язків з зовнішнім середовищем
         .contact-info
           = inline_svg "icons/phone.svg"
-          a.smaller-medium href="tel:+38(032)2951919" +38 (032) 295 19 19
-          a.smaller-medium href="tel:+38(050)3170932" +38 (050) 317 09 32
+          a.smaller-medium itemprop="telephone" href="tel:+38(032)2951919" +38 (032) 295 19 19
+          a.smaller-medium itemprop="telephone" href="tel:+38(050)3170932" +38 (050) 317 09 32
         .contact-info
           = inline_svg "icons/mail-filled.svg"
-          a.smaller-medium href="mailto:hordi@shuvar.com" hordi@shuvar.com
+          a.smaller-medium itemprop="email" href="mailto:hordi@shuvar.com" hordi@shuvar.com
 
   .form-container
     = render "form"

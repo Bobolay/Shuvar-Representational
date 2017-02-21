@@ -1,6 +1,6 @@
 doctype html
 html
-  head
+  head itemscope="" itemtype="http://schema.org/Organization"
     title
       | Website
     meta name="description" content="some text goes here"
@@ -15,8 +15,9 @@ html
     .mask-full
     = render "call_us_popup"
 
-    = render "header"
-    = yield
+    .content
+        = render "header"
+        = yield
     = render "footer"
 
     = render "login_popup"

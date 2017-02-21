@@ -1,6 +1,17 @@
+html
+  height: 100%
 body
   font-family: 'Roboto', sans-serif
   color: $blueGrey700
+  min-height: 100%
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flex
+  display: -o-flex
+  display: flex
+  flex-direction: column
+  .content
+    flex: 1
   @media #{$small-only}
     font-size: 14px
 

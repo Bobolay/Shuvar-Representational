@@ -14,6 +14,7 @@
 #= require plugins/jquery.bxslider
 #= require plugins/jquery.scrolldelta
 #= require plugins/lightgallery.min
+#= require plugins/lg-thumbnail.min
 # require plugins/scroll-banner
 #= require plugins/selectize.min
 #= require plugins/parallax.min
@@ -38,3 +39,4 @@
 #= require register_account
 #= require navigation
 #= require links
+#= require lightgallery

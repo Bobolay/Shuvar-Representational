@@ -3,7 +3,14 @@
   border: 1px solid $blueGrey100
   padding: 2em
   @media #{$small-only}
-    padding: 2em 1em
+    padding: 0
+    border: 0
+  .desktop
+    @media #{$small-only}
+      display: none
+  .mobile
+    @media #{$medium-up}
+      display: none
   .secondary-title
     text-align: left
 
@@ -55,6 +62,8 @@
         &:hover
           .hover-block
             opacity: 1
+    @media #{$small-only}
+      margin-top: 1em
 
   .float-left
     @media #{$large-up}
@@ -62,3 +71,92 @@
   .float-right
     @media #{$large-up}
       float: right !important
+
+  .mobile
+    .download-pdf
+      border: 1px solid $blueGrey100
+      padding: 1em
+      margin-top: 1em
+      .floated
+        +georgia
+        font-size: 1.125em
+        font-style: italic
+        float: left
+      .floated-right
+        float: right
+      .regular
+        clear: both
+        margin-top: 1em
+    .secondary-title
+      margin: 2em 0
+    .terminal-link-mobile
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+      margin: 1.5em 0
+      .floated
+        position: relative
+        height: 70px
+        &:first-child
+          width: 70px
+        &:nth-child(2)
+          width: calc(100% - 70px)
+          background: $blueGrey50
+          padding: 1em 1.5em
+      .larger
+        text-transform: uppercase
+        +medium
+
+  .terminal-main-info-wrapper
+    padding: 1em 0
+
+  .terminal-info-container
+    background: $blueGrey50
+    .img-container
+      padding-bottom: 56%
+    .info-block
+      position: relative
+      padding: 1em 1em 1.5em 3em
+      .icon
+        position: absolute
+        top: 1em
+        left: 1em
+        width: 16px
+        height: 16px
+        svg
+          fill: $green
+          width: 100%
+          height: 100%
+    .small
+      +medium
+      color: $blueGrey300
+    .day, .hours
+      font-size: 1.125em
+      +bold
+      color: $blueGrey900
+      padding-right: 0.5em
+      line-height: 1
+      &.day-off
+        color: $blueGrey300
+      span
+        font-size: 0.5em
+        vertical-align: super
+    .georgia-italic
+      line-height: 1.25
+    .manager
+      color: $green
+      +bold
+    .phone
+      color: $blueGrey900
+      +medium
+  .map-details
+    padding-top: 2em
+    .floated
+      .empty, .rented
+        display: inline-block
+        width: 28px
+        height: 28px
+        border-radius: 2px
+        vertical-align: middle
+      .empty
+        background: $blue300
+      .rented
+        background: $green300
