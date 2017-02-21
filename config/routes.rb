@@ -22,6 +22,7 @@ Rails.application.routes.draw do
     get "terminal_4", action: "terminal_4"
     get "terminal_5", action: "terminal_5"
     get "terminal_6", action: "terminal_6"
+    get "not_found", action: "not_found"
   end
 
   match "*url", to: "application#render_not_found", via: [:get, :post, :path, :put, :update, :delete]

@@ -87,6 +87,11 @@ class PagesController < ApplicationController
 
   end
 
+  def not_found
+    @render_header = false
+    @render_footer = false
+  end
+
   private
 
   def set_page_instance

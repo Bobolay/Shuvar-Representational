@@ -16,9 +16,11 @@ html
     = render "call_us_popup"
 
     .content
-        = render "header"
+        - if @render_header != false
+            = render "header"
         = yield
-    = render "footer"
+    - if @render_footer != false
+        = render "footer"
 
     = render "login_popup"
 
