@@ -15,6 +15,14 @@ class PagesController < ApplicationController
 
   end
 
+  def events_all
+
+  end
+
+  def event_one
+
+  end
+
   def about_us
 
   end
