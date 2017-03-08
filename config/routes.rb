@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   root to: "pages#index"
+  get "download_zip", to: "application#download_zip"
+  get "downloads", to: "application#downloads"
+  get "views", to: "application#views_index"
+  get "views/*path", to: "application#show_view"
 
   controller :pages do
     get "news_all", action: "news_all"
