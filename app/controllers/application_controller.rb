@@ -56,9 +56,9 @@ class ApplicationController < ActionController::Base
     render inline: list.map{|link| "<a href='#{link}'>#{link}</a>" }.join("\n")
   end
 
-  def wget_files
+  def wget_files(folder)
     url = ENV['downloads_host'] + "/views"
-    folder = Rails.root.join("tmp/wget_views").to_s
+
     `wget #{url} -P #{folder} -r`
   end
 
@@ -68,9 +68,12 @@ class ApplicationController < ActionController::Base
   end
 
   def prepare_zip
-    wget_files
+    downloads_folder = Rails.root.join("tmp/wget_views").to_s
     archive_path = Rails.root.join("public/views.zip").to_s
     archive_url = "/public/views.zip"
+    FileUtils.rm(archive_path) if File.exists?(archive_path)
+    FileUtils.rm_rf(downloads_folder) if File.exists?(downloads_folder)
+    wget_files(downloads_folder)
     zip_files(archive_path)
 
     render inline: "<p>Your archive is ready.</p><a href='#{archive_url}'>Download</a>"
