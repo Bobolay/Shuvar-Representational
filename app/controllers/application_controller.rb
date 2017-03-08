@@ -57,7 +57,7 @@ class ApplicationController < ActionController::Base
   end
 
   def wget_files(folder)
-    url = ENV['downloads_host'] + "/views"
+    url = ENV['downloads_host'] + "/views.html"
 
     `wget #{url} -P #{folder} -r`
   end
