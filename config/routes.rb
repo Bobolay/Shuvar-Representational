@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: "pages#index"
-  get "download_zip", to: "application#download_zip"
+  get "download_zip", to: "application#prepare_zip"
   get "downloads", to: "application#downloads"
   get "views", to: "application#views_index"
   get "views/*path", to: "application#show_view"

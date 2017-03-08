@@ -57,15 +57,23 @@ class ApplicationController < ActionController::Base
   end
 
   def wget_files
-    url = ENV['host'] + "/views"
+    url = ENV['downloads_host'] + "/views"
     folder = Rails.root.join("tmp/wget_views").to_s
     `wget #{url} -P #{folder} -r`
   end
 
-  def download_zip
-    wget_files
+  def zip_files(archive_path)
+    folder = Rails.root.join("tmp/wget_views").to_s
+    `zip #{archive_path} #{folder} -r`
+  end
 
-    render inline: "Downloaded"
+  def prepare_zip
+    wget_files
+    archive_path = Rails.root.join("public/views.zip").to_s
+    archive_url = "/public/views.zip"
+    zip_files(archive_path)
+
+    render inline: "<p>Your archive is ready.</p><a href='#{archive_url}'>Download</a>"
   end
 
   def downloads
