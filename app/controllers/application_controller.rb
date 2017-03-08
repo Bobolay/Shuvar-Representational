@@ -70,7 +70,9 @@ class ApplicationController < ActionController::Base
   def prepare_zip
     downloads_folder = Rails.root.join("tmp/wget_views").to_s
     archive_path = Rails.root.join("public/views.zip").to_s
+    archive_folder = Rails.root.join("public").to_s
     archive_url = "/public/views.zip"
+    FileUtils.mkdir(archive_folder) if !File.exists?(archive_folder)
     FileUtils.rm(archive_path) if File.exists?(archive_path)
     FileUtils.rm_rf(downloads_folder) if File.exists?(downloads_folder)
     wget_files(downloads_folder)
