@@ -160,3 +160,53 @@
         background: $blue300
       .rented
         background: $green300
+
+.scheme-title
+  color: $blueGrey800
+  text-transform: uppercase
+  +bold
+
+.shop
+  position: relative
+  padding-left: 30px
+  border-bottom: 1px solid $blueGrey100
+  &:before
+    content: attr(data-number) "."
+    display: block
+    position: absolute
+    top: 16px
+    left: 0
+    color: $blueGrey400
+.accordion-button
+  padding: 16px 0
+  text-transform: uppercase
+  cursor: pointer
+  margin: 1px 0
+  +medium
+  .arrow-dropdown
+    svg
+      fill: $green
+  &.opened
+    border-bottom: 1px solid transparent
+    margin: 0
+.accordion-inner
+  padding: 0 1.125em 1.125em
+  width: 100%
+  z-index: 1
+  .georgia-italic
+    color: $green
+  a.smaller
+    position: relative
+    color: $blueGrey800
+    +medium
+    padding-left: 30px
+    margin: 10px 0
+    svg
+      position: absolute
+      top: 0
+      left: 0
+      fill: $green
+      width: 20px
+      height: 20px
+    &:hover
+      color: $green
