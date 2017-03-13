@@ -6,7 +6,6 @@
     position: absolute
     width: 100%
     height: 100%
-    // background: rgba($blueGrey900,0.5)
     background: rgba(0,0,0,0.5)
     background-blend-mode: multiply
   .banner-text
@@ -178,7 +177,7 @@
         margin-bottom: -50px
       @media #{$medium-up}
         top: 80px
-    .description-column, .slider
+    .description-column
       @media #{$small-only}
         height: 150px
       @media #{$medium-only}
@@ -187,6 +186,17 @@
         height: 400px
       @media #{$xxlarge-up}
         height: 550px
+    .slider
+      &:before
+        content: ''
+        display: block
+        padding-bottom: 56%
+    .about-slider-container
+      position: absolute
+      height: 100%
+      width: 100%
+      top: 0
+      left: 0
     .about-slider
       height: 100%
 
@@ -224,7 +234,7 @@
         width: 40%
       &:before
         content: ''
-        padding-bottom: 70%
+        padding-bottom: 56%
         display: block
     .text-block
       width: 40%

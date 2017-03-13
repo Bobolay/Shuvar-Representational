@@ -46,14 +46,8 @@
   .scheme-container
     position: relative
     width: 100%
-    height: 0
-    padding-bottom: 85%
     svg
-      position: absolute
       width: 100%
-      height: 100%
-      top: 0
-      left: 0
       .link
         cursor: pointer
         .hover-block
@@ -210,3 +204,16 @@
       height: 20px
     &:hover
       color: $green
+
+.scheme-container
+  svg
+    g.pavilion
+      cursor: pointer
+      *
+        fill: $green300
+    g.rented
+      *
+        fill: $blue300
+
+    g.signatures
+      pointer-events: none

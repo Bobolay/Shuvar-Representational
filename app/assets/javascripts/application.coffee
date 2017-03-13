@@ -40,3 +40,4 @@
 #= require navigation
 #= require links
 #= require lightgallery
+#= require scheme_pavilions
