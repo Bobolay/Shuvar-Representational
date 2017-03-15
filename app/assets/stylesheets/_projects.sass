@@ -63,9 +63,11 @@
         +translate(-50%,0)
         opacity: 0
         max-width: 100%
+        pointer-events: none
         &.visible
           +transition(0.75s)
           opacity: 1
+          pointer-events: initial
       .main-title
         color: white
         span

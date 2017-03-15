@@ -18,6 +18,7 @@
 # require plugins/scroll-banner
 #= require plugins/selectize.min
 #= require plugins/parallax.min
+#= require plugins/dragscroll
 
 #     I N I T I A L I Z E
 

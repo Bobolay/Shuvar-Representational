@@ -48,6 +48,7 @@
     width: 100%
     svg
       width: 100%
+      height: auto
       .link
         cursor: pointer
         .hover-block
@@ -206,6 +207,7 @@
       color: $green
 
 .scheme-container
+  overflow: hidden
   svg
     g.pavilion
       cursor: pointer
@@ -217,3 +219,18 @@
 
     g.signatures
       pointer-events: none
+
+
+.scheme-plastic
+  width: 100%
+  height: auto
+  padding-bottom: 60%
+  cursor: -webkit-grab
+  cursor: grab
+  overflow: hidden
+  svg
+    position: absolute
+    top: 0
+    left: 0
+    min-width: 1800px
+    min-height: 1800px

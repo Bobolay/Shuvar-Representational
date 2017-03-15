@@ -179,7 +179,10 @@
         top: 80px
     .description-column
       @media #{$small-only}
-        height: 150px
+        padding-bottom: 60%
+        max-height: 280px
+      @media screen and (max-width: 320px)
+        min-height: 280px
       @media #{$medium-only}
         height: 300px
       @media #{$large-up}
