@@ -159,94 +159,97 @@
 
         .tab-content.form-container
     
-          p.account-title Інформація про автомобіль
+          form
+          
+            p.account-title Інформація про автомобіль
 
-          .row
-            .columns.medium-6
-              .input-field.no-icon
-                input
-                label
-                  | Номер авто&nbsp;
-                  span
-                span.bar
-              .input-field.no-icon
-                select#selectize-field-1 data-placeholder="Категорія автомобіля ? "
-                  option value=""
-                  option value="1" Легковий
-                  option value="2" Легковий (до 2.3т)
-                  option value="3" Легковий з причепом
-                  option value="4" Мікроавтобус (до 3.5т)
-                  option value="5" Мікроавтобус з причепом
-                  option value="6" Вантажний (до 7т)
-                  option value="7" Вантажний (до 10т)
-                  option value="8" Вантажний з причепом
-                  option value="8" Вантажний (від 10т)
-            .columns.medium-6
-              .input-field.no-icon.last
-                select#selectize-field-2 data-placeholder="Тип кузова ?"
-                  option value=""
-                  option value="1" Легковий
-                  option value="2" Легковий (до 2.3т)
-                  option value="3" Легковий з причепом
-                  option value="4" Мікроавтобус (до 3.5т)
-                  option value="5" Мікроавтобус з причепом
-                  option value="6" Вантажний (до 7т)
-                  option value="7" Вантажний (до 10т)
-                  option value="8" Вантажний з причепом
-                  option value="8" Вантажний (від 10т)
+            .row
+              .columns.medium-6
+                .input-field.no-icon
+                  input
+                  label
+                    | Номер авто&nbsp;
+                    span
+                  span.bar
+                .input-field.no-icon
+                  select#selectize-field-1 data-placeholder="Категорія автомобіля ? "
+                    option value=""
+                    option value="1" Легковий
+                    option value="2" Легковий (до 2.3т)
+                    option value="3" Легковий з причепом
+                    option value="4" Мікроавтобус (до 3.5т)
+                    option value="5" Мікроавтобус з причепом
+                    option value="6" Вантажний (до 7т)
+                    option value="7" Вантажний (до 10т)
+                    option value="8" Вантажний з причепом
+                    option value="8" Вантажний (від 10т)
+              .columns.medium-6
+                .input-field.no-icon.last
+                  select#selectize-field-2 data-placeholder="Тип кузова ?"
+                    option value=""
+                    option value="1" Легковий
+                    option value="2" Легковий (до 2.3т)
+                    option value="3" Легковий з причепом
+                    option value="4" Мікроавтобус (до 3.5т)
+                    option value="5" Мікроавтобус з причепом
+                    option value="6" Вантажний (до 7т)
+                    option value="7" Вантажний (до 10т)
+                    option value="8" Вантажний з причепом
+                    option value="8" Вантажний (від 10т)
+              .columns
+                .clearfix
+                  button.floated-right.save
+                    = inline_svg "icons/save.svg"
+                    | зберегти
 
-          .clearfix
-            p.floated-right.save
-              = inline_svg "icons/save.svg"
-              | зберегти
+          form
+            p.account-title Особисті дані
+            .row
 
-          p.account-title Особисті дані
+              .columns.medium-6
+                .input-field.no-icon
+                  input
+                  label
+                    | Логін&nbsp;
+                    span
+                  span.bar
+                .input-field.no-icon
+                  input
+                  label
+                    | Логін&nbsp;
+                    span
+                  span.bar
+                .input-field.no-icon
+                  input
+                  label
+                    | E-mail&nbsp;
+                    span
+                  span.bar              
 
-          .row
+              .columns.medium-6
+                .input-field.last.no-icon
+                  input type="password"
+                  label
+                    | Пароль&nbsp;
+                    span
+                  span.bar
+                .input-field.no-icon
+                  input
+                  label
+                    | Контактний номер&nbsp;
+                    span
+                  span.bar
+                .input-field.no-icon
+                  select#selectize-field-3 data-placeholder="Хто Ви ?"
+                    option value=""
+                    option value="1" Виробник
+                    option value="2" Постачальник
+                    option value="3" Гуртовий покупець
+                    option value="4" Орендар
+                    option value="5" Роздрібний покупець
 
-            .columns.medium-6
-              .input-field.no-icon
-                input
-                label
-                  | Логін&nbsp;
-                  span
-                span.bar
-              .input-field.no-icon
-                input
-                label
-                  | Логін&nbsp;
-                  span
-                span.bar
-              .input-field.no-icon
-                input
-                label
-                  | E-mail&nbsp;
-                  span
-                span.bar              
-
-            .columns.medium-6
-              .input-field.last.no-icon
-                input type="password"
-                label
-                  | Пароль&nbsp;
-                  span
-                span.bar
-              .input-field.no-icon
-                input
-                label
-                  | Контактний номер&nbsp;
-                  span
-                span.bar
-              .input-field.no-icon
-                select#selectize-field-3 data-placeholder="Хто Ви ?"
-                  option value=""
-                  option value="1" Виробник
-                  option value="2" Постачальник
-                  option value="3" Гуртовий покупець
-                  option value="4" Орендар
-                  option value="5" Роздрібний покупець
-
-          .clearfix
-            p.floated-right.save
-              = inline_svg "icons/save.svg"
-              | зберегти
+              .columns
+                .clearfix
+                  button.floated-right.save
+                    = inline_svg "icons/save.svg"
+                    | зберегти
