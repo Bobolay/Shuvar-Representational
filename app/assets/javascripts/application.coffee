@@ -19,11 +19,11 @@
 #= require plugins/selectize.min
 #= require plugins/parallax.min
 #= require plugins/dragscroll
+#= require plugins/isotope.min
 
 #     I N I T I A L I Z E
 
 #= require google_map
-#= require appear-initialize
 #= require bxslider
 #= require fullpage_banner_height
 #= require header
@@ -41,4 +41,4 @@
 #= require navigation
 #= require links
 #= require lightgallery
-#= require scheme_pavilions
+#= require isotope-initialize

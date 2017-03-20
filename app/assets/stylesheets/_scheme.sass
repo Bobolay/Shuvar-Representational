@@ -144,17 +144,115 @@
       +medium
   .map-details
     padding-top: 2em
-    .floated
+    li
+      margin: 20px 0
       .empty, .rented
         display: inline-block
         width: 28px
         height: 28px
         border-radius: 2px
         vertical-align: middle
+
       .empty
-        background: $blue300
-      .rented
         background: $green300
+
+      //   Ф Р У К Т И   Т А   О В О Ч І
+
+      //   соління
+      .pickles
+        background: #9CCC65
+      //   сухофрукти
+      .dried
+        background: #FFA726
+      //   гриби
+      .mushrooms
+        background: #8D6E63
+      //   заморожені фрукти та овочі
+      .frozen-fruits-and-vegetables
+        background: #26C6DA
+      //   зелень
+      .greens
+        background: #C6FF00
+      //   свіжі овочі та фрукти
+      .fresh-fruits-and-vegetables
+        background: #EF5350
+
+      //   Р И Б А
+
+      //   риба жива охолоджена
+      .frozen-fish
+        background: #000
+      //   риба в асортименті
+      .fresh-fish
+        background: #000
+
+      //   К О В Б А С И   Т А   К О П Ч Е Н О С Т І
+
+      //   ковбаси та копченості
+      .sausages
+        background: #000
+      //   молочні продукти
+      .milk
+        background: #000
+
+      //   С В І Ж Е   М ' Я С О
+
+      //   свинина та яловичина
+      .pork-and-beef
+        background: #000
+      //   курятина
+      .chicken
+        background: #000
+
+      //   Б А К А Л І Я
+
+      //   бакалія
+      .grocery
+        background: #000
+      //   кава та чай
+      .coffee-tea
+        background: #000
+      //   побутова хімія
+      .household-chemicals
+        background: #000
+      //   промислові товари
+      .industrial-products
+        background: #000
+      //   солодощі
+      .lollipops
+        background: #000
+      //   алкоголь та тютюнові вироби
+      .alcohol-tobacco
+        background: #000
+      //   посуд та упаковка
+      .tableware-and-packaging
+        background: #000
+      //   інтернет-магазин
+      .internet-shop
+        background: #000
+      //   яйця
+      .eggs
+        background: #000
+      .toys
+      //   іграшки
+        background: #000
+
+      // КВІТИ ТА СУПУТНІ ТОВАРИ
+
+      //   живі квіти
+      .flowers
+        background: #000
+      //   штучні квіти та декори
+      .artificial-flowers
+        background: #000
+      //   насіння та засоби догляду
+      .seed-and-care
+        background: #000
+      //   аксесуари та декори
+      .accessories-and-decor
+        background: #000
+
+
 
 .scheme-title
   color: $blueGrey800
@@ -209,16 +307,16 @@
 .scheme-container
   overflow: hidden
   svg
-    g.pavilion
+    .pavilion
       cursor: pointer
-      *
-        fill: $green300
-    g.rented
-      *
-        fill: $blue300
+      fill: $green300
+    .rented
+      fill: $blue300
 
-    g.signatures
+    .signatures
       pointer-events: none
+
+
 
 
 .scheme-plastic

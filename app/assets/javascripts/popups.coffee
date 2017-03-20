@@ -1,5 +1,8 @@
 $document.ready ->
 
+
+  #     Л О Г І Н     П О П А Н
+
   login_button = $('.login-button')
   login_popup = $('.login-popup-wrapper')
   close_button = $('.login-popup-wrapper .close')
@@ -9,11 +12,27 @@ $document.ready ->
     $('.mask-full ').addClass('visible ')
     login_popup.addClass('visible')
 
-  $.clickOut('.login-popup-wrapper',
+
+  #     П Л А Н     С Х Е М И
+
+  scheme = $('.scheme-container svg')
+  pavilion = scheme.find('.pavilion')
+
+  pavilion.on 'click', ->
+    pavilion_id = $(this).attr("data-pavilion-id")
+    console.log("pavilion:", pavilion_id)
+    $('.mask-full').addClass('visible')
+    $('.terminal-popup').addClass('visible')
+
+
+  #     З А К Р И Т Т Я   К Л І К О М   З А   М Е Ж А М И
+  
+  $.clickOut('.login-popup-wrapper, .terminal-popup',
     ()->
-      $('.login-popup-wrapper').removeClass('visible')
-      $('.mask-full ').removeClass('visible')
-    {except: '.login-popup-wrapper, .login-button'}
+      $('.login-popup-wrapper, .terminal-popup').removeClass('visible')
+      if $('.mask-full').hasClass('visible')
+        $('.mask-full ').removeClass('visible')
+    {except: '.login-popup-wrapper, .login-button, .scheme-container svg .pavilion'}
   )
 
   close_button.on 'click', ->

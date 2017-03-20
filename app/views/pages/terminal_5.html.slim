@@ -38,16 +38,17 @@
 
         .columns.medium-9
   
-          .scheme-container.scheme-plastic.dragscroll data-attr="nodragchildren" = inline_svg "icons/schemes/plastik.svg"
+          .scheme-container.scheme-plastic.dragscroll
+            = inline_svg "icons/schemes/plastik.svg"
 
-          .map-details.clearfix
-            p.floated
+          ul.map-details
+            li
               span.empty
               | &nbsp;&mdash;&nbsp;Вільне приміщення
-            p.floated
+            li
               span.rented
               | &nbsp;&mdash;&nbsp;Орендоване
-            .floated-right.form-button оренда приміщень
+          .form-button оренда приміщень
 
     .inner-indent
 
