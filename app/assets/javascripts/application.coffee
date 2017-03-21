@@ -23,6 +23,7 @@
 
 #     I N I T I A L I Z E
 
+#= require images.js
 #= require google_map
 #= require bxslider
 #= require fullpage_banner_height
