@@ -40,14 +40,30 @@
   
           .scheme-container = inline_svg "icons/schemes/ovochi_and_fruits.svg"
 
-          .map-details.clearfix
-            p.floated
-              span.empty
+          ul.map-details
+            li
+              span.color.empty
               | &nbsp;&mdash;&nbsp;Вільне приміщення
-            p.floated
-              span.rented
-              | &nbsp;&mdash;&nbsp;Орендоване
-            .floated-right.form-button оренда приміщень
+            li
+              span.color.pickles
+              | &nbsp;&mdash;&nbsp;Соління
+            li
+              span.color.dried
+              | &nbsp;&mdash;&nbsp;Сухофрукти
+            li
+              span.color.mushrooms
+              | &nbsp;&mdash;&nbsp;Гриби
+            li
+              span.color.frozen-fruits-and-vegetables
+              | &nbsp;&mdash;&nbsp;Заморожені фрукти та овочі
+            li
+              span.color.greens
+              | &nbsp;&mdash;&nbsp;Зелень
+            li
+              span.color.fresh-fruits-and-vegetables
+              | &nbsp;&mdash;&nbsp;Свіжі овочі та фрукти
+
+          .floated-right.form-button оренда приміщень
 
     .inner-indent
 
@@ -117,3 +133,8 @@
                 | www.smachna-kovbaska.com
                 = inline_svg "icons/planet.svg"
               p.regular Короткий опис магазину
+
+
+      p.large.scheme-title Всі павільйони
+
+      = render "all_schemes_links"

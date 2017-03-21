@@ -32,7 +32,7 @@ $document.ready ->
       $('.login-popup-wrapper, .terminal-popup').removeClass('visible')
       if $('.mask-full').hasClass('visible')
         $('.mask-full ').removeClass('visible')
-    {except: '.login-popup-wrapper, .login-button, .scheme-container svg .pavilion'}
+    {except: '.login-popup-wrapper, .login-button, .scheme-container svg .pavilion, .terminal-popup'}
   )
 
   close_button.on 'click', ->

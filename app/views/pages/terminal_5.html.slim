@@ -2,7 +2,7 @@
   .columns
     .scheme-wrapper
       p.secondary-title
-        | квіти та супутні товари
+        | бакалія
 
       .row.terminal-main-info-wrapper
 
@@ -43,12 +43,40 @@
 
           ul.map-details
             li
-              span.empty
+              span.color.empty
               | &nbsp;&mdash;&nbsp;Вільне приміщення
             li
-              span.rented
-              | &nbsp;&mdash;&nbsp;Орендоване
-          .form-button оренда приміщень
+              span.color.grocery
+              | &nbsp;&mdash;&nbsp;Бакалія
+            li
+              span.color.coffee-tea
+              | &nbsp;&mdash;&nbsp;Кава та чай
+            li
+              span.color.household-chemicals
+              | &nbsp;&mdash;&nbsp;Побутова хімія
+            li
+              span.color.industrial-products
+              | &nbsp;&mdash;&nbsp;Промислові товари
+            li
+              span.color.lollipops
+              | &nbsp;&mdash;&nbsp;Солодощі
+            li
+              span.color.alcohol-tobacco
+              | &nbsp;&mdash;&nbsp;Алкоголь та тютюнові вироби
+            li
+              span.color.tableware-and-packaging
+              | &nbsp;&mdash;&nbsp;Посуд та упаковка
+            li
+              span.color.internet-shop
+              | &nbsp;&mdash;&nbsp;Інтернет-магазин
+            li
+              span.color.eggs
+              | &nbsp;&mdash;&nbsp;Яйця
+            li
+              span.color.toys
+              | &nbsp;&mdash;&nbsp;Іграшки
+
+          .floated-right.form-button оренда приміщень
 
     .inner-indent
 
@@ -118,3 +146,7 @@
                 | www.smachna-kovbaska.com
                 = inline_svg "icons/planet.svg"
               p.regular Короткий опис магазину
+
+      p.large.scheme-title Всі павільйони
+
+      = render "all_schemes_links"

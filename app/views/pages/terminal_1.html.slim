@@ -6,8 +6,8 @@
 
       .row.terminal-main-info-wrapper
 
-        .columns.medium-3
-          .terminal-info-container
+        .columns.large-3
+          .terminal-info-container.clearfix
             .img-container
               .img-background style="background-image: url(#{asset_path('photo/product-category-2.jpg')})"
             .info-block
@@ -36,18 +36,29 @@
               p.manager Стасів Володимир
               p.phone 068 048 3212
 
-        .columns.medium-9
+        .columns.large-9
   
           .scheme-container = inline_svg "icons/schemes/fish_end_moreproduktu.svg"
 
-          .map-details.clearfix
-            p.floated
-              span.empty
+          ul.map-details
+            li
+              span.color.empty
               | &nbsp;&mdash;&nbsp;Вільне приміщення
-            p.floated
-              span.rented
-              | &nbsp;&mdash;&nbsp;Орендоване
-            .floated-right.form-button оренда приміщень
+            li
+              span.color.frozen-fish
+              | &nbsp;&mdash;&nbsp;Риба охолоджена
+            li
+              span.color.fresh-fish
+              | &nbsp;&mdash;&nbsp;Риба жива в асортименті
+
+          .floated-right.form-button оренда приміщень
+
+          .mobile
+            a.download-pdf
+              .clearfix
+                p.floated Завантажити загальну карту
+                .floated-right icon
+              p.regular .pdf 1.4мб
 
     .inner-indent
 
@@ -117,3 +128,7 @@
                 | www.smachna-kovbaska.com
                 = inline_svg "icons/planet.svg"
               p.regular Короткий опис магазину
+
+      p.large.scheme-title Всі павільйони
+
+      = render "all_schemes_links"

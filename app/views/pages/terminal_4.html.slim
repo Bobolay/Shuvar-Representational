@@ -40,14 +40,18 @@
   
           .scheme-container = inline_svg "icons/schemes/myaso.svg"
 
-          .map-details.clearfix
-            p.floated
-              span.empty
+          ul.map-details
+            li
+              span.color.empty
               | &nbsp;&mdash;&nbsp;Вільне приміщення
-            p.floated
-              span.rented
-              | &nbsp;&mdash;&nbsp;Орендоване
-            .floated-right.form-button оренда приміщень
+            li
+              span.color.pork-and-beef
+              | &nbsp;&mdash;&nbsp;Свинина та яловичина
+            li
+              span.color.chicken
+              | &nbsp;&mdash;&nbsp;Курятина
+
+          .floated-right.form-button оренда приміщень
 
     .inner-indent
 
@@ -117,3 +121,7 @@
                 | www.smachna-kovbaska.com
                 = inline_svg "icons/planet.svg"
               p.regular Короткий опис магазину
+
+      p.large.scheme-title Всі павільйони
+
+      = render "all_schemes_links"
