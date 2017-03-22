@@ -51,6 +51,8 @@
                             pushed = 1;
                             lastClientX = e.clientX;
                             lastClientY = e.clientY;
+                            console.log('mouse down')
+                            window.dragInProgress = true;
 
                             e.preventDefault();
                         }
@@ -58,20 +60,34 @@
                 );
 
                 _window[addEventListener](
-                    mouseup, cont.mu = function() {pushed = 0;}, 0
+                    mouseup, cont.mu = function() {
+                        pushed = 0;
+                        console.log('mouse up')
+                        if (window.dragMoveInProgress){
+                            window.dragMoveInProgress = false
+                            setTimeout(function(){
+                                window.dragInProgress = false;
+                            }, 50)
+                        }
+                    }, 0
                 );
 
                 _window[addEventListener](
                     mousemove,
                     cont.mm = function(e) {
                         if (pushed) {
+
+                            newScrollX = (- lastClientX + (lastClientX=e.clientX));
                             (scroller = el.scroller||el).scrollLeft -=
-                                newScrollX = (- lastClientX + (lastClientX=e.clientX));
+                                newScrollX 
                             scroller.scrollTop -=
                                 newScrollY = (- lastClientY + (lastClientY=e.clientY));
                             if (el == _document.body) {
                                 (scroller = _document.documentElement).scrollLeft -= newScrollX;
                                 scroller.scrollTop -= newScrollY;
+                            }
+                            if (newScrollX != lastClientX || newScrollY != lastClientY){
+                                window.dragMoveInProgress = true
                             }
                         }
                     }, 0

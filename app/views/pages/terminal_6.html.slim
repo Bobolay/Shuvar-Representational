@@ -6,8 +6,8 @@
 
       .row.terminal-main-info-wrapper
 
-        .columns.medium-3
-          .terminal-info-container
+        .columns.large-3
+          .terminal-info-container.clearfix
             .img-container
               .img-background style="background-image: url(#{asset_path('photo/product-category-2.jpg')})"
             .info-block
@@ -36,28 +36,37 @@
               p.manager Стасів Володимир
               p.phone 068 048 3212
 
-        .columns.medium-9
+        .columns.large-9
   
           .scheme-container = inline_svg "icons/schemes/kvitu.svg"
 
-          ul.map-details
-            li
-              span.color.empty
-              | &nbsp;&mdash;&nbsp;Вільне приміщення
-            li
-              span.color.flowers
-              | &nbsp;&mdash;&nbsp;Живі квіти
-            li
-              span.color.artificial-flowers
-              | &nbsp;&mdash;&nbsp;Штучні квіти та декори
-            li
-              span.color.seed-and-care
-              | &nbsp;&mdash;&nbsp;Насіння та засоби догляду
-            li
-              span.color.accessories-and-decor
-              | &nbsp;&mdash;&nbsp;Аксесуари та декори
+          .clearfix
 
-          .floated-right.form-button оренда приміщень
+            ul.map-details
+              li
+                span.color.empty
+                | &nbsp;&mdash;&nbsp;Вільне приміщення
+              li
+                span.color.flowers
+                | &nbsp;&mdash;&nbsp;Живі квіти
+              li
+                span.color.artificial-flowers
+                | &nbsp;&mdash;&nbsp;Штучні квіти та декори
+              li
+                span.color.seed-and-care
+                | &nbsp;&mdash;&nbsp;Насіння та засоби догляду
+              li
+                span.color.accessories-and-decor
+                | &nbsp;&mdash;&nbsp;Аксесуари та декори
+
+            .clearfix.floated-right.scheme-action-buttons
+              a.download-pdf
+                .clearfix
+                  p.floated Завантажити загальну карту
+                  .floated-right = inline_svg "icons/pdf-file.svg"
+                p.regular .pdf 1.4мб
+
+              .form-button оренда приміщень
 
     .inner-indent
 

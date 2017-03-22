@@ -6,8 +6,8 @@
 
       .row.terminal-main-info-wrapper
 
-        .columns.medium-3
-          .terminal-info-container
+        .columns.large-3
+          .terminal-info-container.clearfix
             .img-container
               .img-background style="background-image: url(#{asset_path('photo/product-category-2.jpg')})"
             .info-block
@@ -36,47 +36,56 @@
               p.manager Стасів Володимир
               p.phone 068 048 3212
 
-        .columns.medium-9
+        .columns.large-9
   
           .scheme-container.scheme-plastic.dragscroll
             = inline_svg "icons/schemes/plastik.svg"
 
-          ul.map-details
-            li
-              span.color.empty
-              | &nbsp;&mdash;&nbsp;Вільне приміщення
-            li
-              span.color.grocery
-              | &nbsp;&mdash;&nbsp;Бакалія
-            li
-              span.color.coffee-tea
-              | &nbsp;&mdash;&nbsp;Кава та чай
-            li
-              span.color.household-chemicals
-              | &nbsp;&mdash;&nbsp;Побутова хімія
-            li
-              span.color.industrial-products
-              | &nbsp;&mdash;&nbsp;Промислові товари
-            li
-              span.color.lollipops
-              | &nbsp;&mdash;&nbsp;Солодощі
-            li
-              span.color.alcohol-tobacco
-              | &nbsp;&mdash;&nbsp;Алкоголь та тютюнові вироби
-            li
-              span.color.tableware-and-packaging
-              | &nbsp;&mdash;&nbsp;Посуд та упаковка
-            li
-              span.color.internet-shop
-              | &nbsp;&mdash;&nbsp;Інтернет-магазин
-            li
-              span.color.eggs
-              | &nbsp;&mdash;&nbsp;Яйця
-            li
-              span.color.toys
-              | &nbsp;&mdash;&nbsp;Іграшки
+          .clearfix
 
-          .floated-right.form-button оренда приміщень
+            ul.map-details
+              li
+                span.color.empty
+                | &nbsp;&mdash;&nbsp;Вільне приміщення
+              li
+                span.color.grocery
+                | &nbsp;&mdash;&nbsp;Бакалія
+              li
+                span.color.coffee-tea
+                | &nbsp;&mdash;&nbsp;Кава та чай
+              li
+                span.color.household-chemicals
+                | &nbsp;&mdash;&nbsp;Побутова хімія
+              li
+                span.color.industrial-products
+                | &nbsp;&mdash;&nbsp;Промислові товари
+              li
+                span.color.lollipops
+                | &nbsp;&mdash;&nbsp;Солодощі
+              li
+                span.color.alcohol-tobacco
+                | &nbsp;&mdash;&nbsp;Алкоголь та тютюнові вироби
+              li
+                span.color.tableware-and-packaging
+                | &nbsp;&mdash;&nbsp;Посуд та упаковка
+              li
+                span.color.internet-shop
+                | &nbsp;&mdash;&nbsp;Інтернет-магазин
+              li
+                span.color.eggs
+                | &nbsp;&mdash;&nbsp;Яйця
+              li
+                span.color.toys
+                | &nbsp;&mdash;&nbsp;Іграшки
+
+            .clearfix.floated-right.scheme-action-buttons
+              a.download-pdf
+                .clearfix
+                  p.floated Завантажити загальну карту
+                  .floated-right = inline_svg "icons/pdf-file.svg"
+                p.regular .pdf 1.4мб
+
+              .form-button оренда приміщень
 
     .inner-indent
 

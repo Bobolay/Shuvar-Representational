@@ -67,21 +67,35 @@
     @media #{$large-up}
       float: right !important
 
-  .mobile
-    .download-pdf
-      border: 1px solid $blueGrey100
-      padding: 1em
+  .scheme-action-buttons
+    @media #{$medium-up}
+      text-align: right
+    @media #{$small-only}
+      float: none !important
+
+  .download-pdf
+    border: 1px solid $blueGrey100
+    padding: 1em
+    margin-top: 1em
+    .floated
+      +georgia
+      font-size: 1.125em
+      font-style: italic
+      float: left
+    .floated-right
+      float: right
+      width: 30px
+      height: 30px
+      svg
+        width: 100%
+        height: 100%
+        fill: $green
+    .regular
+      clear: both
       margin-top: 1em
-      .floated
-        +georgia
-        font-size: 1.125em
-        font-style: italic
-        float: left
-      .floated-right
-        float: right
-      .regular
-        clear: both
-        margin-top: 1em
+
+  .mobile
+
     .secondary-title
       margin: 2em 0
     .terminal-link-mobile
@@ -150,6 +164,7 @@
       +medium
   .map-details
     padding-top: 2em
+    float: left
     @media #{$small-only}
       display: none
     li
@@ -330,8 +345,8 @@
   fill: #FFA726 !important
 //   молочні продукти
 .milk
-  background: #BDBDBD
-  fill: #BDBDBD !important
+  background: #42A5F5
+  fill: #42A5F5 !important
 
 //   С В І Ж Е   М ' Я С О
 
@@ -348,8 +363,8 @@
 
 //   бакалія
 .grocery
-  background: #BDBDBD
-  fill: #BDBDBD !important
+  background: #76FF03
+  fill: #76FF03 !important
 //   кава та чай
 .coffee-tea
   background: #795548
@@ -372,16 +387,16 @@
   fill: #8D6E63 !important
 //   посуд та упаковка
 .tableware-and-packaging
-  background: #78909C
-  fill: #78909C !important
+  background: #5C6BC0
+  fill: #5C6BC0 !important
 //   інтернет-магазин
 .internet-shop
   background: #FF3D00
   fill: #FF3D00 !important
 //   яйця
 .eggs
-  background: #FFEE58
-  fill: #FFEE58 !important
+  background: #FFEA00
+  fill: #FFEA00 !important
 //   іграшки
 .toys
   background: #26A69A
@@ -395,12 +410,12 @@
   fill: #9CCC65 !important
 //   штучні квіти та декори
 .artificial-flowers
-  background: #BDBDBD
-  fill: #BDBDBD !important
+  background: #7E57C2
+  fill: #7E57C2 !important
 //   насіння та засоби догляду
 .seed-and-care
-  background: #D4E157
-  fill: #D4E157 !important
+  background: #C6FF00
+  fill: #C6FF00 !important
 //   аксесуари та декори
 .accessories-and-decor
   background: #FFA726

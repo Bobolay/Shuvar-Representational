@@ -40,25 +40,27 @@
   
           .scheme-container = inline_svg "icons/schemes/fish_end_moreproduktu.svg"
 
-          ul.map-details
-            li
-              span.color.empty
-              | &nbsp;&mdash;&nbsp;Вільне приміщення
-            li
-              span.color.frozen-fish
-              | &nbsp;&mdash;&nbsp;Риба охолоджена
-            li
-              span.color.fresh-fish
-              | &nbsp;&mdash;&nbsp;Риба жива в асортименті
+          .clearfix
+          
+            ul.map-details.floated
+              li
+                span.color.empty
+                | &nbsp;&mdash;&nbsp;Вільне приміщення
+              li
+                span.color.frozen-fish
+                | &nbsp;&mdash;&nbsp;Риба охолоджена
+              li
+                span.color.fresh-fish
+                | &nbsp;&mdash;&nbsp;Риба жива в асортименті
 
-          .floated-right.form-button оренда приміщень
+            .clearfix.floated-right.scheme-action-buttons
+              a.download-pdf
+                .clearfix
+                  p.floated Завантажити загальну карту
+                  .floated-right = inline_svg "icons/pdf-file.svg"
+                p.regular .pdf 1.4мб
 
-          .mobile
-            a.download-pdf
-              .clearfix
-                p.floated Завантажити загальну карту
-                .floated-right icon
-              p.regular .pdf 1.4мб
+              .form-button оренда приміщень
 
     .inner-indent
 

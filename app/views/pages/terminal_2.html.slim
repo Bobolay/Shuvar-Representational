@@ -6,8 +6,8 @@
 
       .row.terminal-main-info-wrapper
 
-        .columns.medium-3
-          .terminal-info-container
+        .columns.large-3
+          .terminal-info-container.clearfix
             .img-container
               .img-background style="background-image: url(#{asset_path('photo/product-category-2.jpg')})"
             .info-block
@@ -36,34 +36,43 @@
               p.manager Стасів Володимир
               p.phone 068 048 3212
 
-        .columns.medium-9
+        .columns.large-9
   
           .scheme-container = inline_svg "icons/schemes/ovochi_and_fruits.svg"
 
-          ul.map-details
-            li
-              span.color.empty
-              | &nbsp;&mdash;&nbsp;Вільне приміщення
-            li
-              span.color.pickles
-              | &nbsp;&mdash;&nbsp;Соління
-            li
-              span.color.dried
-              | &nbsp;&mdash;&nbsp;Сухофрукти
-            li
-              span.color.mushrooms
-              | &nbsp;&mdash;&nbsp;Гриби
-            li
-              span.color.frozen-fruits-and-vegetables
-              | &nbsp;&mdash;&nbsp;Заморожені фрукти та овочі
-            li
-              span.color.greens
-              | &nbsp;&mdash;&nbsp;Зелень
-            li
-              span.color.fresh-fruits-and-vegetables
-              | &nbsp;&mdash;&nbsp;Свіжі овочі та фрукти
+          .clearfix
+          
+            ul.map-details
+              li
+                span.color.empty
+                | &nbsp;&mdash;&nbsp;Вільне приміщення
+              li
+                span.color.pickles
+                | &nbsp;&mdash;&nbsp;Соління
+              li
+                span.color.dried
+                | &nbsp;&mdash;&nbsp;Сухофрукти
+              li
+                span.color.mushrooms
+                | &nbsp;&mdash;&nbsp;Гриби
+              li
+                span.color.frozen-fruits-and-vegetables
+                | &nbsp;&mdash;&nbsp;Заморожені фрукти та овочі
+              li
+                span.color.greens
+                | &nbsp;&mdash;&nbsp;Зелень
+              li
+                span.color.fresh-fruits-and-vegetables
+                | &nbsp;&mdash;&nbsp;Свіжі овочі та фрукти
 
-          .floated-right.form-button оренда приміщень
+            .clearfix.floated-right.scheme-action-buttons
+              a.download-pdf
+                .clearfix
+                  p.floated Завантажити загальну карту
+                  .floated-right = inline_svg "icons/pdf-file.svg"
+                p.regular .pdf 1.4мб
+
+              .form-button оренда приміщень
 
     .inner-indent
 

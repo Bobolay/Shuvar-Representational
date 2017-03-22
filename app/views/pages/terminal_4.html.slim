@@ -6,8 +6,8 @@
 
       .row.terminal-main-info-wrapper
 
-        .columns.medium-3
-          .terminal-info-container
+        .columns.large-3
+          .terminal-info-container.clearfix
             .img-container
               .img-background style="background-image: url(#{asset_path('photo/product-category-2.jpg')})"
             .info-block
@@ -36,22 +36,31 @@
               p.manager Стасів Володимир
               p.phone 068 048 3212
 
-        .columns.medium-9
+        .columns.large-9
   
           .scheme-container = inline_svg "icons/schemes/myaso.svg"
 
-          ul.map-details
-            li
-              span.color.empty
-              | &nbsp;&mdash;&nbsp;Вільне приміщення
-            li
-              span.color.pork-and-beef
-              | &nbsp;&mdash;&nbsp;Свинина та яловичина
-            li
-              span.color.chicken
-              | &nbsp;&mdash;&nbsp;Курятина
+          .clearfix
+          
+            ul.map-details
+              li
+                span.color.empty
+                | &nbsp;&mdash;&nbsp;Вільне приміщення
+              li
+                span.color.pork-and-beef
+                | &nbsp;&mdash;&nbsp;Свинина та яловичина
+              li
+                span.color.chicken
+                | &nbsp;&mdash;&nbsp;Курятина
 
-          .floated-right.form-button оренда приміщень
+            .clearfix.floated-right.scheme-action-buttons
+              a.download-pdf
+                .clearfix
+                  p.floated Завантажити загальну карту
+                  .floated-right = inline_svg "icons/pdf-file.svg"
+                p.regular .pdf 1.4мб
+
+              .form-button оренда приміщень
 
     .inner-indent
 
