@@ -1,10 +1,12 @@
 .scheme-wrapper
   margin: 2em 0
   border: 1px solid $blueGrey100
-  padding: 2em
+  padding: 1em
   @media #{$small-only}
     padding: 0
     border: 0
+  @media #{$xxlarge-up}
+    padding: 2em
   .desktop
     @media #{$small-only}
       display: none
@@ -76,7 +78,7 @@
   .download-pdf
     border: 1px solid $blueGrey100
     padding: 1em
-    margin-top: 1em
+    margin-top: 2em
     .floated
       +georgia
       font-size: 1.125em
@@ -244,16 +246,20 @@
 .scheme-plastic
   width: 100%
   height: auto
-  padding-bottom: 60%
+  // padding-bottom: 60%
   cursor: -webkit-grab
   cursor: grab
   overflow: hidden
   svg
-    position: absolute
+    // position: absolute
     top: 0
     left: 0
-    min-width: 1800px
-    min-height: 1800px
+  @media #{$xlarge-up}
+    padding-bottom: 60%
+    svg
+      position: absolute
+      min-width: 1800px
+      min-height: 1800px
 
 
 .terminal
