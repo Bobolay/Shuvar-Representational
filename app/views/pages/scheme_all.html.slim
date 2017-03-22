@@ -47,9 +47,10 @@
       .mobile
         a.download-pdf
           .clearfix
-            p.floated Завантажити загальну карту
-            .floated-right icon
-          p.regular .pdf 1.4мб
+            .floated
+              p.italic Завантажити загальну карту
+              p.smaller .pdf 1.4мб
+            .floated-right = inline_svg "icons/pdf-file.svg"
         p.secondary-title
           | всі термінали
         a.clearfix.terminal-link-mobile href=terminal_1_path
