@@ -5,7 +5,7 @@ $document.ready ->
 
   login_button = $('.login-button')
   login_popup = $('.login-popup-wrapper')
-  close_button = $('.login-popup-wrapper .close')
+  close_popup = $('.close-popup')
 
   login_button.on 'click', ->
 
@@ -36,8 +36,8 @@ $document.ready ->
     {except: '.login-popup-wrapper, .login-button, .scheme-container svg .pavilion, .terminal-popup'}
   )
 
-  close_button.on 'click', ->
-    login_popup.removeClass('visible')
+  close_popup.on 'click', ->
+    $(this).parent().removeClass('visible')
     $('.mask-full ').removeClass('visible')
 
 

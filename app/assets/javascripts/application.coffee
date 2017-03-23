@@ -15,11 +15,9 @@
 #= require plugins/jquery.scrolldelta
 #= require plugins/lightgallery.min
 #= require plugins/lg-thumbnail.min
-# require plugins/scroll-banner
 #= require plugins/selectize.min
 #= require plugins/parallax.min
 #= require plugins/dragscroll
-#= require plugins/isotope.min
 
 #     I N I T I A L I Z E
 
@@ -42,4 +40,3 @@
 #= require navigation
 #= require links
 #= require lightgallery
-#= require isotope-initialize

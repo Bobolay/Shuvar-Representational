@@ -51,7 +51,7 @@
                             pushed = 1;
                             lastClientX = e.clientX;
                             lastClientY = e.clientY;
-                            console.log('mouse down')
+                            // console.log('mouse down')
                             window.dragInProgress = true;
 
                             e.preventDefault();
@@ -62,7 +62,7 @@
                 _window[addEventListener](
                     mouseup, cont.mu = function() {
                         pushed = 0;
-                        console.log('mouse up')
+                        // console.log('mouse up')
                         if (window.dragMoveInProgress){
                             window.dragMoveInProgress = false
                             setTimeout(function(){
