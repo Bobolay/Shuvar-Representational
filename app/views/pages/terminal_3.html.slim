@@ -25,11 +25,34 @@
             .info-block
               .icon = inline_svg "icons/clock-2.svg"
               p.small Години роботи
-              p.hours
-                | 9&nbsp;
-                span 00
-                | &nbsp;-&nbsp;21&nbsp;
-                span 00
+              .clearfix
+                .floated
+                  p.smaller Пн - Пт
+                .floated-right
+                  p.regular-medium.aligned
+                    | 6&nbsp;
+                    span 00
+                    | &nbsp;&mdash; 18&nbsp;
+                    span 00
+              .clearfix
+                .floated
+                  p.smaller Сб
+                .floated-right
+                  p.regular-medium.aligned
+                    | 6&nbsp;
+                    span 00
+                    | &nbsp;&mdash; 15&nbsp;
+                    span 00
+              .clearfix
+                .floated
+                  p.smaller Нд
+                .floated-right
+                  p.regular-medium.aligned
+                    | 8&nbsp;
+                    span 00
+                    | &nbsp;&mdash; 13&nbsp;
+                    span 00
+
             .info-block
               .icon = inline_svg "icons/phone.svg"
               p.small Менеджер терміналу
