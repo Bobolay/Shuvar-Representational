@@ -188,13 +188,13 @@
 .shop
   position: relative
   border-bottom: 1px solid $blueGrey100
-  float: left
+  display: inline-block
   margin: 10px
-  width: calc(100%/3 - 20px)
+  width: calc(100%/3 - 24px)
   @media #{$small-only}
-    width: calc(100% - 20px)
+    width: calc(100% - 24px)
   @media #{$medium-only}
-    width: calc(100%/2 - 20px)
+    width: calc(100%/2 - 24px)
   &:before
     content: attr(data-number) "."
     display: block

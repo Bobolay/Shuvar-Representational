@@ -87,6 +87,8 @@
         text-transform: uppercase
         margin-top: 5px
         line-height: 1.25
+        @media screen and (max-width: 768px) and (orientation: landscape)
+          font-size: 12px
       &:hover, &.active
         background: $green
         border: 1px solid $green
@@ -185,6 +187,11 @@
         width: 30%
       &:nth-child(2)
         width: 70%
+      @media screen and (max-width: 768px) and (orientation: landscape)
+        &:first-child, &:nth-child(2)
+          width: 100%
+        &:first-child
+          max-width: 100px
     .img-container
       border-radius: 50%
       overflow: hidden
@@ -212,6 +219,8 @@
     cursor: pointer
     margin: 1px 0
     +medium
+    @media screen and (max-width: 768px) and (orientation: landscape)
+      font-size: 12px
     .arrow-dropdown
       svg
         fill: $green
