@@ -15,6 +15,14 @@ body
   @media #{$small-only}
     font-size: 14px
   &.menu-opened
+    @media #{$small-only}
+      .main-wrapper
+        max-height: calc(100vh - 110px)
+        overflow: hidden
+    @media screen and (max-width: 768px) and (orientation: landscape)
+      .main-wrapper
+        max-height: calc(100vh - 110px)
+        overflow: hidden
 
 
 .row.columns-left

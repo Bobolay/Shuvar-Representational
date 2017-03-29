@@ -62,7 +62,7 @@ satisfy_conditions = (subscriber)->
 
 
 
-$document.on "click", (e)->
+$document.on "click touchstart", (e)->
   #console.log "CLICK"
   #console.log "target:", e.target
   $target = $(e.target)

@@ -11,19 +11,21 @@ html
     = csrf_meta_tags
   body
 
-    .mask
-    .mask-full
-    = render "call_us_popup"
-    = render "terminal_popup"
+    - if @render_header != false
+        = render "header"
 
-    .content
-        - if @render_header != false
-            = render "header"
-        = yield
-    - if @render_footer != false
-        = render "footer"
+    .main-wrapper
+        .mask
+        .mask-full
+        = render "call_us_popup"
+        = render "terminal_popup"
 
-    = render "login_popup"
+        .content
+            = yield
+        - if @render_footer != false
+            = render "footer"
+
+        = render "login_popup"
 
     script src="//maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAPS_API_KEY']}"
     = javascript_include_tag "application", 'data-turbolinks-track' => true

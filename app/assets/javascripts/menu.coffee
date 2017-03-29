@@ -1,9 +1,9 @@
 $document.on 'click', '.menu-button', ->
 
   $(this).toggleClass("opened")
+  $('body').toggleClass('menu-opened')
   $('.menu-wrapper').toggleClass('opened')
   $('.mask').toggleClass('visible')
-  $('body').toggleClass('menu-opened')
 
 $.clickOut(".menu-wrapper",
   ()->

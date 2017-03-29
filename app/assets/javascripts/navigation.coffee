@@ -19,7 +19,7 @@ scroll = (e)->
 
   #     M E N U
   menu = $('.menu-wrapper')
-  if scroll_top > top_nav_height
+  if scroll_top > top_nav_height && width > 768
     menu.css('top', scroll_top+main_nav_height)
   else
     menu.css('top', main_nav_height+main_nav_top)
