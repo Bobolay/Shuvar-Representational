@@ -13,3 +13,11 @@ $(->
       $(this).text($(this).text().substr(0,120)+'...')
   )
 )
+
+$(->
+  $(".search-wrapper .larger").each(()->
+    length=$(this).text().length
+    if length>100
+      $(this).text($(this).text().substr(0,100)+'...')
+  )
+)

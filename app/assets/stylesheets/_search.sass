@@ -1,0 +1,43 @@
+.search-wrapper
+
+  .main-title
+    text-align: left
+    .searchword
+      &:before, &:after
+        color: $blueGrey700
+      &:before
+        content: '\00AB'
+      &:after
+        content: '\00BB'
+
+  .smaller
+    margin-top: 10px
+    margin-bottom: 10px
+
+  .result-block
+    padding: 30px 0
+    border-bottom: 1px solid $blueGrey50
+    &:last-child
+      border-bottom: 0
+    .larger
+      +bold
+      span
+        color: $green
+    .regular
+      text-decoration: underline
+      color: $blueGrey200
+      margin-top: 10px
+      span
+        color: $green
+        text-decoration: none
+        margin-left: 20px
+        svg
+          position: relative
+          top: 3px
+          transform: matrix(-1, 0, 0, 1, 0, 0)
+          fill: $green
+          width: 16px
+          height: 16px
+          margin-left: 10px
+      &:hover
+        color: $green

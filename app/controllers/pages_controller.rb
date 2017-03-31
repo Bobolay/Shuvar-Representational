@@ -95,6 +95,10 @@ class PagesController < ApplicationController
 
   end
 
+  def search
+
+  end
+
   def not_found
     @render_header = false
     @render_footer = false
